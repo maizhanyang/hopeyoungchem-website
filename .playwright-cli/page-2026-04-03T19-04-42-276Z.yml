@@ -1,0 +1,321 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "广州虹扬化工科技有限公司" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e10]
+        - generic [ref=e11]:
+          - link "联系虹扬" [ref=e12] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e13]
+          - link "新闻动态" [ref=e16] [cursor=pointer]:
+            - /url: /news
+            - img [ref=e17]
+          - generic [ref=e20]:
+            - img [ref=e21]
+            - generic "语言切换" [ref=e24]:
+              - link "中文" [ref=e25] [cursor=pointer]:
+                - /url: /
+              - generic [ref=e26]: "|"
+              - link "English" [ref=e27] [cursor=pointer]:
+                - /url: /en
+          - search "站内检索占位" [ref=e28]:
+            - searchbox "搜索关键词" [ref=e29]
+            - button "搜索" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+      - generic [ref=e35]:
+        - navigation "主导航" [ref=e36]:
+          - link "关于虹扬" [ref=e37] [cursor=pointer]:
+            - /url: /about
+          - link "解决方案" [ref=e38] [cursor=pointer]:
+            - /url: /solutions
+          - link "行业应用" [ref=e39] [cursor=pointer]:
+            - /url: /applications
+          - link "研发协同" [ref=e40] [cursor=pointer]:
+            - /url: /technology
+        - navigation "辅助导航" [ref=e41]:
+          - link "联系我们" [ref=e42] [cursor=pointer]:
+            - /url: /contact
+          - link "新闻动态" [ref=e43] [cursor=pointer]:
+            - /url: /news
+  - main [ref=e44]:
+    - generic [ref=e46]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: 关键技术伙伴
+        - heading "为高端制造提供关键粘接解决方案" [level=1] [ref=e50]
+        - paragraph [ref=e51]: 聚焦丙烯酸压敏胶核心平台 服务电子 高端制造与新能源项目
+        - paragraph [ref=e52]: 依托硕博团队、自主知识产权体系与协同制造能力，把路线判断、资料沟通、样品验证与稳定供货放进同一条项目链路
+        - generic [ref=e53]:
+          - link "联系销售" [ref=e54] [cursor=pointer]:
+            - /url: /contact
+          - link "查看解决方案" [ref=e55] [cursor=pointer]:
+            - /url: /solutions
+        - paragraph [ref=e56]: 广州虹扬负责研发与销售，中山置盈承接生产与仓储；当前公开层已纳入 9 个产品摘要、营业执照、高新证书与 17 项专利条目。
+      - img "压敏胶研发场景主视觉" [ref=e59]
+    - generic [ref=e61]:
+      - article [ref=e62]:
+        - strong [ref=e63]: 4硕2博
+        - generic [ref=e64]: 研发团队
+        - paragraph [ref=e65]: 覆盖化工新材料、材料科学、物理学与应用开发方向。
+      - article [ref=e66]:
+        - strong [ref=e67]: 4大
+        - generic [ref=e68]: 材料平台
+        - paragraph [ref=e69]: 覆盖永久强粘、可移除、标签包装与功能特种四类公开路线。
+      - article [ref=e70]:
+        - strong [ref=e71]: 17项
+        - generic [ref=e72]: 公开专利条目
+        - paragraph [ref=e73]: 已确认可公开的专利总表，覆盖生产、存储、上料、喷涂、温控与提纯等环节。
+    - generic [ref=e74]:
+      - generic [ref=e76]:
+        - generic [ref=e77]: 公司简介
+        - heading "关键技术伙伴，不只是材料供应商" [level=2] [ref=e78]
+        - paragraph [ref=e79]: 聚焦丙烯酸压敏胶、工业涂料及助剂，以自主研发、协同制造与项目化服务支撑工业客户导入与量产
+      - generic [ref=e80]:
+        - link "科研场景与材料路线判断场景 Solutions 解决方案 从四大体系和示例产品先判断路线 进入内容" [ref=e81] [cursor=pointer]:
+          - /url: /solutions
+          - img "科研场景与材料路线判断场景" [ref=e83]
+          - generic [ref=e84]:
+            - generic [ref=e85]: Solutions
+            - heading "解决方案" [level=3] [ref=e86]
+            - paragraph [ref=e87]: 从四大体系和示例产品先判断路线
+            - strong [ref=e88]: 进入内容
+        - link "真实办公与项目协同环境 Applications 行业应用 看电子 高端制造与新能源中的项目逻辑 进入内容" [ref=e89] [cursor=pointer]:
+          - /url: /applications
+          - img "真实办公与项目协同环境" [ref=e91]
+          - generic [ref=e92]:
+            - generic [ref=e93]: Applications
+            - heading "行业应用" [level=3] [ref=e94]
+            - paragraph [ref=e95]: 看电子 高端制造与新能源中的项目逻辑
+            - strong [ref=e96]: 进入内容
+        - link "实验室人物协作与研发讨论场景 R&D Collaboration 研发协同 看硕博团队 华工合作与验证方法 进入内容" [ref=e97] [cursor=pointer]:
+          - /url: /technology
+          - img "实验室人物协作与研发讨论场景" [ref=e99]
+          - generic [ref=e100]:
+            - generic [ref=e101]: R&D Collaboration
+            - heading "研发协同" [level=3] [ref=e102]
+            - paragraph [ref=e103]: 看硕博团队 华工合作与验证方法
+            - strong [ref=e104]: 进入内容
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]: 核心能力
+        - heading "把研发 销售与制造放进同一条项目链路" [level=2] [ref=e108]
+        - paragraph [ref=e109]: 从项目问题、材料平台与制造协同三方面建立更完整的首轮判断
+      - generic [ref=e110]:
+        - article [ref=e111]:
+          - text: Front-end Collaboration
+          - heading "前端方案协同" [level=3] [ref=e112]
+          - paragraph [ref=e113]: 围绕基材、工艺、目标性能与导入节奏组织首轮沟通
+          - strong [ref=e114]: 更适合处在方案评估、资料申请、打样或联合验证阶段的工业客户。
+          - link "进入内容" [ref=e115] [cursor=pointer]:
+            - /url: /solutions
+        - article [ref=e116]:
+          - text: Manufacturing Support
+          - heading "后端稳定交付" [level=3] [ref=e117]
+          - paragraph [ref=e118]: 以置盈的生产仓储能力承接批量验证、稳定供应与制造协同
+          - strong [ref=e119]: 让前端技术判断和后端交付能力处在同一套对外表达中。
+          - link "进入内容" [ref=e120] [cursor=pointer]:
+            - /url: /applications
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - generic [ref=e125]: 客户共创
+          - heading "更有效的技术合作，来自一起判断 一起验证" [level=2] [ref=e126]
+          - paragraph [ref=e127]: 虹扬希望呈现的不只是技术实力，也是一种更适合工业项目长期配合的协同方式。
+        - paragraph [ref=e128]: 虹扬把客户真实工况带进技术判断，让销售、研发、制造与项目团队围绕同一问题协同
+        - generic [ref=e129]:
+          - paragraph [ref=e132]: 把场景、工艺限制和验证节奏放进同一套沟通框架
+          - paragraph [ref=e135]: 让一次资料咨询更快走向样品、验证与长期合作
+          - paragraph [ref=e138]: 把销售表达、技术判断和制造配合放在同一条项目链路上
+      - generic [ref=e139]:
+        - article [ref=e140]:
+          - img "会议室中的项目讨论与方案沟通场景" [ref=e142]
+          - generic [ref=e143]:
+            - heading "方案讨论" [level=3] [ref=e144]
+            - paragraph [ref=e145]: 通过会议、资料对接与路线判断，把问题讲明白再进入验证。
+        - article [ref=e146]:
+          - img "办公室中的商务与项目协同场景" [ref=e148]
+          - generic [ref=e149]:
+            - heading "日常协同" [level=3] [ref=e150]
+            - paragraph [ref=e151]: 把销售、研发与客户沟通放进更顺畅的项目推进节奏里。
+    - generic [ref=e152]:
+      - generic [ref=e153]:
+        - generic [ref=e154]: 信任基础
+        - heading "在客户联系销售前，先把主体、资质、专利与验证基础讲清楚" [level=2] [ref=e155]
+        - paragraph [ref=e156]: 首页先释放营业主体、高新技术企业证明、公开专利条目与实验验证基础，让客户更快形成“这家公司靠谱”的判断。
+      - generic [ref=e157]:
+        - article [ref=e158]:
+          - heading "营业主体与协同架构" [level=3] [ref=e159]
+          - paragraph [ref=e160]: 广州虹扬负责研发与销售，中山置盈承担生产与仓储，形成前端方案判断与后端稳定交付的协同架构。
+          - generic [ref=e161]:
+            - img "广州虹扬化工科技有限公司营业执照" [ref=e162]
+            - generic [ref=e163]: 广州虹扬化工科技有限公司营业执照
+        - article [ref=e164]:
+          - heading "高新技术企业证明" [level=3] [ref=e165]
+          - paragraph [ref=e166]: 协同制造主体已纳入高新技术企业证书公开展示，让技术型企业属性与制造背书更清晰。
+          - generic [ref=e167]:
+            - img "中山置盈化工科技有限公司高新技术企业证书" [ref=e168]
+            - generic [ref=e169]: 协同制造主体 中山置盈高新技术企业证书
+        - article [ref=e170]:
+          - heading "17 项公开专利条目" [level=3] [ref=e171]
+          - paragraph [ref=e172]: 专利总表已确认可公开，覆盖压敏胶生产、混合、上料、存储、喷涂、温控、输送与提纯等关键环节。
+          - generic [ref=e173]:
+            - img "一种抗失效的胶水存放装置发明专利证书" [ref=e174]
+            - generic [ref=e175]: 公开专利示例：一种抗失效的胶水存放装置
+        - article [ref=e176]:
+          - heading "实验验证与行业导入" [level=3] [ref=e177]
+          - paragraph [ref=e178]: 实验室验证、客户导入测试和量产场景反馈共同构成对外信任基础。
+    - generic [ref=e179]:
+      - generic [ref=e180]:
+        - generic [ref=e181]: 新闻动态
+        - heading "近期公开更新，已经开始向正式版结构靠拢" [level=2] [ref=e182]
+        - paragraph [ref=e183]: 首页先展示已经确认可公开的内容推进，包括产品摘要、匿名案例、资质证明、真实场景图片与正式联系入口。
+      - generic [ref=e184]:
+        - article [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e187]: 官网更新
+            - strong [ref=e188]: 2026年4月
+          - heading "官网公开层已完成一轮正式版扩充" [level=3] [ref=e189]
+          - paragraph [ref=e190]: 官网已补入营业执照、高新证书、17 项公开专利条目与 9 个产品摘要，整体表达已从展示版明显推进到正式版。
+          - paragraph [ref=e193]: 当前公开层优先承接材料方向判断、资质证明与正式联系入口，完整 TDS / SDS 仍按项目沟通继续提供。
+        - generic [ref=e194]:
+          - article [ref=e195]:
+            - generic [ref=e196]:
+              - generic [ref=e197]: 案例表达
+              - strong [ref=e198]: 2026年4月
+            - heading "行业应用页已切换为匿名量化案例结构" [level=3] [ref=e199]
+            - paragraph [ref=e200]: 应用页现在以 5 个匿名案例呈现消费电子、高端制造、新能源、规模化生产与高端标签方向的项目逻辑。
+            - paragraph [ref=e203]: 在未启用实名客户授权前，量化结果、验证指标与业务成果会先作为更稳妥的公开表达方式。
+          - article [ref=e204]:
+            - generic [ref=e205]:
+              - generic [ref=e206]: 联系渠道
+              - strong [ref=e207]: 2026年4月
+            - heading "正式联系页已整合公开电话、邮箱、微信与双地址" [level=3] [ref=e208]
+            - paragraph [ref=e209]: 联系页现已同步 5 条公开业务电话、商务邮箱、业务微信二维码，以及办公室和实验室地址。
+            - paragraph [ref=e212]: 这让资料申请、样品沟通、技术会议与来访安排都可以在一个正式入口里完成。
+          - link "查看更多动态" [ref=e213] [cursor=pointer]:
+            - /url: /news
+    - generic [ref=e215]:
+      - generic [ref=e216]:
+        - generic [ref=e217]: 企业信息
+        - heading "资料与项目沟通入口" [level=2] [ref=e218]
+        - paragraph [ref=e219]: 虹扬负责研发与销售，置盈负责生产与仓储，共同服务工业客户的压敏胶与材料协同开发项目
+        - generic [ref=e220]:
+          - link "18148928019" [ref=e221] [cursor=pointer]:
+            - /url: tel:18148928019
+          - link "进入联系页" [ref=e222] [cursor=pointer]:
+            - /url: /contact
+        - link "hopeyoung@hopeyoungchem.cn" [ref=e223] [cursor=pointer]:
+          - /url: mailto:hopeyoung@hopeyoungchem.cn
+      - generic [ref=e224]:
+        - article [ref=e225]:
+          - generic [ref=e226]: 业务电话
+          - generic [ref=e227]:
+            - link "吴润东（线上销售） 18148928019" [ref=e228] [cursor=pointer]:
+              - /url: tel:18148928019
+              - strong [ref=e229]: 吴润东（线上销售）
+              - generic [ref=e230]: "18148928019"
+            - link "张俊（线下销售） 13922297800" [ref=e231] [cursor=pointer]:
+              - /url: tel:13922297800
+              - strong [ref=e232]: 张俊（线下销售）
+              - generic [ref=e233]: "13922297800"
+            - link "何永华（线下销售） 18620031360" [ref=e234] [cursor=pointer]:
+              - /url: tel:18620031360
+              - strong [ref=e235]: 何永华（线下销售）
+              - generic [ref=e236]: "18620031360"
+            - link "麦展扬（项目统筹） 15507697210" [ref=e237] [cursor=pointer]:
+              - /url: tel:15507697210
+              - strong [ref=e238]: 麦展扬（项目统筹）
+              - generic [ref=e239]: "15507697210"
+            - link "袁锐（来访协调） 18142899637" [ref=e240] [cursor=pointer]:
+              - /url: tel:18142899637
+              - strong [ref=e241]: 袁锐（来访协调）
+              - generic [ref=e242]: "18142899637"
+        - article [ref=e243]:
+          - generic [ref=e244]: 业务微信
+          - img "虹扬化工业务微信二维码" [ref=e246]
+          - paragraph [ref=e247]: 可扫码添加业务微信，用于项目沟通、资料跟进与来访安排。
+        - article [ref=e248]:
+          - generic [ref=e249]: 办公 / 实验地址
+          - generic [ref=e250]:
+            - paragraph [ref=e251]:
+              - strong [ref=e252]: 办公室
+              - generic [ref=e253]: 广州市天河区东莞庄路110号E栋308-2
+            - paragraph [ref=e254]:
+              - strong [ref=e255]: 实验室
+              - generic [ref=e256]: 广州市天河区东莞庄路110号E栋302
+  - contentinfo [ref=e257]:
+    - generic [ref=e258]:
+      - generic [ref=e259]:
+        - link "虹扬化工品牌标识 HOPE YOUNG Industrial Bonding Solutions" [ref=e260] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e262]
+          - generic [ref=e263]:
+            - strong [ref=e264]: HOPE YOUNG
+            - generic [ref=e265]: Industrial Bonding Solutions
+        - generic [ref=e266]:
+          - generic [ref=e267]: 网站切换
+          - generic "语言切换" [ref=e268]:
+            - link "中文" [ref=e269] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e270]: "|"
+            - link "English" [ref=e271] [cursor=pointer]:
+              - /url: /en
+      - generic [ref=e272]:
+        - generic [ref=e273]:
+          - heading "公司" [level=3] [ref=e274]
+          - generic [ref=e275]:
+            - link "关于虹扬" [ref=e276] [cursor=pointer]:
+              - /url: /about
+            - link "新闻动态" [ref=e277] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e278]:
+          - heading "品牌及业务" [level=3] [ref=e279]
+          - generic [ref=e280]:
+            - link "解决方案" [ref=e281] [cursor=pointer]:
+              - /url: /solutions
+            - link "行业应用" [ref=e282] [cursor=pointer]:
+              - /url: /applications
+            - link "研发协同" [ref=e283] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e284]:
+          - heading "快速链接" [level=3] [ref=e285]
+          - generic [ref=e286]:
+            - link "首页" [ref=e287] [cursor=pointer]:
+              - /url: /
+            - link "联系我们" [ref=e288] [cursor=pointer]:
+              - /url: /contact
+            - link "新闻动态" [ref=e289] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e290]:
+          - heading "联系" [level=3] [ref=e291]
+          - link "联系" [ref=e292] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e293]: 联系
+            - generic [ref=e294]: →
+          - generic [ref=e295]:
+            - link "销售热线 18148928019" [ref=e296] [cursor=pointer]:
+              - /url: tel:18148928019
+              - img [ref=e297]
+              - generic [ref=e299]:
+                - generic [ref=e300]: 销售热线
+                - strong [ref=e301]: "18148928019"
+            - link "业务微信 查看二维码" [ref=e302] [cursor=pointer]:
+              - /url: /contact
+              - img [ref=e303]
+              - generic [ref=e306]:
+                - generic [ref=e307]: 业务微信
+                - strong [ref=e308]: 查看二维码
+            - generic [ref=e309]:
+              - img [ref=e310]
+              - generic [ref=e313]:
+                - generic [ref=e314]: 公司地址
+                - strong [ref=e315]: 广州市天河区东莞庄路110号E栋308-2
+      - generic [ref=e316]:
+        - paragraph [ref=e317]: 首批正式公开层已纳入营业执照、高新证书、17 项公开专利条目与 9 个产品摘要，更多案例与资料按授权继续补充
+        - generic [ref=e318]:
+          - generic [ref=e319]: 网站地图
+          - generic [ref=e320]: 版权声明
+          - generic [ref=e321]: 使用条款
+          - generic [ref=e322]: 隐私声明
+        - generic [ref=e324]: © 2026 广州虹扬化工科技有限公司，广州，中国

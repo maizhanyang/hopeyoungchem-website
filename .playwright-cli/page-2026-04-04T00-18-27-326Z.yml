@@ -1,0 +1,264 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "广州虹扬化工科技有限公司" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e10]
+        - generic [ref=e11]:
+          - link "联系虹扬" [ref=e12] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e13]
+          - link "新闻动态" [ref=e16] [cursor=pointer]:
+            - /url: /news
+            - img [ref=e17]
+          - generic [ref=e20]:
+            - img [ref=e21]
+            - generic "语言切换" [ref=e24]:
+              - link "中文" [ref=e25] [cursor=pointer]:
+                - /url: /about
+              - generic [ref=e26]: "|"
+              - link "English" [ref=e27] [cursor=pointer]:
+                - /url: /en/about
+          - search "站内检索占位" [ref=e28]:
+            - searchbox "搜索关键词" [ref=e29]
+            - button "搜索" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+      - generic [ref=e35]:
+        - navigation "主导航" [ref=e36]:
+          - link "关于虹扬" [ref=e37] [cursor=pointer]:
+            - /url: /about
+          - link "解决方案" [ref=e38] [cursor=pointer]:
+            - /url: /solutions
+          - link "行业应用" [ref=e39] [cursor=pointer]:
+            - /url: /applications
+          - link "研发协同" [ref=e40] [cursor=pointer]:
+            - /url: /technology
+        - navigation "辅助导航" [ref=e41]:
+          - link "联系我们" [ref=e42] [cursor=pointer]:
+            - /url: /contact
+          - link "新闻动态" [ref=e43] [cursor=pointer]:
+            - /url: /news
+  - main [ref=e44]:
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: 关于虹扬
+          - heading "懂材料 也懂项目配合" [level=1] [ref=e50]
+          - paragraph [ref=e51]: 让客户更快理解虹扬与协同方式
+          - paragraph [ref=e52]: 首版官网采用更克制的企业表达方式，不堆砌口号，而是用结构化信息建立品牌印象和合作预期。
+          - generic [ref=e53]:
+            - link "联系我们" [ref=e54] [cursor=pointer]:
+              - /url: /contact
+            - link "查看技术实力" [ref=e55] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e56]:
+          - generic [ref=e57]: 品牌与合作
+          - paragraph [ref=e58]: 这一轮已经接入真实办公、实验与证照素材，后续只需继续补齐最终对外文案。
+          - strong [ref=e59]: 这一轮已经接入真实办公、实验与证照素材，后续只需继续补齐最终对外文案。
+      - img "公司入口与品牌标识场景" [ref=e62]
+    - generic [ref=e64]:
+      - img "虹扬化工品牌标识" [ref=e66]
+      - generic [ref=e67]:
+        - generic [ref=e68]: 品牌识别
+        - heading "把品牌、技术方法和合作方式放在一起看" [level=2] [ref=e69]
+        - paragraph [ref=e70]: 广州虹扬化工科技有限公司聚焦丙烯酸压敏胶、工业涂料及助剂的研发与销售，并以中山置盈的生产、仓储与协同制造能力承接交付。官网对外把虹扬定义为客户的“关键技术伙伴”：从需求对接、路线判断、样品验证到工艺落地，用一套贯通研发、销售与制造的全周期支持方式服务电子、高端制造与新能源项目。
+        - generic [ref=e71]:
+          - link "联系我们" [ref=e72] [cursor=pointer]:
+            - /url: /contact
+          - link "查看技术实力" [ref=e73] [cursor=pointer]:
+            - /url: /technology
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]: 品牌露出
+        - heading "把附件 6 里的真实品牌素材接进正式关于页" [level=2] [ref=e77]
+        - paragraph [ref=e78]: 这组品牌墙素材现在直接承担关于页的正式视觉露出，也让品牌、空间和接待感受有了更真实的公开表达。
+      - generic [ref=e79]:
+        - article [ref=e80]:
+          - img "公司前台品牌墙与接待空间" [ref=e82]
+          - generic [ref=e83]:
+            - heading "品牌前台与接待位" [level=3] [ref=e84]
+            - paragraph [ref=e85]: 把真实品牌位放进关于页后，站点的正式企业感会比单纯使用 logo 更完整。
+        - article [ref=e86]:
+          - img "品牌墙近景与办公接待环境" [ref=e88]
+          - generic [ref=e89]:
+            - heading "正式品牌露出场景" [level=3] [ref=e90]
+            - paragraph [ref=e91]: 这组素材直接支撑官网中的品牌识别、来访预期和主体可信度表达。
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]: 合作方式
+        - heading "把长期配合说清楚，比堆品牌口号更重要" [level=2] [ref=e96]
+        - paragraph [ref=e97]: 关于页更像一张合作方式说明页，帮助客户理解虹扬如何进入项目、如何组织沟通，以及为什么适合长期配合。
+      - generic [ref=e98]:
+        - article [ref=e99]:
+          - heading "自主研发与知识产权体系" [level=3] [ref=e100]
+          - paragraph [ref=e101]: 围绕丙烯酸压敏胶与工业涂料路线，持续沉淀自主技术平台、产品矩阵与公开专利基础。
+          - generic [ref=e102]: 这让材料判断、产品升级与后续定制开发具备更稳定的技术底座。
+        - article [ref=e103]:
+          - heading "硕博团队与产学研协同" [level=3] [ref=e104]
+          - paragraph [ref=e105]: 4 位硕士、2 位博士组成的团队，与华南理工大学实验室协同开展技术研究与应用转化。
+          - generic [ref=e106]: 让官网对外传达的不只是“有研发”，而是具备持续研究、验证和工程转化能力。
+        - article [ref=e107]:
+          - heading "从需求对接到工艺落地" [level=3] [ref=e108]
+          - paragraph [ref=e109]: 合作并不止于供货，而是围绕需求澄清、配方判断、验证安排、量产导入和后续优化持续推进。
+          - generic [ref=e110]: 这也是“关键技术伙伴”在官网对外最需要讲清楚的合作方式。
+    - generic [ref=e111]:
+      - generic [ref=e112]:
+        - generic [ref=e113]: 公开资料层
+        - heading "把品牌现场、证照与专利公开层放在同一页收口" [level=2] [ref=e114]
+        - paragraph [ref=e115]: 关于页现在不仅讲故事，也把真实品牌场景、营业主体、高新证明与专利积累放在一起，帮助客户更快判断这是一个可正式沟通的企业入口。
+      - generic [ref=e116]:
+        - article [ref=e117]:
+          - heading "营业主体与协同架构" [level=3] [ref=e118]
+          - paragraph [ref=e119]: 官网对外采用“虹扬负责研发与销售，置盈负责生产与仓储”的协同表达，并以营业执照作为第一层公开主体证明。
+          - generic [ref=e120]:
+            - img "广州虹扬化工科技有限公司营业执照" [ref=e121]
+            - generic [ref=e122]: 广州虹扬化工科技有限公司营业执照
+        - article [ref=e123]:
+          - heading "高新技术企业证明" [level=3] [ref=e124]
+          - paragraph [ref=e125]: 高新技术企业证书直接支撑协同制造端的技术型企业属性，让研发判断与制造交付之间的关系更容易被客户理解。
+          - generic [ref=e126]:
+            - img "中山置盈化工科技有限公司高新技术企业证书" [ref=e127]
+            - generic [ref=e128]: 协同制造主体 中山置盈高新技术企业证书
+        - article [ref=e129]:
+          - heading "发明专利与工艺积累" [level=3] [ref=e130]
+          - paragraph [ref=e131]: 已确认可公开的专利总表收录 17 项条目，可用于说明协同制造端在压敏胶生产、存储、喷涂、温控与提纯等环节上的持续积累。
+          - generic [ref=e132]:
+            - img "一种抗失效的胶水存放装置发明专利证书" [ref=e133]
+            - generic [ref=e134]: 公开专利示例：一种抗失效的胶水存放装置
+        - article [ref=e135]:
+          - heading "实验验证与行业导入" [level=3] [ref=e136]
+          - paragraph [ref=e137]: 产品可靠性建立在“实验室-客户”双重验证之上，并已在电子、新能源等方向形成导入经验。
+      - paragraph [ref=e138]: 当前正式公开层已覆盖营业执照、高新证书、17 项公开专利条目、9 个产品摘要、5 个匿名量化案例，以及附件 6 中的真实办公与实验场景。后续若补齐备案信息、产品实拍与实名授权案例，站点即可进一步进入最终上线状态。
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - generic [ref=e141]: 发展节奏
+        - heading "用公开节点概括企业发展节奏" [level=2] [ref=e142]
+        - paragraph [ref=e143]: 时间线作为附属信息保留，用更轻的方式帮助客户快速理解企业阶段和业务方向。
+      - generic [ref=e144]:
+        - article [ref=e145]:
+          - generic [ref=e146]: "01"
+          - heading "研发团队与协同布局" [level=3] [ref=e147]
+          - paragraph [ref=e148]: 逐步形成由华工背景团队牵引、4 位硕士与 2 位博士参与的研发配置，并建立产学研协同基础。
+        - article [ref=e149]:
+          - generic [ref=e150]: "02"
+          - heading "知识产权与产品矩阵" [level=3] [ref=e151]
+          - paragraph [ref=e152]: 围绕压敏胶与工业涂料路线形成自主知识产权体系，并逐步搭建覆盖多场景的产品矩阵。
+        - article [ref=e153]:
+          - generic [ref=e154]: "03"
+          - heading "高端场景验证与交付" [level=3] [ref=e155]
+          - paragraph [ref=e156]: 产品逐步进入消费电子、高端制造与新能源方向的验证和交付节奏，形成更完整的项目协同经验。
+    - generic [ref=e158]:
+      - generic [ref=e159]:
+        - generic [ref=e160]: 合作方式
+        - heading "先判断合作方式，再决定是否继续深入" [level=2] [ref=e161]
+        - paragraph [ref=e162]: 关于页更像品牌与合作说明页，帮助客户快速选择下一步。
+      - generic [ref=e163]:
+        - article [ref=e164]:
+          - generic [ref=e165]:
+            - heading "看解决方案" [level=3] [ref=e166]
+            - paragraph [ref=e167]: 如果你想先确认业务边界、材料平台和公开资料表达方式。
+          - link "进入解决方案" [ref=e168] [cursor=pointer]:
+            - /url: /solutions
+            - generic [ref=e169]: 进入解决方案
+            - generic [ref=e170]: →
+        - article [ref=e171]:
+          - generic [ref=e172]:
+            - heading "看研发协同" [level=3] [ref=e173]
+            - paragraph [ref=e174]: 如果你更关心团队背景、验证方法和长期技术配合能力。
+          - link "查看研发协同" [ref=e175] [cursor=pointer]:
+            - /url: /technology
+            - generic [ref=e176]: 查看研发协同
+            - generic [ref=e177]: →
+        - article [ref=e178]:
+          - generic [ref=e179]:
+            - heading "直接联系" [level=3] [ref=e180]
+            - paragraph [ref=e181]: 如果你已经希望进入正式项目沟通，公开业务电话和业务微信会更高效。
+          - link "联系我们" [ref=e182] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e183]: 联系我们
+            - generic [ref=e184]: →
+      - generic [ref=e185]:
+        - link "联系我们" [ref=e186] [cursor=pointer]:
+          - /url: /contact
+        - link "查看解决方案" [ref=e187] [cursor=pointer]:
+          - /url: /solutions
+  - contentinfo [ref=e188]:
+    - generic [ref=e189]:
+      - generic [ref=e190]:
+        - link "虹扬化工品牌标识 HOPE YOUNG Industrial Bonding Solutions" [ref=e191] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e193]
+          - generic [ref=e194]:
+            - strong [ref=e195]: HOPE YOUNG
+            - generic [ref=e196]: Industrial Bonding Solutions
+        - generic [ref=e197]:
+          - generic [ref=e198]: 网站切换
+          - generic "语言切换" [ref=e199]:
+            - link "中文" [ref=e200] [cursor=pointer]:
+              - /url: /about
+            - generic [ref=e201]: "|"
+            - link "English" [ref=e202] [cursor=pointer]:
+              - /url: /en/about
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - heading "公司" [level=3] [ref=e205]
+          - generic [ref=e206]:
+            - link "关于虹扬" [ref=e207] [cursor=pointer]:
+              - /url: /about
+            - link "新闻动态" [ref=e208] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e209]:
+          - heading "品牌及业务" [level=3] [ref=e210]
+          - generic [ref=e211]:
+            - link "解决方案" [ref=e212] [cursor=pointer]:
+              - /url: /solutions
+            - link "行业应用" [ref=e213] [cursor=pointer]:
+              - /url: /applications
+            - link "研发协同" [ref=e214] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e215]:
+          - heading "快速链接" [level=3] [ref=e216]
+          - generic [ref=e217]:
+            - link "首页" [ref=e218] [cursor=pointer]:
+              - /url: /
+            - link "联系我们" [ref=e219] [cursor=pointer]:
+              - /url: /contact
+            - link "新闻动态" [ref=e220] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e221]:
+          - heading "联系" [level=3] [ref=e222]
+          - link "联系" [ref=e223] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e224]: 联系
+            - generic [ref=e225]: →
+          - generic [ref=e226]:
+            - link "销售热线 18148928019" [ref=e227] [cursor=pointer]:
+              - /url: tel:18148928019
+              - img [ref=e228]
+              - generic [ref=e230]:
+                - generic [ref=e231]: 销售热线
+                - strong [ref=e232]: "18148928019"
+            - link "业务微信 查看二维码" [ref=e233] [cursor=pointer]:
+              - /url: /contact
+              - img [ref=e234]
+              - generic [ref=e237]:
+                - generic [ref=e238]: 业务微信
+                - strong [ref=e239]: 查看二维码
+            - generic [ref=e240]:
+              - img [ref=e241]
+              - generic [ref=e244]:
+                - generic [ref=e245]: 公司地址
+                - strong [ref=e246]: 广州市天河区东莞庄路110号E栋308-2
+      - generic [ref=e247]:
+        - paragraph [ref=e248]: 首批正式公开层已纳入营业执照、高新证书、17 项公开专利条目与 9 个产品摘要，更多案例与资料按授权继续补充
+        - generic [ref=e249]:
+          - link "网站地图" [ref=e250] [cursor=pointer]:
+            - /url: /sitemap
+          - link "版权声明" [ref=e251] [cursor=pointer]:
+            - /url: /copyright
+          - link "使用条款" [ref=e252] [cursor=pointer]:
+            - /url: /terms
+          - link "隐私声明" [ref=e253] [cursor=pointer]:
+            - /url: /privacy
+        - generic [ref=e255]: © 2026 广州虹扬化工科技有限公司，广州，中国

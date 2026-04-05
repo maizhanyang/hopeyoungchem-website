@@ -1,0 +1,162 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "Hope Young brand mark Hope Young Industrial Bonding Solutions" [ref=e6] [cursor=pointer]:
+      - /url: /en
+      - img "Hope Young brand mark" [ref=e8]
+      - generic [ref=e9]:
+        - strong [ref=e10]: Hope Young
+        - generic [ref=e11]: Industrial Bonding Solutions
+    - navigation "Primary navigation" [ref=e12]:
+      - link "Home" [ref=e13] [cursor=pointer]:
+        - /url: /en
+      - link "Solutions" [ref=e14] [cursor=pointer]:
+        - /url: /en/solutions
+      - link "Applications" [ref=e15] [cursor=pointer]:
+        - /url: /en/applications
+      - link "R&D Collaboration" [ref=e16] [cursor=pointer]:
+        - /url: /en/technology
+      - link "About" [ref=e17] [cursor=pointer]:
+        - /url: /en/about
+      - link "News" [ref=e18] [cursor=pointer]:
+        - /url: /en/news
+      - link "Contact" [ref=e19] [cursor=pointer]:
+        - /url: /en/contact
+    - link "中文" [ref=e20] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e21]: 中
+      - generic [ref=e22]: 中文
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - img "Hope Young meeting and collaboration scene" [ref=e27]
+      - generic [ref=e29]:
+        - generic [ref=e30]: Industrial bonding solutions
+        - heading "Industrial bonding solutions and material collaboration" [level=1] [ref=e31]
+        - paragraph [ref=e32]: Hope Young supports coating, battery-material and industrial manufacturing customers with customized bonding routes and conventional resin supply.
+        - generic [ref=e33]:
+          - link "Contact sales" [ref=e34] [cursor=pointer]:
+            - /url: /en/contact
+          - link "Explore solutions" [ref=e35] [cursor=pointer]:
+            - /url: /en/solutions
+        - paragraph [ref=e36]: Professor-led judgement and doctoral participation keep validation close to real process conditions.
+    - generic [ref=e38]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: Brand Intro
+        - heading "Hope Young works as a material collaboration partner for industrial customers" [level=2] [ref=e42]
+        - paragraph [ref=e43]: The business combines customized bonding-solution work with conventional resin supply and platform-based material support.
+      - img "Hope Young entrance and brand scene" [ref=e45]
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]: Core Entry Points
+        - heading "Three ways to understand Hope Young quickly" [level=2] [ref=e49]
+        - paragraph [ref=e50]: Enter through solutions, applications or R&D collaboration.
+      - generic [ref=e51]:
+        - link "Hope Young solution and laboratory scene Solutions Customized solutions Start from process conditions, project targets and route judgement to frame the right direction. Explore" [ref=e52] [cursor=pointer]:
+          - /url: /en/solutions
+          - img "Hope Young solution and laboratory scene" [ref=e54]
+          - generic [ref=e55]:
+            - generic [ref=e56]: Solutions
+            - heading "Customized solutions" [level=3] [ref=e57]
+            - paragraph [ref=e58]: Start from process conditions, project targets and route judgement to frame the right direction.
+            - strong [ref=e59]: Explore
+        - link "Hope Young application and validation scene Applications Industry applications See how Hope Young enters real coating, battery-material and industrial manufacturing work. Explore" [ref=e60] [cursor=pointer]:
+          - /url: /en/applications
+          - img "Hope Young application and validation scene" [ref=e62]
+          - generic [ref=e63]:
+            - generic [ref=e64]: Applications
+            - heading "Industry applications" [level=3] [ref=e65]
+            - paragraph [ref=e66]: See how Hope Young enters real coating, battery-material and industrial manufacturing work.
+            - strong [ref=e67]: Explore
+        - link "Hope Young R&D collaboration and meeting scene R&D Collaboration R&D collaboration Learn how the team, lab environment and validation method support deeper collaboration. Explore" [ref=e68] [cursor=pointer]:
+          - /url: /en/technology
+          - img "Hope Young R&D collaboration and meeting scene" [ref=e70]
+          - generic [ref=e71]:
+            - generic [ref=e72]: R&D Collaboration
+            - heading "R&D collaboration" [level=3] [ref=e73]
+            - paragraph [ref=e74]: Learn how the team, lab environment and validation method support deeper collaboration.
+            - strong [ref=e75]: Explore
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]: Featured Capabilities
+          - heading "Solution collaboration and material platforms" [level=2] [ref=e81]
+          - paragraph [ref=e82]: Understand how Hope Young enters a project before moving into deeper documents and validation discussion.
+        - paragraph [ref=e83]: Hope Young puts real customer conditions into technical judgement so sales, R&D and project teams can work around the same practical problem.
+        - generic [ref=e84]:
+          - paragraph [ref=e87]: Keep scenario, process limits and validation rhythm in one shared conversation frame.
+          - paragraph [ref=e90]: Help a first document exchange move faster toward samples, validation and longer cooperation.
+      - generic [ref=e91]:
+        - article [ref=e92]:
+          - img "Hope Young project discussion room" [ref=e93]
+          - generic [ref=e94]:
+            - strong [ref=e95]: Project discussion
+            - paragraph [ref=e96]: Use route discussion, document alignment and meeting space to frame the problem before validation begins.
+        - generic [ref=e97]:
+          - link "Custom Collaboration Clarify the route before validation starts Discussions begin with substrate, process and target performance so the project can move into useful validation faster. Explore" [ref=e98] [cursor=pointer]:
+            - /url: /en/solutions
+            - generic [ref=e99]: Custom Collaboration
+            - heading "Clarify the route before validation starts" [level=3] [ref=e100]
+            - paragraph [ref=e101]: Discussions begin with substrate, process and target performance so the project can move into useful validation faster.
+            - strong [ref=e102]: Explore
+          - link "Material Platforms Use the platform to support landing work Polyacrylate, polyurethane, polyurea and specialty resin systems support later sample, supply and technical discussion. Explore" [ref=e103] [cursor=pointer]:
+            - /url: /en/applications
+            - generic [ref=e104]: Material Platforms
+            - heading "Use the platform to support landing work" [level=3] [ref=e105]
+            - paragraph [ref=e106]: Polyacrylate, polyurethane, polyurea and specialty resin systems support later sample, supply and technical discussion.
+            - strong [ref=e107]: Explore
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]: Contact Hope Young
+        - heading "If you already have a project in motion, we can talk directly" [level=2] [ref=e112]
+        - paragraph [ref=e113]: Phone is best for a quick route check, while WeChat works well for documents and follow-up.
+        - generic [ref=e114]:
+          - link "18148928019" [ref=e115] [cursor=pointer]:
+            - /url: tel:18148928019
+          - link "Open contact page" [ref=e116] [cursor=pointer]:
+            - /url: /en/contact
+      - generic [ref=e117]:
+        - article [ref=e118]:
+          - generic [ref=e119]: Business WeChat
+          - img "Hope Young business WeChat QR code" [ref=e121]
+          - paragraph [ref=e122]: Scan to add the business WeChat channel for project discussion and document follow-up.
+        - article [ref=e123]:
+          - generic [ref=e124]: Company Address
+          - paragraph [ref=e125]: 广州市天河区东莞庄路110号中创盈科赛宝科技园
+  - contentinfo [ref=e126]:
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - img "Hope Young brand mark" [ref=e130]
+        - generic [ref=e131]:
+          - generic [ref=e132]: Guangzhou
+          - heading "Guangzhou Hope Young Chemical Technology Co., Ltd." [level=2] [ref=e133]
+      - paragraph [ref=e134]: Hope Young supports industrial customers with bonding solution consulting, collaborative material development and conventional resin supply, with an emphasis on practical communication and long-term cooperation.
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - heading "Quick Links" [level=3] [ref=e137]
+        - generic [ref=e138]:
+          - link "Home" [ref=e139] [cursor=pointer]:
+            - /url: /en
+          - link "Solutions" [ref=e140] [cursor=pointer]:
+            - /url: /en/solutions
+          - link "Applications" [ref=e141] [cursor=pointer]:
+            - /url: /en/applications
+          - link "R&D Collaboration" [ref=e142] [cursor=pointer]:
+            - /url: /en/technology
+          - link "About" [ref=e143] [cursor=pointer]:
+            - /url: /en/about
+          - link "News" [ref=e144] [cursor=pointer]:
+            - /url: /en/news
+          - link "Contact" [ref=e145] [cursor=pointer]:
+            - /url: /en/contact
+      - generic [ref=e146]:
+        - heading "Business Contact" [level=3] [ref=e147]
+        - generic [ref=e148]:
+          - link "销售咨询 18148928019" [ref=e149] [cursor=pointer]:
+            - /url: tel:18148928019
+            - strong [ref=e150]: 销售咨询
+            - generic [ref=e151]: "18148928019"
+          - generic [ref=e152]:
+            - strong [ref=e153]: Address
+            - paragraph [ref=e154]: 广州市天河区东莞庄路110号中创盈科赛宝科技园
+    - generic [ref=e155]:
+      - paragraph [ref=e156]: Cases, certificates and technical documents on the website will be expanded only within approved public scope.
+      - generic [ref=e158]: © 2026 Hope Young

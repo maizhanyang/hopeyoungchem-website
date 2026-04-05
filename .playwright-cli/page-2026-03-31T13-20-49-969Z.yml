@@ -1,0 +1,185 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "虹扬化工图标标识 HOPE YOUNG Industrial Bonding Solutions" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "虹扬化工图标标识" [ref=e8]
+      - generic [ref=e9]:
+        - strong [ref=e10]: HOPE YOUNG
+        - generic [ref=e11]: Industrial Bonding Solutions
+    - navigation "主导航" [ref=e12]:
+      - link "首页" [ref=e13] [cursor=pointer]:
+        - /url: /
+      - link "解决方案" [ref=e14] [cursor=pointer]:
+        - /url: /solutions
+      - link "行业应用" [ref=e15] [cursor=pointer]:
+        - /url: /applications
+      - link "研发协同" [ref=e16] [cursor=pointer]:
+        - /url: /technology
+      - link "联系我们" [ref=e17] [cursor=pointer]:
+        - /url: /contact
+    - generic "语言切换" [ref=e18]:
+      - link "中文" [ref=e19] [cursor=pointer]:
+        - /url: /about
+      - generic [ref=e20]: "|"
+      - link "English" [ref=e21] [cursor=pointer]:
+        - /url: /en/about
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - img "商务讨论与项目协同场景" [ref=e25]
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: 关于虹扬
+          - heading "懂材料 也懂项目配合" [level=1] [ref=e30]
+          - paragraph [ref=e31]: 让客户更快理解虹扬与协同方式
+          - paragraph [ref=e32]: 首版官网采用更克制的企业表达方式，不堆砌口号，而是用结构化信息建立品牌印象和合作预期。
+          - generic [ref=e33]:
+            - link "联系我们" [ref=e34] [cursor=pointer]:
+              - /url: /contact
+            - link "查看技术实力" [ref=e35] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e36]:
+          - generic [ref=e37]: 品牌与合作
+          - paragraph [ref=e38]: 后续可继续补充办公、实验或团队相关视觉素材。
+          - strong [ref=e39]: 后续可继续补充办公、实验或团队相关视觉素材。
+    - generic [ref=e41]:
+      - img "虹扬化工品牌标识" [ref=e43]
+      - generic [ref=e44]:
+        - generic [ref=e45]: 品牌识别
+        - heading "把品牌、技术方法和合作方式放在一起看" [level=2] [ref=e46]
+        - paragraph [ref=e47]: 广州虹扬化工科技有限公司立足广州，专注丙烯酸压敏胶、工业涂料及助剂的研发与销售，并面向工业客户提供粘接方案咨询、材料协同开发与技术支持。官网关于页的重点，是把这种“技术方法 + 行业理解 + 项目配合”的组合优势讲清楚。
+        - generic [ref=e48]:
+          - link "联系我们" [ref=e49] [cursor=pointer]:
+            - /url: /contact
+          - link "查看技术实力" [ref=e50] [cursor=pointer]:
+            - /url: /technology
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]: 合作方式
+        - heading "把长期配合说清楚，比堆品牌口号更重要" [level=2] [ref=e55]
+        - paragraph [ref=e56]: 关于页更像一张合作方式说明页，帮助客户理解虹扬如何进入项目、如何组织沟通，以及为什么适合长期配合。
+      - generic [ref=e57]:
+        - article [ref=e58]:
+          - heading "先理解应用场景" [level=3] [ref=e59]
+          - paragraph [ref=e60]: 先把工艺条件、目标性能和项目约束讲明白，再进入材料讨论。
+          - generic [ref=e61]: 这样更利于销售和技术表达保持一致。
+        - article [ref=e62]:
+          - heading "用技术支持服务" [level=3] [ref=e63]
+          - paragraph [ref=e64]: 将技术判断、路线建议与实际沟通效率放在同一套服务逻辑中。
+          - generic [ref=e65]: 更适合需要持续优化和协同开发的工业客户。
+        - article [ref=e66]:
+          - heading "追求长期合作" [level=3] [ref=e67]
+          - paragraph [ref=e68]: 把供应、沟通、验证和后续优化视作一条长期合作链路。
+          - generic [ref=e69]: 官网表达也围绕这种长期协同心态展开。
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - generic [ref=e72]: 发展节奏
+        - heading "用公开节点概括企业发展节奏" [level=2] [ref=e73]
+        - paragraph [ref=e74]: 时间线作为附属信息保留，用更轻的方式帮助客户快速理解企业阶段和业务方向。
+      - generic [ref=e75]:
+        - article [ref=e76]:
+          - generic [ref=e77]: "01"
+          - heading "企业定位建立" [level=3] [ref=e78]
+          - paragraph [ref=e79]: 围绕工业粘接材料与方案咨询形成清晰的业务表达。
+        - article [ref=e80]:
+          - generic [ref=e81]: "02"
+          - heading "材料平台完善" [level=3] [ref=e82]
+          - paragraph [ref=e83]: 逐步形成聚丙烯酸酯、聚氨酯、聚脲与特种树脂的对外平台结构。
+        - article [ref=e84]:
+          - generic [ref=e85]: "03"
+          - heading "重点行业拓展" [level=3] [ref=e86]
+          - paragraph [ref=e87]: 面向涂布、电池材料与工业制造场景持续深化理解和配合方式。
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]: 行动入口
+        - heading "把项目背景说清楚，材料沟通才能更快进入有效区间。" [level=2] [ref=e92]
+        - paragraph [ref=e93]: 虹扬官网优先解决“理解场景、建立信任、快速联系”三件事。涉及资料申请、样品沟通和进一步验证时，可继续通过销售热线与业务微信推进。
+      - generic [ref=e94]:
+        - article [ref=e95]:
+          - heading "项目初询" [level=3] [ref=e96]
+          - paragraph [ref=e97]: 适合正在评估材料方向、工艺约束或方案可行性的客户。
+        - article [ref=e98]:
+          - heading "资料申请" [level=3] [ref=e99]
+          - paragraph [ref=e100]: 适合希望获取 TDS / SDS 或进一步技术说明的客户。
+        - article [ref=e101]:
+          - heading "样品沟通" [level=3] [ref=e102]
+          - paragraph [ref=e103]: 适合已经进入打样、验证或联合开发阶段的项目团队。
+      - generic [ref=e104]:
+        - link "联系销售" [ref=e105] [cursor=pointer]:
+          - /url: /contact
+        - link "查看解决方案" [ref=e106] [cursor=pointer]:
+          - /url: /solutions
+  - contentinfo [ref=e107]:
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - link "虹扬化工品牌标识 HOPE YOUNG Industrial Bonding Solutions" [ref=e110] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e112]
+          - generic [ref=e113]:
+            - strong [ref=e114]: HOPE YOUNG
+            - generic [ref=e115]: Industrial Bonding Solutions
+        - generic [ref=e116]:
+          - generic [ref=e117]: 网站切换
+          - generic "语言切换" [ref=e118]:
+            - link "中文" [ref=e119] [cursor=pointer]:
+              - /url: /about
+            - generic [ref=e120]: "|"
+            - link "English" [ref=e121] [cursor=pointer]:
+              - /url: /en/about
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - heading "公司" [level=3] [ref=e124]
+          - generic [ref=e125]:
+            - link "关于虹扬" [ref=e126] [cursor=pointer]:
+              - /url: /about
+            - link "新闻动态" [ref=e127] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e128]:
+          - heading "品牌及业务" [level=3] [ref=e129]
+          - generic [ref=e130]:
+            - link "解决方案" [ref=e131] [cursor=pointer]:
+              - /url: /solutions
+            - link "行业应用" [ref=e132] [cursor=pointer]:
+              - /url: /applications
+            - link "研发协同" [ref=e133] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e134]:
+          - heading "快速链接" [level=3] [ref=e135]
+          - generic [ref=e136]:
+            - link "首页" [ref=e137] [cursor=pointer]:
+              - /url: /
+            - link "联系我们" [ref=e138] [cursor=pointer]:
+              - /url: /contact
+            - link "新闻动态" [ref=e139] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e140]:
+          - heading "联系" [level=3] [ref=e141]
+          - link "联系" [ref=e142] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e143]: 联系
+            - generic [ref=e144]: →
+          - generic [ref=e145]:
+            - link "销售热线 18148928019" [ref=e146] [cursor=pointer]:
+              - /url: tel:18148928019
+              - img [ref=e147]
+              - generic [ref=e149]:
+                - generic [ref=e150]: 销售热线
+                - strong [ref=e151]: "18148928019"
+            - link "业务微信 查看二维码" [ref=e152] [cursor=pointer]:
+              - /url: /contact
+              - img [ref=e153]
+              - generic [ref=e156]:
+                - generic [ref=e157]: 业务微信
+                - strong [ref=e158]: 查看二维码
+            - generic [ref=e159]:
+              - img [ref=e160]
+              - generic [ref=e163]:
+                - generic [ref=e164]: 公司地址
+                - strong [ref=e165]: 广州市天河区东莞庄路110号中创盈科赛宝科技园
+      - generic [ref=e166]:
+        - paragraph [ref=e167]: 官网案例与资料将按授权范围逐步更新 对外展示内容以正式批准版本为准
+        - generic [ref=e168]:
+          - generic [ref=e169]: 网站地图
+          - generic [ref=e170]: 版权声明
+          - generic [ref=e171]: 使用条款
+          - generic [ref=e172]: 隐私声明
+        - generic [ref=e174]: © 2026 广州虹扬化工科技有限公司，广州，中国

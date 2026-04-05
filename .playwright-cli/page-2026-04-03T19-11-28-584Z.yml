@@ -1,0 +1,258 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "广州虹扬化工科技有限公司" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e10]
+        - generic [ref=e11]:
+          - link "联系虹扬" [ref=e12] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e13]
+          - link "新闻动态" [ref=e16] [cursor=pointer]:
+            - /url: /news
+            - img [ref=e17]
+          - generic [ref=e20]:
+            - img [ref=e21]
+            - generic "语言切换" [ref=e24]:
+              - link "中文" [ref=e25] [cursor=pointer]:
+                - /url: /contact
+              - generic [ref=e26]: "|"
+              - link "English" [ref=e27] [cursor=pointer]:
+                - /url: /en/contact
+          - search "站内检索占位" [ref=e28]:
+            - searchbox "搜索关键词" [ref=e29]
+            - button "搜索" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+      - generic [ref=e35]:
+        - navigation "主导航" [ref=e36]:
+          - link "关于虹扬" [ref=e37] [cursor=pointer]:
+            - /url: /about
+          - link "解决方案" [ref=e38] [cursor=pointer]:
+            - /url: /solutions
+          - link "行业应用" [ref=e39] [cursor=pointer]:
+            - /url: /applications
+          - link "研发协同" [ref=e40] [cursor=pointer]:
+            - /url: /technology
+        - navigation "辅助导航" [ref=e41]:
+          - link "联系我们" [ref=e42] [cursor=pointer]:
+            - /url: /contact
+          - link "新闻动态" [ref=e43] [cursor=pointer]:
+            - /url: /news
+  - main [ref=e44]:
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: 联系我们
+          - heading "把资料 样品与项目沟通放进同一个正式入口" [level=1] [ref=e50]
+          - paragraph [ref=e51]: 5 条业务电话 商务邮箱 微信与双地址 一页直达
+          - paragraph [ref=e52]: 无论是初步了解材料方向、申请技术资料，还是推进样品、验证和技术会议，都可以通过公开业务电话、商务邮箱与业务微信直接建立联系。
+          - generic [ref=e53]:
+            - link "查看解决方案" [ref=e54] [cursor=pointer]:
+              - /url: /solutions
+            - link "了解技术实力" [ref=e55] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e56]:
+          - generic [ref=e57]: 正式联系
+          - paragraph [ref=e58]: 项目处于初评、打样、资料申请或技术会议筹备阶段，都可以通过公开业务电话、商务邮箱、业务微信二维码和办公 / 实验地址快速建立正式联系。
+          - strong [ref=e59]: 标准资料需求确认后 24 小时内可安排发送或寄出，首次问询原则上 1 个工作日内响应。
+      - img "办公室入口与来访识别场景" [ref=e62]
+    - generic [ref=e64]:
+      - generic [ref=e66]:
+        - generic [ref=e67]: 官方渠道
+        - heading "把电话、微信和来访地址放进同一个正式入口" [level=2] [ref=e68]
+        - paragraph [ref=e69]: 项目处于初评、打样、资料申请或技术会议筹备阶段，都可以通过公开业务电话、商务邮箱、业务微信二维码和办公 / 实验地址快速建立正式联系。
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e72]: 联系信息
+          - heading "正式联系信息" [level=2] [ref=e73]
+          - paragraph [ref=e74]: 以下信息用于官网公开对外联系，适用于销售咨询、资料申请、技术会议安排、来访沟通和项目跟进。
+        - generic [ref=e75]:
+          - article [ref=e76]:
+            - generic [ref=e77]: 业务电话
+            - generic [ref=e78]:
+              - link "吴润东（线上销售） 18148928019" [ref=e79] [cursor=pointer]:
+                - /url: tel:18148928019
+                - strong [ref=e80]: 吴润东（线上销售）
+                - generic [ref=e81]: "18148928019"
+              - link "张俊（线下销售） 13922297800" [ref=e82] [cursor=pointer]:
+                - /url: tel:13922297800
+                - strong [ref=e83]: 张俊（线下销售）
+                - generic [ref=e84]: "13922297800"
+              - link "何永华（线下销售） 18620031360" [ref=e85] [cursor=pointer]:
+                - /url: tel:18620031360
+                - strong [ref=e86]: 何永华（线下销售）
+                - generic [ref=e87]: "18620031360"
+              - link "麦展扬（项目统筹） 15507697210" [ref=e88] [cursor=pointer]:
+                - /url: tel:15507697210
+                - strong [ref=e89]: 麦展扬（项目统筹）
+                - generic [ref=e90]: "15507697210"
+              - link "袁锐（来访协调） 18142899637" [ref=e91] [cursor=pointer]:
+                - /url: tel:18142899637
+                - strong [ref=e92]: 袁锐（来访协调）
+                - generic [ref=e93]: "18142899637"
+            - link "hopeyoung@hopeyoungchem.cn" [ref=e94] [cursor=pointer]:
+              - /url: mailto:hopeyoung@hopeyoungchem.cn
+          - article [ref=e95]:
+            - generic [ref=e96]: 业务微信
+            - img "虹扬化工业务微信二维码" [ref=e98]
+            - paragraph [ref=e99]: 可扫码添加业务微信，用于项目沟通、资料跟进与来访安排。
+          - article [ref=e100]:
+            - generic [ref=e101]: 办公 / 实验地址
+            - generic [ref=e102]:
+              - paragraph [ref=e103]:
+                - strong [ref=e104]: 办公室
+                - generic [ref=e105]: 广州市天河区东莞庄路110号E栋308-2
+              - paragraph [ref=e106]:
+                - strong [ref=e107]: 实验室
+                - generic [ref=e108]: 广州市天河区东莞庄路110号E栋302
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]: 沟通方式
+        - heading "根据项目阶段选择更合适的沟通方式" [level=2] [ref=e112]
+        - paragraph [ref=e113]: 不同阶段对资料、样品和响应速度的要求不同。联系页先把路径分清楚，让沟通更像正式项目配合。
+      - generic [ref=e114]:
+        - article [ref=e115]:
+          - heading "样品申请" [level=3] [ref=e116]
+          - strong [ref=e117]: 适合已有明确应用方向，需要验证具体产品匹配度的项目
+          - paragraph [ref=e118]: 建议提供意向产品型号、基材类型、表面处理情况、工艺条件概览以及最终应用场景与核心性能要求。
+          - generic [ref=e119]: 技术团队评估后将判断现有产品是否匹配或需定制开发，并确认样品发放事宜。
+        - article [ref=e120]:
+          - heading "技术资料申请" [level=3] [ref=e121]
+          - strong [ref=e122]: 适合希望继续了解 TDS / SDS 或产品技术摘要的客户
+          - paragraph [ref=e123]: 请结合感兴趣的产品系列或应用领域提出需求，便于销售与技术团队发送更匹配的资料库。
+          - generic [ref=e124]: 资料开放仍遵循“公开摘要 + 咨询后深入沟通”的规则。
+        - article [ref=e125]:
+          - heading "技术会议与联合验证" [level=3] [ref=e126]
+          - strong [ref=e127]: 适合已进入验证流程、需要更快推进的复杂项目
+          - paragraph [ref=e128]: 对于复杂应用挑战，建议直接电话或邮件说明需求，并安排线上或线下技术会议，由硕博团队共同参与问题分析。
+          - generic [ref=e129]: 这类项目更适合尽快进入更细的应用和验证讨论。
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]: 表单与沟通模板
+        - heading "让项目要点整理和继续沟通保持一致" [level=2] [ref=e134]
+        - paragraph [ref=e135]: 把留资表单和沟通建议放在同一层级，既方便内部收集，也方便客户直接复制使用
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - generic [ref=e138]: 快速留资
+          - heading "先整理项目要点，再通过微信或电话发给业务联系人" [level=2] [ref=e139]
+          - paragraph [ref=e140]: 首版 beta 暂不接入在线提交后台。填写后可一键复制咨询内容，再通过业务微信或业务电话继续沟通。
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - generic [ref=e143]: 公司名称
+            - textbox "公司名称" [ref=e144]:
+              - /placeholder: 例如：某某材料科技有限公司
+          - generic [ref=e145]:
+            - generic [ref=e146]: 联系人
+            - textbox "联系人" [ref=e147]:
+              - /placeholder: 姓名 / 职位
+          - generic [ref=e148]:
+            - generic [ref=e149]: 联系电话
+            - textbox "联系电话" [ref=e150]:
+              - /placeholder: 便于回电或微信确认
+          - generic [ref=e151]:
+            - generic [ref=e152]: 应用场景
+            - textbox "应用场景" [ref=e153]:
+              - /placeholder: 如：涂布、标签、电池封装、复合加工
+          - generic [ref=e154]:
+            - generic [ref=e155]: 关注材料方向
+            - textbox "关注材料方向" [ref=e156]:
+              - /placeholder: 可填写永久强粘 / 可移除 / 标签包装 / 功能特种或待建议
+          - generic [ref=e157]:
+            - generic [ref=e158]: 项目说明
+            - textbox "项目说明" [ref=e159]:
+              - /placeholder: 建议说明基材、工艺方式、关键性能目标、当前问题和预计验证时间。
+          - generic [ref=e160]:
+            - button "复制咨询信息" [ref=e161] [cursor=pointer]
+            - link "直接联系销售" [ref=e162] [cursor=pointer]:
+              - /url: tel:18148928019
+            - status [ref=e163]: 提交按钮不会公开发送数据，只会整理并复制一份结构化咨询内容。
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - generic [ref=e166]: 沟通建议
+          - heading "首次联系建议准备" [level=2] [ref=e167]
+          - paragraph [ref=e168]: 为了让销售与技术沟通更高效，建议在首次来电或添加微信前先整理以下信息。
+        - generic [ref=e169]:
+          - paragraph [ref=e172]: 公司名称与联系人信息
+          - paragraph [ref=e175]: 意向产品型号或关注的材料方向
+          - paragraph [ref=e178]: 基材类型、表面处理情况与当前工艺方式
+          - paragraph [ref=e181]: 最终应用场景与核心性能要求
+          - paragraph [ref=e184]: 当前遇到的问题与希望改善的重点
+          - paragraph [ref=e187]: 是否需要 TDS / SDS、样品、技术会议或进一步验证支持
+          - paragraph [ref=e190]: 项目所处阶段、预计验证时间节点，以及是否需要安排办公室 / 实验室来访
+        - paragraph [ref=e191]: 如果信息尚不完整，也可以先通过电话、邮件或微信建立联系，再逐步补充细节。
+  - contentinfo [ref=e192]:
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - link "虹扬化工品牌标识 HOPE YOUNG Industrial Bonding Solutions" [ref=e195] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e197]
+          - generic [ref=e198]:
+            - strong [ref=e199]: HOPE YOUNG
+            - generic [ref=e200]: Industrial Bonding Solutions
+        - generic [ref=e201]:
+          - generic [ref=e202]: 网站切换
+          - generic "语言切换" [ref=e203]:
+            - link "中文" [ref=e204] [cursor=pointer]:
+              - /url: /contact
+            - generic [ref=e205]: "|"
+            - link "English" [ref=e206] [cursor=pointer]:
+              - /url: /en/contact
+      - generic [ref=e207]:
+        - generic [ref=e208]:
+          - heading "公司" [level=3] [ref=e209]
+          - generic [ref=e210]:
+            - link "关于虹扬" [ref=e211] [cursor=pointer]:
+              - /url: /about
+            - link "新闻动态" [ref=e212] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e213]:
+          - heading "品牌及业务" [level=3] [ref=e214]
+          - generic [ref=e215]:
+            - link "解决方案" [ref=e216] [cursor=pointer]:
+              - /url: /solutions
+            - link "行业应用" [ref=e217] [cursor=pointer]:
+              - /url: /applications
+            - link "研发协同" [ref=e218] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e219]:
+          - heading "快速链接" [level=3] [ref=e220]
+          - generic [ref=e221]:
+            - link "首页" [ref=e222] [cursor=pointer]:
+              - /url: /
+            - link "联系我们" [ref=e223] [cursor=pointer]:
+              - /url: /contact
+            - link "新闻动态" [ref=e224] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e225]:
+          - heading "联系" [level=3] [ref=e226]
+          - link "联系" [ref=e227] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e228]: 联系
+            - generic [ref=e229]: →
+          - generic [ref=e230]:
+            - link "销售热线 18148928019" [ref=e231] [cursor=pointer]:
+              - /url: tel:18148928019
+              - img [ref=e232]
+              - generic [ref=e234]:
+                - generic [ref=e235]: 销售热线
+                - strong [ref=e236]: "18148928019"
+            - link "业务微信 查看二维码" [ref=e237] [cursor=pointer]:
+              - /url: /contact
+              - img [ref=e238]
+              - generic [ref=e241]:
+                - generic [ref=e242]: 业务微信
+                - strong [ref=e243]: 查看二维码
+            - generic [ref=e244]:
+              - img [ref=e245]
+              - generic [ref=e248]:
+                - generic [ref=e249]: 公司地址
+                - strong [ref=e250]: 广州市天河区东莞庄路110号E栋308-2
+      - generic [ref=e251]:
+        - paragraph [ref=e252]: 首批正式公开层已纳入营业执照、高新证书、17 项公开专利条目与 9 个产品摘要，更多案例与资料按授权继续补充
+        - generic [ref=e253]:
+          - generic [ref=e254]: 网站地图
+          - generic [ref=e255]: 版权声明
+          - generic [ref=e256]: 使用条款
+          - generic [ref=e257]: 隐私声明
+        - generic [ref=e259]: © 2026 广州虹扬化工科技有限公司，广州，中国

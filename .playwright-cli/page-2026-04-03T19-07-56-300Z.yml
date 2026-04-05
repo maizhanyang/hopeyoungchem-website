@@ -1,0 +1,207 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "广州虹扬化工科技有限公司" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e10]
+        - generic [ref=e11]:
+          - link "联系虹扬" [ref=e12] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e13]
+          - link "新闻动态" [ref=e16] [cursor=pointer]:
+            - /url: /news
+            - img [ref=e17]
+          - generic [ref=e20]:
+            - img [ref=e21]
+            - generic "语言切换" [ref=e24]:
+              - link "中文" [ref=e25] [cursor=pointer]:
+                - /url: /news
+              - generic [ref=e26]: "|"
+              - link "English" [ref=e27] [cursor=pointer]:
+                - /url: /en/news
+          - search "站内检索占位" [ref=e28]:
+            - searchbox "搜索关键词" [ref=e29]
+            - button "搜索" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+      - generic [ref=e35]:
+        - navigation "主导航" [ref=e36]:
+          - link "关于虹扬" [ref=e37] [cursor=pointer]:
+            - /url: /about
+          - link "解决方案" [ref=e38] [cursor=pointer]:
+            - /url: /solutions
+          - link "行业应用" [ref=e39] [cursor=pointer]:
+            - /url: /applications
+          - link "研发协同" [ref=e40] [cursor=pointer]:
+            - /url: /technology
+        - navigation "辅助导航" [ref=e41]:
+          - link "联系我们" [ref=e42] [cursor=pointer]:
+            - /url: /contact
+          - link "新闻动态" [ref=e43] [cursor=pointer]:
+            - /url: /news
+  - main [ref=e44]:
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: 新闻动态
+          - heading "跟进官网正式版的公开进展" [level=1] [ref=e50]
+          - paragraph [ref=e51]: 把产品摘要 资质证明 案例表达与联系入口持续补齐
+          - paragraph [ref=e52]: 这一页记录官网从展示版向正式版推进的公开更新，优先发布已经确认可对外使用的资料、场景与模块。
+          - generic [ref=e53]:
+            - link "联系销售" [ref=e54] [cursor=pointer]:
+              - /url: /contact
+            - link "查看研发协同" [ref=e55] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e56]:
+          - generic [ref=e57]: 发布方式
+          - paragraph [ref=e58]: 这一页承担的不是传统企业新闻中心，而是把官网内容建设、资料开放与品牌公开进展持续讲清楚，让客户看到站点正在稳定变成一个正式可用的对外入口。
+          - strong [ref=e59]: 新闻动态将按公开授权范围持续扩充，不一次性做成完整媒体中心。
+      - img "真实办公空间与团队协同环境" [ref=e62]
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - generic [ref=e66]: 置顶动态
+        - heading "先看一个重点更新，再顺着时间继续浏览" [level=2] [ref=e67]
+        - paragraph [ref=e68]: 动态页更像品牌更新流，而不是传统新闻中心。第一版先建立稳定的公开表达方式，再逐步增加更多内容。
+      - article [ref=e69]:
+        - article [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: 置顶更新
+            - strong [ref=e73]: 2026年4月
+          - heading "官网公开层已完成一轮更接近正式版的补齐" [level=3] [ref=e74]
+          - paragraph [ref=e75]: 这一轮已公开营业执照、高新证书、17 项专利条目、9 个产品摘要、5 个匿名量化案例，以及更多真实办公和实验场景图片。
+          - paragraph [ref=e78]: 站点现在已经能同时承担品牌展示、材料判断、资质证明、案例表达和正式联系入口五类任务。
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - generic [ref=e81]: 近期内容
+        - heading "先用事实型更新把公开层做扎实，再逐步扩内容库" [level=2] [ref=e82]
+        - paragraph [ref=e83]: 当前动态区以官网进展和公开资料更新为主，后续再按授权补入里程碑、活动和更丰富的品牌内容。
+      - generic [ref=e84]:
+        - article [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e87]: 更新 01
+            - strong [ref=e88]: 2026年4月
+          - generic [ref=e89]:
+            - generic [ref=e90]: 解决方案
+            - heading "公开产品摘要已扩展到 9 个代表型号" [level=3] [ref=e91]
+            - paragraph [ref=e92]: 解决方案页现已覆盖 7068#、7088#、1088#、7098#、9#、V08，以及新增的 9088#、9098# 和轮胎胶。
+            - paragraph [ref=e95]: 公开层先帮助客户判断应用方向与产品边界，更详细的 TDS / SDS 仍在项目沟通后继续提供。
+        - article [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]: 更新 02
+            - strong [ref=e99]: 2026年4月
+          - generic [ref=e100]:
+            - generic [ref=e101]: 行业应用
+            - heading "应用页已切换为 5 个匿名量化案例" [level=3] [ref=e102]
+            - paragraph [ref=e103]: 案例表达现在覆盖消费电子、高端制造、新能源封装、规模化生产优化和高端标签升级五类场景，并加入具体验证指标与结果。
+            - paragraph [ref=e106]: 在正式获得实名客户授权之前，这种匿名量化表达更适合作为官网长期公开版本。
+        - article [ref=e107]:
+          - generic [ref=e108]:
+            - generic [ref=e109]: 更新 03
+            - strong [ref=e110]: 2026年4月
+          - generic [ref=e111]:
+            - generic [ref=e112]: 正式联系
+            - heading "公开联系页已同步 5 条电话与双地址" [level=3] [ref=e113]
+            - paragraph [ref=e114]: 联系页现在已整合公开业务电话、商务邮箱、业务微信二维码、办公室地址和实验室地址，适合直接承接资料申请与项目沟通。
+            - paragraph [ref=e117]: 剩余待最终拍板的内容，主要集中在首页最终标题口径、公司关系标准文案和正式上线时的备案合规页。
+      - paragraph [ref=e118]: 当前动态区已经具备“记录官网正式版推进”的基本能力。后续如果更新节奏稳定，可再扩展为更完整的品牌与内容中心。
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - generic [ref=e123]: 继续浏览
+          - heading "从公开更新进入正式沟通" [level=2] [ref=e124]
+          - paragraph [ref=e125]: 动态页更轻，下一步通常是继续看业务页面，或直接建立联系。
+        - generic [ref=e126]:
+          - link "联系销售" [ref=e127] [cursor=pointer]:
+            - /url: /contact
+          - link "查看研发协同" [ref=e128] [cursor=pointer]:
+            - /url: /technology
+      - generic [ref=e129]:
+        - article [ref=e130]:
+          - heading "查看解决方案" [level=3] [ref=e131]
+          - paragraph [ref=e132]: 继续了解材料平台、样品表达与资料开放逻辑。
+          - link "进入解决方案" [ref=e133] [cursor=pointer]:
+            - /url: /solutions
+            - generic [ref=e134]: 进入解决方案
+            - generic [ref=e135]: →
+        - article [ref=e136]:
+          - heading "联系我们" [level=3] [ref=e137]
+          - paragraph [ref=e138]: 如果你希望围绕公开更新继续讨论具体项目，可直接进入联系页。
+          - link "进入联系页" [ref=e139] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e140]: 进入联系页
+            - generic [ref=e141]: →
+  - contentinfo [ref=e142]:
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - link "虹扬化工品牌标识 HOPE YOUNG Industrial Bonding Solutions" [ref=e145] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e147]
+          - generic [ref=e148]:
+            - strong [ref=e149]: HOPE YOUNG
+            - generic [ref=e150]: Industrial Bonding Solutions
+        - generic [ref=e151]:
+          - generic [ref=e152]: 网站切换
+          - generic "语言切换" [ref=e153]:
+            - link "中文" [ref=e154] [cursor=pointer]:
+              - /url: /news
+            - generic [ref=e155]: "|"
+            - link "English" [ref=e156] [cursor=pointer]:
+              - /url: /en/news
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - heading "公司" [level=3] [ref=e159]
+          - generic [ref=e160]:
+            - link "关于虹扬" [ref=e161] [cursor=pointer]:
+              - /url: /about
+            - link "新闻动态" [ref=e162] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e163]:
+          - heading "品牌及业务" [level=3] [ref=e164]
+          - generic [ref=e165]:
+            - link "解决方案" [ref=e166] [cursor=pointer]:
+              - /url: /solutions
+            - link "行业应用" [ref=e167] [cursor=pointer]:
+              - /url: /applications
+            - link "研发协同" [ref=e168] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e169]:
+          - heading "快速链接" [level=3] [ref=e170]
+          - generic [ref=e171]:
+            - link "首页" [ref=e172] [cursor=pointer]:
+              - /url: /
+            - link "联系我们" [ref=e173] [cursor=pointer]:
+              - /url: /contact
+            - link "新闻动态" [ref=e174] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e175]:
+          - heading "联系" [level=3] [ref=e176]
+          - link "联系" [ref=e177] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e178]: 联系
+            - generic [ref=e179]: →
+          - generic [ref=e180]:
+            - link "销售热线 18148928019" [ref=e181] [cursor=pointer]:
+              - /url: tel:18148928019
+              - img [ref=e182]
+              - generic [ref=e184]:
+                - generic [ref=e185]: 销售热线
+                - strong [ref=e186]: "18148928019"
+            - link "业务微信 查看二维码" [ref=e187] [cursor=pointer]:
+              - /url: /contact
+              - img [ref=e188]
+              - generic [ref=e191]:
+                - generic [ref=e192]: 业务微信
+                - strong [ref=e193]: 查看二维码
+            - generic [ref=e194]:
+              - img [ref=e195]
+              - generic [ref=e198]:
+                - generic [ref=e199]: 公司地址
+                - strong [ref=e200]: 广州市天河区东莞庄路110号E栋308-2
+      - generic [ref=e201]:
+        - paragraph [ref=e202]: 首批正式公开层已纳入营业执照、高新证书、17 项公开专利条目与 9 个产品摘要，更多案例与资料按授权继续补充
+        - generic [ref=e203]:
+          - generic [ref=e204]: 网站地图
+          - generic [ref=e205]: 版权声明
+          - generic [ref=e206]: 使用条款
+          - generic [ref=e207]: 隐私声明
+        - generic [ref=e209]: © 2026 广州虹扬化工科技有限公司，广州，中国

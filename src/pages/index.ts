@@ -1,0 +1,8 @@
+export { HomePage } from './HomePage'
+export { SolutionsPage } from './SolutionsPage'
+export { ApplicationsPage } from './ApplicationsPage'
+export { TechnologyPage } from './TechnologyPage'
+export { AboutPage } from './AboutPage'
+export { NewsPage } from './NewsPage'
+export { ContactPage } from './ContactPage'
+export { DocumentUtilityPage, SitemapUtilityPage } from './UtilityPage'

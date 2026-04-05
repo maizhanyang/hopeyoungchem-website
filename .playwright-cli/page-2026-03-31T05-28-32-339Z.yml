@@ -1,0 +1,162 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "虹扬化工品牌标识 虹扬化工 Industrial Bonding Solutions" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "虹扬化工品牌标识" [ref=e8]
+      - generic [ref=e9]:
+        - strong [ref=e10]: 虹扬化工
+        - generic [ref=e11]: Industrial Bonding Solutions
+    - navigation "主导航" [ref=e12]:
+      - link "首页" [ref=e13] [cursor=pointer]:
+        - /url: /
+      - link "解决方案" [ref=e14] [cursor=pointer]:
+        - /url: /solutions
+      - link "行业应用" [ref=e15] [cursor=pointer]:
+        - /url: /applications
+      - link "研发协同" [ref=e16] [cursor=pointer]:
+        - /url: /technology
+      - link "关于虹扬" [ref=e17] [cursor=pointer]:
+        - /url: /about
+      - link "新闻动态" [ref=e18] [cursor=pointer]:
+        - /url: /news
+      - link "联系我们" [ref=e19] [cursor=pointer]:
+        - /url: /contact
+    - link "English" [ref=e20] [cursor=pointer]:
+      - /url: /en
+      - generic [ref=e21]: EN
+      - generic [ref=e22]: English
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - img "虹扬会议与协同研发场景" [ref=e27]
+      - generic [ref=e29]:
+        - generic [ref=e30]: 工业粘接方案
+        - heading "工业粘接方案 与材料协同" [level=1] [ref=e31]
+        - paragraph [ref=e32]: 虹扬为涂布、电池材料与工业制造客户提供定制化粘接方案与常规树脂支持。
+        - generic [ref=e33]:
+          - link "联系销售" [ref=e34] [cursor=pointer]:
+            - /url: /contact
+          - link "查看解决方案" [ref=e35] [cursor=pointer]:
+            - /url: /solutions
+        - paragraph [ref=e36]: 教授与博士参与研发判断，验证始终围绕真实工艺展开。
+    - generic [ref=e38]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: 品牌简介
+        - heading "虹扬化工，面向工业客户的材料协同伙伴" [level=2] [ref=e42]
+        - paragraph [ref=e43]: 公司以定制化粘接方案为主线，同时提供常规树脂与材料平台支持。
+      - img "虹扬公司入口与品牌场景" [ref=e45]
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]: 核心入口
+        - heading "三个入口，快速看懂虹扬" [level=2] [ref=e49]
+        - paragraph [ref=e50]: 按解决方案、应用场景和研发协同进入内容。
+      - generic [ref=e51]:
+        - link "虹扬实验室与材料解决方案场景 Solutions 定制解决方案 从项目目标、工艺条件与材料路线出发，快速判断方案方向。 进入内容" [ref=e52] [cursor=pointer]:
+          - /url: /solutions
+          - img "虹扬实验室与材料解决方案场景" [ref=e54]
+          - generic [ref=e55]:
+            - generic [ref=e56]: Solutions
+            - heading "定制解决方案" [level=3] [ref=e57]
+            - paragraph [ref=e58]: 从项目目标、工艺条件与材料路线出发，快速判断方案方向。
+            - strong [ref=e59]: 进入内容
+        - link "虹扬行业应用与实验验证场景 Applications 行业应用 从涂布、电池材料与工业制造场景进入真实工况。 进入内容" [ref=e60] [cursor=pointer]:
+          - /url: /applications
+          - img "虹扬行业应用与实验验证场景" [ref=e62]
+          - generic [ref=e63]:
+            - generic [ref=e64]: Applications
+            - heading "行业应用" [level=3] [ref=e65]
+            - paragraph [ref=e66]: 从涂布、电池材料与工业制造场景进入真实工况。
+            - strong [ref=e67]: 进入内容
+        - link "虹扬研发协同与会议讨论场景 R&D Collaboration 研发协同 通过团队、实验环境与验证方法了解更深层协同。 进入内容" [ref=e68] [cursor=pointer]:
+          - /url: /technology
+          - img "虹扬研发协同与会议讨论场景" [ref=e70]
+          - generic [ref=e71]:
+            - generic [ref=e72]: R&D Collaboration
+            - heading "研发协同" [level=3] [ref=e73]
+            - paragraph [ref=e74]: 通过团队、实验环境与验证方法了解更深层协同。
+            - strong [ref=e75]: 进入内容
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]: 重点能力
+          - heading "定制协同与材料平台" [level=2] [ref=e81]
+          - paragraph [ref=e82]: 先理解虹扬如何进入项目，再展开更具体的资料与验证沟通。
+        - paragraph [ref=e83]: 虹扬更看重把客户真实工况带进技术判断，让销售、研发与项目团队围绕同一个问题协同。
+        - generic [ref=e84]:
+          - paragraph [ref=e87]: 把场景、工艺限制和验证节奏放进同一套沟通框架。
+          - paragraph [ref=e90]: 让一次资料咨询更快走向样品、验证与长期合作。
+      - generic [ref=e91]:
+        - article [ref=e92]:
+          - img "虹扬项目讨论空间" [ref=e93]
+          - generic [ref=e94]:
+            - strong [ref=e95]: 方案讨论
+            - paragraph [ref=e96]: 通过会议、资料对接与路线判断，把问题尽量讲明白再进入验证。
+        - generic [ref=e97]:
+          - link "Custom Collaboration 先把方案路线判断清楚 从基材、工艺和性能目标切入，帮助客户更快进入有效验证。 进入内容" [ref=e98] [cursor=pointer]:
+            - /url: /solutions
+            - generic [ref=e99]: Custom Collaboration
+            - heading "先把方案路线判断清楚" [level=3] [ref=e100]
+            - paragraph [ref=e101]: 从基材、工艺和性能目标切入，帮助客户更快进入有效验证。
+            - strong [ref=e102]: 进入内容
+          - link "Material Platforms 再用材料平台承接落地 聚丙烯酸酯、聚氨酯、聚脲与特种树脂平台支撑后续样品与供货沟通。 进入内容" [ref=e103] [cursor=pointer]:
+            - /url: /applications
+            - generic [ref=e104]: Material Platforms
+            - heading "再用材料平台承接落地" [level=3] [ref=e105]
+            - paragraph [ref=e106]: 聚丙烯酸酯、聚氨酯、聚脲与特种树脂平台支撑后续样品与供货沟通。
+            - strong [ref=e107]: 进入内容
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]: 联系虹扬
+        - heading "已有项目背景，现在就可以直接沟通" [level=2] [ref=e112]
+        - paragraph [ref=e113]: 电话适合快速判断方向，微信适合资料对接与后续跟进。
+        - generic [ref=e114]:
+          - link "18148928019" [ref=e115] [cursor=pointer]:
+            - /url: tel:18148928019
+          - link "进入联系页" [ref=e116] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=e117]:
+        - article [ref=e118]:
+          - generic [ref=e119]: 业务微信
+          - img "虹扬化工业务微信二维码" [ref=e121]
+          - paragraph [ref=e122]: 可扫码添加业务微信，用于项目沟通和资料对接。
+        - article [ref=e123]:
+          - generic [ref=e124]: 公司地址
+          - paragraph [ref=e125]: 广州市天河区东莞庄路110号中创盈科赛宝科技园
+  - contentinfo [ref=e126]:
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - img "虹扬化工品牌标识" [ref=e130]
+        - generic [ref=e131]:
+          - generic [ref=e132]: 广州
+          - heading "广州虹扬化工科技有限公司" [level=2] [ref=e133]
+      - paragraph [ref=e134]: 虹扬面向工业客户提供粘接方案咨询、材料协同开发与常规树脂供应，强调技术沟通、应用验证与长期配合。
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - heading "快速入口" [level=3] [ref=e137]
+        - generic [ref=e138]:
+          - link "首页" [ref=e139] [cursor=pointer]:
+            - /url: /
+          - link "解决方案" [ref=e140] [cursor=pointer]:
+            - /url: /solutions
+          - link "行业应用" [ref=e141] [cursor=pointer]:
+            - /url: /applications
+          - link "研发协同" [ref=e142] [cursor=pointer]:
+            - /url: /technology
+          - link "关于虹扬" [ref=e143] [cursor=pointer]:
+            - /url: /about
+          - link "新闻动态" [ref=e144] [cursor=pointer]:
+            - /url: /news
+          - link "联系我们" [ref=e145] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=e146]:
+        - heading "商务联系" [level=3] [ref=e147]
+        - generic [ref=e148]:
+          - link "销售咨询 18148928019" [ref=e149] [cursor=pointer]:
+            - /url: tel:18148928019
+            - strong [ref=e150]: 销售咨询
+            - generic [ref=e151]: "18148928019"
+          - generic [ref=e152]:
+            - strong [ref=e153]: 公司地址
+            - paragraph [ref=e154]: 广州市天河区东莞庄路110号中创盈科赛宝科技园
+    - generic [ref=e155]:
+      - paragraph [ref=e156]: 官网中的案例、资质与技术资料将按授权范围分批更新，对外展示内容以正式批准版本为准。
+      - generic [ref=e158]: © 2026 Hope Young

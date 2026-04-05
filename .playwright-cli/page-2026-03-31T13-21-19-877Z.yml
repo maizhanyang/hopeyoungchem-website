@@ -1,0 +1,211 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "虹扬化工图标标识 HOPE YOUNG Industrial Bonding Solutions" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "虹扬化工图标标识" [ref=e8]
+      - generic [ref=e9]:
+        - strong [ref=e10]: HOPE YOUNG
+        - generic [ref=e11]: Industrial Bonding Solutions
+    - navigation "主导航" [ref=e12]:
+      - link "首页" [ref=e13] [cursor=pointer]:
+        - /url: /
+      - link "解决方案" [ref=e14] [cursor=pointer]:
+        - /url: /solutions
+      - link "行业应用" [ref=e15] [cursor=pointer]:
+        - /url: /applications
+      - link "研发协同" [ref=e16] [cursor=pointer]:
+        - /url: /technology
+      - link "联系我们" [ref=e17] [cursor=pointer]:
+        - /url: /contact
+    - generic "语言切换" [ref=e18]:
+      - link "中文" [ref=e19] [cursor=pointer]:
+        - /url: /contact
+      - generic [ref=e20]: "|"
+      - link "English" [ref=e21] [cursor=pointer]:
+        - /url: /en/contact
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - img "正式沟通与业务接待场景" [ref=e25]
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: 联系我们
+          - heading "让沟通更快进入有效区间" [level=1] [ref=e30]
+          - paragraph [ref=e31]: 公开电话 微信与表单入口 一页直达
+          - paragraph [ref=e32]: 无论是初步了解材料方向、申请技术资料，还是推进样品与验证，都可以通过销售热线与业务微信直接建立联系。
+          - generic [ref=e33]:
+            - link "查看解决方案" [ref=e34] [cursor=pointer]:
+              - /url: /solutions
+            - link "了解技术实力" [ref=e35] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e36]:
+          - generic [ref=e37]: 正式联系
+          - paragraph [ref=e38]: 项目处于初评、打样或资料申请阶段，都可以通过销售热线、业务微信二维码和简化后的来访地址快速建立正式联系。
+          - strong [ref=e39]: 首次联系前若能提前准备基材、工艺和关键性能目标，沟通效率通常会更高。
+    - generic [ref=e41]:
+      - generic [ref=e43]:
+        - generic [ref=e44]: 官方渠道
+        - heading "把电话、微信和来访地址放进同一个正式入口" [level=2] [ref=e45]
+        - paragraph [ref=e46]: 项目处于初评、打样或资料申请阶段，都可以通过销售热线、业务微信二维码和简化后的来访地址快速建立正式联系。
+      - generic [ref=e48]:
+        - article [ref=e49]:
+          - generic [ref=e50]: 销售热线
+          - link "销售咨询 18148928019" [ref=e52] [cursor=pointer]:
+            - /url: tel:18148928019
+            - strong [ref=e53]: 销售咨询
+            - generic [ref=e54]: "18148928019"
+        - article [ref=e55]:
+          - generic [ref=e56]: 业务微信
+          - img "虹扬化工业务微信二维码" [ref=e58]
+          - paragraph [ref=e59]: 可扫码添加业务微信，用于项目沟通和资料对接。
+        - article [ref=e60]:
+          - generic [ref=e61]: 公司地址
+          - paragraph [ref=e62]: 广州市天河区东莞庄路110号中创盈科赛宝科技园
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]: 沟通方式
+        - heading "根据项目阶段选择更合适的沟通方式" [level=2] [ref=e66]
+        - paragraph [ref=e67]: 不同阶段对资料、样品和响应速度的要求不同。联系页先把路径分清楚，让沟通更像正式项目配合。
+      - generic [ref=e68]:
+        - article [ref=e69]:
+          - heading "项目初询" [level=3] [ref=e70]
+          - strong [ref=e71]: 适合正在判断材料方向和方案可行性的客户
+          - paragraph [ref=e72]: 建议先说明应用场景、基材、关键性能目标和当前遇到的问题，便于销售更快进入有效沟通。
+          - generic [ref=e73]: 初步信息越清晰，后续资料与样品讨论就越高效。
+        - article [ref=e74]:
+          - heading "资料申请" [level=3] [ref=e75]
+          - strong [ref=e76]: 适合希望继续了解 TDS / SDS 或技术摘要的客户
+          - paragraph [ref=e77]: 建议结合具体场景和项目边界提出需求，避免脱离应用条件理解材料数据。
+          - generic [ref=e78]: 资料规则会根据公开范围和项目情况由销售继续沟通。
+        - article [ref=e79]:
+          - heading "打样与联合验证" [level=3] [ref=e80]
+          - strong [ref=e81]: 适合已经进入验证流程、需要加快推进的项目
+          - paragraph [ref=e82]: 如项目已明确时间节点、验证指标或材料关注点，建议直接电话沟通并同步微信跟进。
+          - generic [ref=e83]: 这类项目更适合尽快进入更细的应用和验证讨论。
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - generic [ref=e87]: 表单与沟通模板
+        - heading "让项目要点整理和继续沟通保持一致" [level=2] [ref=e88]
+        - paragraph [ref=e89]: 把留资表单和沟通建议放在同一层级，既方便内部收集，也方便客户直接复制使用
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic [ref=e92]: 快速留资
+          - heading "先整理项目要点，再通过微信或电话发给销售" [level=2] [ref=e93]
+          - paragraph [ref=e94]: 首版 beta 暂不接入在线提交后台。填写后可一键复制咨询内容，再通过业务微信或销售电话继续沟通。
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - generic [ref=e97]: 公司名称
+            - textbox "公司名称" [ref=e98]:
+              - /placeholder: 例如：某某材料科技有限公司
+          - generic [ref=e99]:
+            - generic [ref=e100]: 联系人
+            - textbox "联系人" [ref=e101]:
+              - /placeholder: 姓名 / 职位
+          - generic [ref=e102]:
+            - generic [ref=e103]: 联系电话
+            - textbox "联系电话" [ref=e104]:
+              - /placeholder: 便于回电或微信确认
+          - generic [ref=e105]:
+            - generic [ref=e106]: 应用场景
+            - textbox "应用场景" [ref=e107]:
+              - /placeholder: 如：涂布、标签、电池封装、复合加工
+          - generic [ref=e108]:
+            - generic [ref=e109]: 关注材料方向
+            - textbox "关注材料方向" [ref=e110]:
+              - /placeholder: 可填写丙烯酸酯 / 聚氨酯 / 聚脲 / 环氧或待建议
+          - generic [ref=e111]:
+            - generic [ref=e112]: 项目说明
+            - textbox "项目说明" [ref=e113]:
+              - /placeholder: 建议说明基材、工艺方式、关键性能目标、当前问题和预计验证时间。
+          - generic [ref=e114]:
+            - button "复制咨询信息" [ref=e115] [cursor=pointer]
+            - link "直接联系销售" [ref=e116] [cursor=pointer]:
+              - /url: tel:18148928019
+            - status [ref=e117]: 提交按钮不会公开发送数据，只会整理并复制一份结构化咨询内容。
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - generic [ref=e120]: 沟通建议
+          - heading "首次联系建议准备" [level=2] [ref=e121]
+          - paragraph [ref=e122]: 为了让销售与技术沟通更高效，建议在首次来电或添加微信前先整理以下信息。
+        - generic [ref=e123]:
+          - paragraph [ref=e126]: 公司名称与联系人信息
+          - paragraph [ref=e129]: 应用场景、基材类型与当前工艺方式
+          - paragraph [ref=e132]: 关注的材料方向或性能目标
+          - paragraph [ref=e135]: 当前遇到的问题与希望改善的重点
+          - paragraph [ref=e138]: 是否需要 TDS / SDS、样品或进一步技术沟通
+          - paragraph [ref=e141]: 项目所处阶段与预计验证时间节点
+        - paragraph [ref=e142]: 如果信息尚不完整，也可以先通过电话或微信建立联系，再逐步补充细节。
+  - contentinfo [ref=e143]:
+    - generic [ref=e144]:
+      - generic [ref=e145]:
+        - link "虹扬化工品牌标识 HOPE YOUNG Industrial Bonding Solutions" [ref=e146] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e148]
+          - generic [ref=e149]:
+            - strong [ref=e150]: HOPE YOUNG
+            - generic [ref=e151]: Industrial Bonding Solutions
+        - generic [ref=e152]:
+          - generic [ref=e153]: 网站切换
+          - generic "语言切换" [ref=e154]:
+            - link "中文" [ref=e155] [cursor=pointer]:
+              - /url: /contact
+            - generic [ref=e156]: "|"
+            - link "English" [ref=e157] [cursor=pointer]:
+              - /url: /en/contact
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - heading "公司" [level=3] [ref=e160]
+          - generic [ref=e161]:
+            - link "关于虹扬" [ref=e162] [cursor=pointer]:
+              - /url: /about
+            - link "新闻动态" [ref=e163] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e164]:
+          - heading "品牌及业务" [level=3] [ref=e165]
+          - generic [ref=e166]:
+            - link "解决方案" [ref=e167] [cursor=pointer]:
+              - /url: /solutions
+            - link "行业应用" [ref=e168] [cursor=pointer]:
+              - /url: /applications
+            - link "研发协同" [ref=e169] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e170]:
+          - heading "快速链接" [level=3] [ref=e171]
+          - generic [ref=e172]:
+            - link "首页" [ref=e173] [cursor=pointer]:
+              - /url: /
+            - link "联系我们" [ref=e174] [cursor=pointer]:
+              - /url: /contact
+            - link "新闻动态" [ref=e175] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e176]:
+          - heading "联系" [level=3] [ref=e177]
+          - link "联系" [ref=e178] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e179]: 联系
+            - generic [ref=e180]: →
+          - generic [ref=e181]:
+            - link "销售热线 18148928019" [ref=e182] [cursor=pointer]:
+              - /url: tel:18148928019
+              - img [ref=e183]
+              - generic [ref=e185]:
+                - generic [ref=e186]: 销售热线
+                - strong [ref=e187]: "18148928019"
+            - link "业务微信 查看二维码" [ref=e188] [cursor=pointer]:
+              - /url: /contact
+              - img [ref=e189]
+              - generic [ref=e192]:
+                - generic [ref=e193]: 业务微信
+                - strong [ref=e194]: 查看二维码
+            - generic [ref=e195]:
+              - img [ref=e196]
+              - generic [ref=e199]:
+                - generic [ref=e200]: 公司地址
+                - strong [ref=e201]: 广州市天河区东莞庄路110号中创盈科赛宝科技园
+      - generic [ref=e202]:
+        - paragraph [ref=e203]: 官网案例与资料将按授权范围逐步更新 对外展示内容以正式批准版本为准
+        - generic [ref=e204]:
+          - generic [ref=e205]: 网站地图
+          - generic [ref=e206]: 版权声明
+          - generic [ref=e207]: 使用条款
+          - generic [ref=e208]: 隐私声明
+        - generic [ref=e210]: © 2026 广州虹扬化工科技有限公司，广州，中国

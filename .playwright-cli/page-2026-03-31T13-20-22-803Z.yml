@@ -1,0 +1,310 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "虹扬化工图标标识 HOPE YOUNG Industrial Bonding Solutions" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "虹扬化工图标标识" [ref=e8]
+      - generic [ref=e9]:
+        - strong [ref=e10]: HOPE YOUNG
+        - generic [ref=e11]: Industrial Bonding Solutions
+    - navigation "主导航" [ref=e12]:
+      - link "首页" [ref=e13] [cursor=pointer]:
+        - /url: /
+      - link "解决方案" [ref=e14] [cursor=pointer]:
+        - /url: /solutions
+      - link "行业应用" [ref=e15] [cursor=pointer]:
+        - /url: /applications
+      - link "研发协同" [ref=e16] [cursor=pointer]:
+        - /url: /technology
+      - link "联系我们" [ref=e17] [cursor=pointer]:
+        - /url: /contact
+    - generic "语言切换" [ref=e18]:
+      - link "中文" [ref=e19] [cursor=pointer]:
+        - /url: /solutions
+      - generic [ref=e20]: "|"
+      - link "English" [ref=e21] [cursor=pointer]:
+        - /url: /en/solutions
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - img "材料测试与实验协同场景" [ref=e25]
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: 工业粘接解决方案
+          - heading "更快找到适合的材料路线" [level=1] [ref=e30]
+          - paragraph [ref=e31]: 围绕材料平台 应用方向与定制策略
+          - paragraph [ref=e32]: 当项目进入样品评估、技术资料申请或更深层沟通阶段，再由销售和技术团队根据具体场景提供进一步资料。
+          - generic [ref=e33]:
+            - link "联系销售" [ref=e34] [cursor=pointer]:
+              - /url: /contact
+            - link "查看行业应用" [ref=e35] [cursor=pointer]:
+              - /url: /applications
+        - generic [ref=e36]:
+          - generic [ref=e37]: 材料平台
+          - paragraph [ref=e38]: 对外展示重点是“适用方向 + 定制空间 + 沟通方式”。
+          - strong [ref=e39]: 对外展示重点是“适用方向 + 定制空间 + 沟通方式”。
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]: 材料路线
+        - heading "把平台判断放在产品型号之前" [level=2] [ref=e44]
+        - paragraph [ref=e45]: 虹扬以“材料平台 + 应用场景 + 定制方向”的方式组织解决方案内容，帮助客户在首轮浏览中更快识别潜在匹配路线。
+      - paragraph [ref=e47]: 先看平台适配和定制空间，再进入样品、资料与供货沟通，这样更接近真实工业项目的进入方式。
+    - generic [ref=e49]:
+      - article [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]: 平台 01
+          - heading "聚丙烯酸酯体系" [level=3] [ref=e53]
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: 适用方向
+            - paragraph [ref=e57]: 适合涂布、复合、功能层及多类基材界面处理需求。
+          - generic [ref=e58]:
+            - generic [ref=e59]: 性能重点
+            - generic [ref=e60]:
+              - strong [ref=e61]: 附着方向清晰
+              - strong [ref=e62]: 涂布适配性好
+              - strong [ref=e63]: 可兼顾初粘与持粘目标
+          - generic [ref=e64]:
+            - generic [ref=e65]: 可定制方向
+            - paragraph [ref=e66]: 可围绕固含、黏度、施工窗口、耐候性与终端表现做调节。
+      - article [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]: 平台 02
+          - heading "聚氨酯体系" [level=3] [ref=e70]
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - generic [ref=e73]: 适用方向
+            - paragraph [ref=e74]: 适合综合性能要求更高、需要柔韧性与结构稳定性平衡的方案。
+          - generic [ref=e75]:
+            - generic [ref=e76]: 性能重点
+            - generic [ref=e77]:
+              - strong [ref=e78]: 力学性能均衡
+              - strong [ref=e79]: 适合复合结构
+              - strong [ref=e80]: 可靠性可持续优化
+          - generic [ref=e81]:
+            - generic [ref=e82]: 可定制方向
+            - paragraph [ref=e83]: 可根据固化机制、柔韧度、强度和长期耐久方向协同设计。
+      - article [ref=e84]:
+        - generic [ref=e85]:
+          - generic [ref=e86]: 平台 03
+          - heading "聚脲体系" [level=3] [ref=e87]
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e90]: 适用方向
+            - paragraph [ref=e91]: 适合耐磨、防护、功能层延展或环境适应性较高的工况。
+          - generic [ref=e92]:
+            - generic [ref=e93]: 性能重点
+            - generic [ref=e94]:
+              - strong [ref=e95]: 反应快
+              - strong [ref=e96]: 防护方向明确
+              - strong [ref=e97]: 适配特殊工况
+          - generic [ref=e98]:
+            - generic [ref=e99]: 可定制方向
+            - paragraph [ref=e100]: 可与施工条件、防护目标和工况特征一起评估优化。
+      - article [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]: 平台 04
+          - heading "特种树脂体系" [level=3] [ref=e104]
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - generic [ref=e107]: 适用方向
+            - paragraph [ref=e108]: 适合需要特殊性能窗口、复合材料策略或工艺定制的项目。
+          - generic [ref=e109]:
+            - generic [ref=e110]: 性能重点
+            - generic [ref=e111]:
+              - strong [ref=e112]: 路线弹性更大
+              - strong [ref=e113]: 适配特殊要求
+              - strong [ref=e114]: 利于差异化开发
+          - generic [ref=e115]:
+            - generic [ref=e116]: 可定制方向
+            - paragraph [ref=e117]: 可结合项目约束与终端目标，协同设计更贴合的树脂路径。
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - generic [ref=e120]: 示例产品表达
+        - heading "先用 7068# / 7088# 建立产品表达方式，而不是一次铺满完整目录" [level=2] [ref=e121]
+        - paragraph [ref=e122]: 首版官网先展示两个代表性型号的公开摘要，既让客户看到产品落地感，也保留后续逐步扩充产品库和完整 TDS 的空间。
+      - generic [ref=e123]:
+        - article [ref=e124]:
+          - generic [ref=e125]:
+            - heading "7068# 高性能胶粘剂" [level=3] [ref=e126]
+            - paragraph [ref=e127]: 面向高初黏与稳定粘接需求场景的示例型号，可用于泡棉、EVA、橡塑及胶带制品方向。
+          - generic [ref=e128]:
+            - generic [ref=e129]: 适用方向
+            - paragraph [ref=e130]: 适用于 EVA 泡棉、海绵、橡塑、商标纸与双面胶粘带等生产场景。
+          - generic [ref=e131]:
+            - generic [ref=e132]: 特点摘要
+            - generic [ref=e133]:
+              - generic [ref=e134]: 高初黏力
+              - generic [ref=e135]: 高持黏性
+              - generic [ref=e136]: 耐候性强
+              - generic [ref=e137]: 低 VOC 配方
+          - generic [ref=e138]:
+            - generic [ref=e139]: 公开参数
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - strong [ref=e142]: 固含量
+                - paragraph [ref=e143]: 37±2%
+              - generic [ref=e144]:
+                - strong [ref=e145]: 粘度
+                - paragraph [ref=e146]: 1000-3500 cps
+              - generic [ref=e147]:
+                - strong [ref=e148]: 180°剥离
+                - paragraph [ref=e149]: ">14 N/25mm"
+              - generic [ref=e150]:
+                - strong [ref=e151]: 持粘性
+                - paragraph [ref=e152]: ">120 min"
+          - paragraph [ref=e153]: 详细 TDS、批次指标与应用边界在明确项目场景后提供。
+        - article [ref=e154]:
+          - generic [ref=e155]:
+            - heading "7088# 高性能可移胶粘剂" [level=3] [ref=e156]
+            - paragraph [ref=e157]: 面向高黏力且可移除需求的示例型号，适合镀铝 PVC 膜、塑料薄膜与临时性粘附场景。
+          - generic [ref=e158]:
+            - generic [ref=e159]: 适用方向
+            - paragraph [ref=e160]: 适用于电子标签、广告装饰、保护膜、封装胶带以及需要不残胶可移除的应用。
+          - generic [ref=e161]:
+            - generic [ref=e162]: 特点摘要
+            - generic [ref=e163]:
+              - generic [ref=e164]: 高黏力可移除
+              - generic [ref=e165]: 适配薄膜材料
+              - generic [ref=e166]: 耐温耐湿
+              - generic [ref=e167]: 环保安全
+          - generic [ref=e168]:
+            - generic [ref=e169]: 公开参数
+            - generic [ref=e170]:
+              - generic [ref=e171]:
+                - strong [ref=e172]: 适用基材
+                - paragraph [ref=e173]: PVC / BOPP / PET / 金属箔
+              - generic [ref=e174]:
+                - strong [ref=e175]: 干燥工艺
+                - paragraph [ref=e176]: 80-100°C 热风烘干
+              - generic [ref=e177]:
+                - strong [ref=e178]: 熟化建议
+                - paragraph [ref=e179]: 12-24 小时
+              - generic [ref=e180]:
+                - strong [ref=e181]: 包装形式
+                - paragraph [ref=e182]: 180kg / 1000kg
+          - paragraph [ref=e183]: 首版只公开产品摘要和典型使用建议，完整参数按项目需求继续沟通。
+    - generic [ref=e185]:
+      - generic [ref=e186]:
+        - generic [ref=e187]:
+          - generic [ref=e188]: 协同流程
+          - heading "让客户知道一条咨询如何进入更具体的材料讨论" [level=2] [ref=e189]
+          - paragraph [ref=e190]: 工业客户关心的不只是材料本身，也关心合作节奏是否清晰。解决方案页需要让沟通路径更透明。
+        - generic [ref=e191]:
+          - generic [ref=e192]: 资料开放
+          - heading "资料开放策略" [level=3] [ref=e193]
+          - paragraph [ref=e194]: 官网公开层先展示平台能力和应用摘要，更详细的 TDS / SDS 与项目资料在明确需求后再继续沟通。
+          - generic [ref=e195]:
+            - paragraph [ref=e198]: 公开层：材料平台、适用方向与能力概览。
+            - paragraph [ref=e201]: 咨询层：根据需求进入 TDS / SDS、样品和技术答疑流程。
+            - paragraph [ref=e204]: 项目层：涉及定制路径或特殊工艺时，按项目边界继续沟通。
+      - generic [ref=e205]:
+        - article [ref=e206]:
+          - heading "明确项目条件" [level=3] [ref=e207]
+          - paragraph [ref=e208]: 梳理基材、工艺、关键性能目标、量产节奏与验证边界。
+          - generic [ref=e209]: 为后续路线判断建立共同语言。
+        - article [ref=e210]:
+          - heading "判断优先路线" [level=3] [ref=e211]
+          - paragraph [ref=e212]: 从合适的材料平台出发，明确优先验证方向和关注重点。
+          - generic [ref=e213]: 避免一开始就陷入过细的型号层面比较。
+        - article [ref=e214]:
+          - heading "进入样品与验证" [level=3] [ref=e215]
+          - paragraph [ref=e216]: 围绕附着力、稳定性、环境适应性等关键指标推进打样。
+          - generic [ref=e217]: 帮助客户更快完成“能否进入下一步”的判断。
+        - article [ref=e218]:
+          - heading "继续交付与优化" [level=3] [ref=e219]
+          - paragraph [ref=e220]: 项目进入持续供货、反馈复盘与性能优化的长期协同阶段。
+          - generic [ref=e221]: 更适合需要稳定配合与持续改善的工业客户关系。
+    - generic [ref=e223]:
+      - generic [ref=e224]:
+        - generic [ref=e225]: 行动入口
+        - heading "把项目背景说清楚，材料沟通才能更快进入有效区间。" [level=2] [ref=e226]
+        - paragraph [ref=e227]: 虹扬官网优先解决“理解场景、建立信任、快速联系”三件事。涉及资料申请、样品沟通和进一步验证时，可继续通过销售热线与业务微信推进。
+      - generic [ref=e228]:
+        - article [ref=e229]:
+          - heading "项目初询" [level=3] [ref=e230]
+          - paragraph [ref=e231]: 适合正在评估材料方向、工艺约束或方案可行性的客户。
+        - article [ref=e232]:
+          - heading "资料申请" [level=3] [ref=e233]
+          - paragraph [ref=e234]: 适合希望获取 TDS / SDS 或进一步技术说明的客户。
+        - article [ref=e235]:
+          - heading "样品沟通" [level=3] [ref=e236]
+          - paragraph [ref=e237]: 适合已经进入打样、验证或联合开发阶段的项目团队。
+      - generic [ref=e238]:
+        - link "联系销售" [ref=e239] [cursor=pointer]:
+          - /url: /contact
+        - link "查看解决方案" [ref=e240] [cursor=pointer]:
+          - /url: /solutions
+  - contentinfo [ref=e241]:
+    - generic [ref=e242]:
+      - generic [ref=e243]:
+        - link "虹扬化工品牌标识 HOPE YOUNG Industrial Bonding Solutions" [ref=e244] [cursor=pointer]:
+          - /url: /
+          - img "虹扬化工品牌标识" [ref=e246]
+          - generic [ref=e247]:
+            - strong [ref=e248]: HOPE YOUNG
+            - generic [ref=e249]: Industrial Bonding Solutions
+        - generic [ref=e250]:
+          - generic [ref=e251]: 网站切换
+          - generic "语言切换" [ref=e252]:
+            - link "中文" [ref=e253] [cursor=pointer]:
+              - /url: /solutions
+            - generic [ref=e254]: "|"
+            - link "English" [ref=e255] [cursor=pointer]:
+              - /url: /en/solutions
+      - generic [ref=e256]:
+        - generic [ref=e257]:
+          - heading "公司" [level=3] [ref=e258]
+          - generic [ref=e259]:
+            - link "关于虹扬" [ref=e260] [cursor=pointer]:
+              - /url: /about
+            - link "新闻动态" [ref=e261] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e262]:
+          - heading "品牌及业务" [level=3] [ref=e263]
+          - generic [ref=e264]:
+            - link "解决方案" [ref=e265] [cursor=pointer]:
+              - /url: /solutions
+            - link "行业应用" [ref=e266] [cursor=pointer]:
+              - /url: /applications
+            - link "研发协同" [ref=e267] [cursor=pointer]:
+              - /url: /technology
+        - generic [ref=e268]:
+          - heading "快速链接" [level=3] [ref=e269]
+          - generic [ref=e270]:
+            - link "首页" [ref=e271] [cursor=pointer]:
+              - /url: /
+            - link "联系我们" [ref=e272] [cursor=pointer]:
+              - /url: /contact
+            - link "新闻动态" [ref=e273] [cursor=pointer]:
+              - /url: /news
+        - generic [ref=e274]:
+          - heading "联系" [level=3] [ref=e275]
+          - link "联系" [ref=e276] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e277]: 联系
+            - generic [ref=e278]: →
+          - generic [ref=e279]:
+            - link "销售热线 18148928019" [ref=e280] [cursor=pointer]:
+              - /url: tel:18148928019
+              - img [ref=e281]
+              - generic [ref=e283]:
+                - generic [ref=e284]: 销售热线
+                - strong [ref=e285]: "18148928019"
+            - link "业务微信 查看二维码" [ref=e286] [cursor=pointer]:
+              - /url: /contact
+              - img [ref=e287]
+              - generic [ref=e290]:
+                - generic [ref=e291]: 业务微信
+                - strong [ref=e292]: 查看二维码
+            - generic [ref=e293]:
+              - img [ref=e294]
+              - generic [ref=e297]:
+                - generic [ref=e298]: 公司地址
+                - strong [ref=e299]: 广州市天河区东莞庄路110号中创盈科赛宝科技园
+      - generic [ref=e300]:
+        - paragraph [ref=e301]: 官网案例与资料将按授权范围逐步更新 对外展示内容以正式批准版本为准
+        - generic [ref=e302]:
+          - generic [ref=e303]: 网站地图
+          - generic [ref=e304]: 版权声明
+          - generic [ref=e305]: 使用条款
+          - generic [ref=e306]: 隐私声明
+        - generic [ref=e308]: © 2026 广州虹扬化工科技有限公司，广州，中国
