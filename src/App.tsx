@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { pageOrder, siteContent, type Locale, type PageKey } from './content/siteContent'
 import { utilityPageOrder, supportContent, type UtilityPageKey } from './content/supportContent'
-import { buildPath, getPageTitle, type RouteKey } from './utils/navigation'
+import { buildPath, getPageTitle } from './utils/navigation'
 import { usePageMetadata } from './hooks/usePageMetadata'
 
 import { SiteHeader, SiteFooter } from './components/layout'
@@ -18,6 +18,28 @@ const ContactPage = lazy(() => import('./pages/ContactPage').then(m => ({ defaul
 const DocumentUtilityPage = lazy(() => import('./pages/UtilityPage').then(m => ({ default: m.DocumentUtilityPage })))
 const SitemapUtilityPage = lazy(() => import('./pages/UtilityPage').then(m => ({ default: m.SitemapUtilityPage })))
 
+function getSitePageComponent(page: PageKey) {
+  switch (page) {
+    case 'home':
+      return HomePage
+    case 'solutions':
+      return SolutionsPage
+    case 'applications':
+      return ApplicationsPage
+    case 'technology':
+      return TechnologyPage
+    case 'about':
+      return AboutPage
+    case 'news':
+      return NewsPage
+    case 'contact':
+      return ContactPage
+  }
+
+  const exhaustiveCheck: never = page
+  throw new Error(`Unhandled site page: ${exhaustiveCheck}`)
+}
+
 function SitePage({ locale, page }: { locale: Locale; page: PageKey }) {
   const content = siteContent[locale]
   const description = content.meta.pageDescriptions[page] ?? content.meta.defaultDescription
@@ -29,24 +51,14 @@ function SitePage({ locale, page }: { locale: Locale; page: PageKey }) {
     description,
   })
 
-  const PageComponent = (() => {
-    switch (page) {
-      case 'home': return HomePage
-      case 'solutions': return SolutionsPage
-      case 'applications': return ApplicationsPage
-      case 'technology': return TechnologyPage
-      case 'about': return AboutPage
-      case 'news': return NewsPage
-      case 'contact': return ContactPage
-    }
-  })()
+  const PageComponent = getSitePageComponent(page)
 
   return (
     <div className="app-shell">
       <SiteHeader locale={locale} page={page} />
       <main className={`site-main site-main-${page}`}>
         <Suspense fallback={<PageLoader />}>
-          {PageComponent && <PageComponent locale={locale} />}
+          <PageComponent locale={locale} />
         </Suspense>
       </main>
       <SiteFooter locale={locale} page={page} />
