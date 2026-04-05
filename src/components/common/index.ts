@@ -40,3 +40,5 @@ export { NewsPageCta } from './NewsPageCta'
 export { ContactHub } from './ContactHub'
 export { ContactFormPanel } from './ContactFormPanel'
 export { InquiryTemplatePanel } from './InquiryTemplatePanel'
+// Page loader
+export { PageLoader } from './PageLoader'
