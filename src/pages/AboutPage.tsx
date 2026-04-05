@@ -5,7 +5,10 @@ import {
   FeaturePanel,
   CredentialPanel,
   ButtonLink,
+  PhotoCardPanel,
 } from '../components/common'
+import { Link } from 'react-router-dom'
+import { buildPath } from '../utils'
 import officeEntranceImage from '../assets/media/provided/office-entry-real.jpg'
 import companyBrandWall1Image from '../assets/media/provided/company-brand-wall-1.jpg'
 import companyBrandWall2Image from '../assets/media/provided/company-brand-wall-2.jpg'

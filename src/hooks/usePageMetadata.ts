@@ -7,10 +7,6 @@ function getOpenGraphLocale(locale: Locale): string {
   return locale === 'zh' ? 'zh_CN' : 'en_US'
 }
 
-function getOpenGraphLocale(locale: Locale): string {
-  return locale === 'zh' ? 'zh_CN' : 'en_US'
-}
-
 export function usePageMetadata({
   locale,
   page,

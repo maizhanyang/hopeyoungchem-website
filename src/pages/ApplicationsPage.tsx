@@ -6,6 +6,8 @@ import {
   FeaturePanel,
   ButtonLink,
 } from '../components/common'
+import { Link } from 'react-router-dom'
+import { buildPath } from '../utils'
 import researchScene1Image from '../assets/media/provided/research-scene-1.jpg'
 import labReactorImage from '../assets/media/provided/lab-person-1.jpg'
 import meetingRoomRealImage from '../assets/media/provided/meeting-room-real.jpg'
