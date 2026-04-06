@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import type { PortalEntry, Locale } from '../../content/siteContent'
 import { buildPath } from '../../utils/navigation'
+import LazyImage from './LazyImage'
 
 export function PortalEntryPanel({
   entry,
@@ -12,7 +13,7 @@ export function PortalEntryPanel({
   return (
     <Link className="portal-entry" to={buildPath(locale, entry.page)}>
       <div className="portal-entry-media">
-        <img src={entry.image} alt={entry.alt} />
+        <LazyImage src={entry.image} alt={entry.alt} />
       </div>
       <div className="portal-entry-copy">
         <span>{entry.eyebrow}</span>

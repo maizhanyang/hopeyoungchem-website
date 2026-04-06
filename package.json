@@ -1,13 +1,16 @@
 {
-  "name": "hope-young-website",
+  "name": "hopeyoungchem-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npx tsx scripts/generate-sitemap.ts > public/sitemap.xml && node scripts/prerender.mjs",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:only": "vite build",
+    "prerender": "node scripts/prerender.mjs",
+    "generate:sitemap": "npx tsx scripts/generate-sitemap.ts > public/sitemap.xml"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

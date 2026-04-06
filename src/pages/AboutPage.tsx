@@ -6,6 +6,7 @@ import {
   CredentialPanel,
   ButtonLink,
   PhotoCardPanel,
+  LazyImage,
 } from '../components/common'
 import { Link } from 'react-router-dom'
 import { buildPath } from '../utils'
@@ -20,7 +21,7 @@ function AboutBrandSection({ locale }: { locale: Locale }) {
     <section className="content-section about-brand-section">
       <div className="about-brand-shell">
         <div className="about-brand-plaque">
-          <img
+          <LazyImage
             src={siteConfig.assets.logo.src}
             alt={siteConfig.assets.logo.alt[locale]}
           />

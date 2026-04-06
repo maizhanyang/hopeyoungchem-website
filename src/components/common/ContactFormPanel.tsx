@@ -19,21 +19,49 @@ export function ContactFormPanel({ locale }: { locale: Locale }) {
   const isZh = locale === 'zh'
   const primaryPhone = siteConfig.contacts.phones[0]
 
-  const copyInquiry = async (event: FormEvent<HTMLFormElement>) => {
+  const submitInquiry = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const inquiryText = [
-      isZh ? '虹扬官网咨询信息' : 'Hope Young Website Inquiry',
-      `${isZh ? '公司名称' : 'Company'}: ${draft.company}`,
-      `${isZh ? '联系人' : 'Contact'}: ${draft.contactPerson}`,
-      `${isZh ? '联系电话' : 'Phone'}: ${draft.phone}`,
-      `${isZh ? '应用场景' : 'Application'}: ${draft.application}`,
-      `${isZh ? '关注材料' : 'Material Focus'}: ${draft.material || (isZh ? '待沟通' : 'To be discussed')}`,
-      `${isZh ? '项目说明' : 'Project Notes'}: ${draft.message}`,
-    ].join('\n')
+    const formId = import.meta.env.VITE_FORMSPREE_FORM_ID
 
-    const copied = await copyTextToClipboard(inquiryText)
-    setStatus(copied ? 'success' : 'error')
+    // 未配置 Formspree 时，回退到复制到剪贴板
+    if (!formId) {
+      const inquiryText = [
+        isZh ? '虹扬官网咨询信息' : 'Hope Young Website Inquiry',
+        `${isZh ? '公司名称' : 'Company'}: ${draft.company}`,
+        `${isZh ? '联系人' : 'Contact'}: ${draft.contactPerson}`,
+        `${isZh ? '联系电话' : 'Phone'}: ${draft.phone}`,
+        `${isZh ? '应用场景' : 'Application'}: ${draft.application}`,
+        `${isZh ? '关注材料' : 'Material Focus'}: ${draft.material || (isZh ? '待沟通' : 'To be discussed')}`,
+        `${isZh ? '项目说明' : 'Project Notes'}: ${draft.message}`,
+      ].join('\n')
+
+      const copied = await copyTextToClipboard(inquiryText)
+      setStatus(copied ? 'success' : 'error')
+      return
+    }
+
+    try {
+      const response = await fetch(`https://formspree.io/f/${formId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          ...draft,
+          language: locale,
+          submittedAt: new Date().toISOString(),
+        }),
+      })
+
+      if (!response.ok) throw new Error('Form submission failed')
+
+      setStatus('success')
+      setDraft(emptyInquiryDraft)
+    } catch {
+      setStatus('error')
+    }
   }
 
   const updateField = (field: keyof InquiryDraft, value: string) => {
@@ -57,7 +85,7 @@ export function ContactFormPanel({ locale }: { locale: Locale }) {
             : 'The beta version does not connect a live submission backend yet. Fill in the form to copy a structured inquiry brief, then continue through the business WeChat channel or a direct business phone.'}
         </p>
       </div>
-      <form className="contact-form" onSubmit={copyInquiry}>
+      <form className="contact-form" onSubmit={submitInquiry}>
         <label>
           <span>{isZh ? '公司名称' : 'Company'}</span>
           <input

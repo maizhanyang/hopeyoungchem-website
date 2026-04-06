@@ -1,4 +1,5 @@
 import type { CredentialCard } from '../../content/siteContent'
+import LazyImage from './LazyImage'
 
 export function CredentialPanel({ card }: { card: CredentialCard }) {
   return (
@@ -7,7 +8,7 @@ export function CredentialPanel({ card }: { card: CredentialCard }) {
       <p>{card.description}</p>
       {card.imageSrc && card.imageAlt && (
         <div className="credential-panel-media">
-          <img src={card.imageSrc} alt={card.imageAlt} />
+          <LazyImage src={card.imageSrc} alt={card.imageAlt} />
           {card.imageCaption && <span>{card.imageCaption}</span>}
         </div>
       )}

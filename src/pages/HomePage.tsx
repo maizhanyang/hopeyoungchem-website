@@ -1,11 +1,13 @@
 import { siteConfig, siteContent, type Locale, type PhotoCard } from '../content/siteContent'
 import { buildPhoneHref, buildMailtoHref } from '../utils/links'
+import { LazyImage } from '../components/common'
 import {
   ButtonLink,
   SectionHeader,
   PortalEntryPanel,
   CredentialPanel,
 } from '../components/common'
+import { OrganizationJsonLd } from '../components/seo'
 import researchScene2Image from '../assets/media/provided/research-scene-2.jpg'
 
 function HomeHero({ locale }: { locale: Locale }) {
@@ -29,9 +31,10 @@ function HomeHero({ locale }: { locale: Locale }) {
         </div>
         <div className="home-hero-media-panel">
           <div className="home-hero-media">
-            <img
+            <LazyImage
               className="home-hero-image"
               src={researchScene2Image}
+              placeholder="blur"
               alt={
                 locale === 'zh'
                   ? '压敏胶研发场景主视觉'
@@ -140,7 +143,7 @@ function HomeCorporateBand({ locale }: { locale: Locale }) {
           <article className="home-corporate-card">
             <span className="contact-channel-label">{content.contact.channelLabels.wechat}</span>
             <div className="home-qr-shell">
-              <img
+              <LazyImage
                 className="home-qr-image"
                 src={siteConfig.assets.wechatQr.src}
                 alt={siteConfig.assets.wechatQr.alt[locale]}
@@ -168,8 +171,28 @@ function HomeCorporateBand({ locale }: { locale: Locale }) {
 }
 
 export function HomePage({ locale }: { locale: Locale }) {
+  const content = siteContent[locale]
+
   return (
     <>
+      <OrganizationJsonLd
+        name={content.brand.fullName}
+        description={content.meta.defaultDescription}
+        url={siteConfig.legal.websiteUrl ?? 'https://www.hopeyoungchem.com'}
+        logo={`${siteConfig.legal.websiteUrl ?? 'https://www.hopeyoungchem.com'}${siteConfig.assets.logo.src}`}
+        address={{
+          streetAddress: siteConfig.contacts.address,
+          addressLocality: '广州',
+          addressRegion: '广东',
+          postalCode: '510000',
+          addressCountry: 'CN',
+        }}
+        contactPoint={{
+          telephone: siteConfig.contacts.phones[0].number,
+          contactType: 'customer service',
+          availableLanguage: ['Chinese', 'English'],
+        }}
+      />
       <HomeHero locale={locale} />
       <HomeMetricBand locale={locale} />
       <HomePortalSection locale={locale} />

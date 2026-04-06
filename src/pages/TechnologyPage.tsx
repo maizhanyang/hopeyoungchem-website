@@ -6,6 +6,7 @@ import {
   CredentialPanel,
   TechnologyGalleryTile,
   ButtonLink,
+  LazyImage,
 } from '../components/common'
 import labHoodImage from '../assets/media/provided/lab-hood.jpg'
 
@@ -29,7 +30,7 @@ function TechnologyIntroSection({ locale }: { locale: Locale }) {
           />
         </div>
         <div className="technology-intro-media">
-          <img src={galleryLead.src} alt={galleryLead.alt} />
+          <LazyImage src={galleryLead.src} alt={galleryLead.alt} />
           <div className="technology-intro-caption">
             <span className="contact-channel-label">{galleryLead.title}</span>
             <p>{galleryLead.description}</p>

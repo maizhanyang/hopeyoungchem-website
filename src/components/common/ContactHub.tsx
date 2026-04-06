@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { siteConfig, siteContent, type Locale } from '../../content/siteContent'
 import { buildPath } from '../../utils/navigation'
 import { buildPhoneHref, buildMailtoHref } from '../../utils/links'
+import LazyImage from './LazyImage'
 
 export function ContactHub({ locale }: { locale: Locale }) {
   const content = siteContent[locale].contact
@@ -37,7 +38,7 @@ export function ContactHub({ locale }: { locale: Locale }) {
         <article className="contact-channel">
           <span className="contact-channel-label">{content.channelLabels.wechat}</span>
           <div className="contact-qr-shell">
-            <img
+            <LazyImage
               className="contact-qr-image"
               src={siteConfig.assets.wechatQr.src}
               alt={siteConfig.assets.wechatQr.alt[locale]}

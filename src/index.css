@@ -7393,3 +7393,60 @@ body {
     @apply font-sans;
   }
 }
+
+/* ==============================
+   MobileNav 移动端导航样式
+   ============================== */
+
+/* 汉堡按钮 — 默认隐藏，移动端显示 */
+.mobile-nav-trigger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.mobile-nav-trigger:hover {
+  background-color: #f1f5f9;
+}
+
+.mobile-nav-trigger-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mobile-nav-trigger-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: #0f172a;
+}
+
+/* 响应式：移动端隐藏桌面导航，显示汉堡按钮 */
+@media (max-width: 767px) {
+  .mobile-nav-trigger {
+    display: inline-flex;
+  }
+
+  .header-utility-desktop {
+    display: none !important;
+  }
+
+  .site-header-bottomrow-desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav-trigger {
+    display: none !important;
+  }
+}

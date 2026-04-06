@@ -42,3 +42,7 @@ export { ContactFormPanel } from './ContactFormPanel'
 export { InquiryTemplatePanel } from './InquiryTemplatePanel'
 // Page loader
 export { PageLoader } from './PageLoader'
+
+// Lazy loading
+export { default as LazyImage } from './LazyImage'
+export type { LazyImageProps } from './LazyImage'

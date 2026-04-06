@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { siteConfig, siteContent, type Locale } from '../content/siteContent'
 import { ensureHeadTag, removeHeadTag, buildPath, type RouteKey } from '../utils'
+import { dispatchRenderReady } from '../utils/renderReady'
 
 function getOpenGraphLocale(locale: Locale): string {
   return locale === 'zh' ? 'zh_CN' : 'en_US'
@@ -84,6 +85,9 @@ export function usePageMetadata({
       removeHeadTag('link[rel="canonical"]')
       removeHeadTag('meta[property="og:url"]')
     }
+
+    // 通知预渲染器页面已准备好
+    dispatchRenderReady()
   }, [
     content.brand.fullName,
     content.brand.shortName,

@@ -1,4 +1,5 @@
 import type { CaseStudy, Locale } from '../../content/siteContent'
+import LazyImage from './LazyImage'
 
 export function CaseFeatureBand({
   caseStudy,
@@ -31,7 +32,7 @@ export function CaseFeatureBand({
   return (
     <article className={reverse ? 'case-feature-band case-feature-band-reverse' : 'case-feature-band'}>
       <div className="case-feature-media">
-        <img src={image} alt={caseStudy.title} />
+        <LazyImage src={image} alt={caseStudy.title} />
       </div>
       <div className="case-feature-copy">
         <span className="eyebrow">

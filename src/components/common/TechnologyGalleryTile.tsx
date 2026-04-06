@@ -1,4 +1,5 @@
 import type { PhotoCard } from '../../content/siteContent'
+import LazyImage from './LazyImage'
 
 export function TechnologyGalleryTile({
   photo,
@@ -10,7 +11,7 @@ export function TechnologyGalleryTile({
   return (
     <article className={featured ? 'technology-gallery-tile technology-gallery-tile-featured' : 'technology-gallery-tile'}>
       <div className="technology-gallery-tile-media">
-        <img src={photo.src} alt={photo.alt} />
+        <LazyImage src={photo.src} alt={photo.alt} />
       </div>
       <div className="technology-gallery-tile-copy">
         <h3>{photo.title}</h3>

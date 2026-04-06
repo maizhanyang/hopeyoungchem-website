@@ -1,5 +1,6 @@
 import type { HeroContent, Locale } from '../../content/siteContent'
 import { ButtonLink } from './ButtonLink'
+import LazyImage from './LazyImage'
 
 export function EditorialBanner({
   locale,
@@ -40,7 +41,7 @@ export function EditorialBanner({
         </div>
         <div className="editorial-banner-media-panel">
           <div className="editorial-banner-media">
-            <img src={image} alt={alt} />
+            <LazyImage src={image} alt={alt} />
           </div>
         </div>
       </div>
