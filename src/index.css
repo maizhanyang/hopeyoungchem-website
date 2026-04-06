@@ -7450,3 +7450,22 @@ body {
     display: none !important;
   }
 }
+
+/* 移动端按钮增大 */
+@media (max-width: 767px) {
+  .button-link {
+    font-size: 16px;
+    padding: 12px 24px;
+    min-height: 48px;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .hero-actions .button-link {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}

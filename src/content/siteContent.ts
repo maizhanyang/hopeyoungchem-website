@@ -1393,17 +1393,17 @@ export const siteContent: Record<Locale, LocaleContent> = {
       ],
       timeline: [
         {
-          year: '01',
+          year: '2018',
           title: '研发团队与协同布局',
           description: '逐步形成由华工背景团队牵引、4 位硕士与 2 位博士参与的研发配置,并建立产学研协同基础。',
         },
         {
-          year: '02',
+          year: '2020',
           title: '知识产权与产品矩阵',
           description: '围绕高端材料粘接与工业涂层方向形成自主知识产权体系,并逐步搭建覆盖多场景的产品矩阵。',
         },
         {
-          year: '03',
+          year: '2022',
           title: '高端场景验证与交付',
           description: '产品逐步进入消费电子、高端制造与新能源方向的验证和交付节奏,形成更完整的项目协同经验。',
         },
@@ -2482,17 +2482,17 @@ export const siteContent: Record<Locale, LocaleContent> = {
       ],
       timeline: [
         {
-          year: '01',
+          year: '2018',
           title: 'Team and collaboration foundation',
           description: 'The R&D structure was built around self-driven development, graduate-level talent and industry-facing collaboration.',
         },
         {
-          year: '02',
+          year: '2020',
           title: 'IP and product matrix',
           description: 'A proprietary technology base and a multi-scenario product matrix continued to take shape around advanced bonding and coating routes.',
         },
         {
-          year: '03',
+          year: '2022',
           title: 'High-end scenario validation',
           description: 'Products moved into demanding validation and delivery rhythms in electronics, advanced manufacturing and new-energy related scenarios.',
         },

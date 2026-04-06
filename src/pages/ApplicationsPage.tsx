@@ -8,7 +8,7 @@ import {
 } from '../components/common'
 import { Link } from 'react-router-dom'
 import { buildPath } from '../utils'
-import researchScene1Image from '../assets/media/provided/research-scene-1.jpg'
+import officeWorkspaceImage from '../assets/media/provided/office-workspace.jpg'
 import labReactorImage from '../assets/media/provided/lab-person-1.jpg'
 import meetingRoomRealImage from '../assets/media/provided/meeting-room-real.jpg'
 import researchScene2Image from '../assets/media/provided/research-scene-2.jpg'
@@ -20,7 +20,7 @@ function ApplicationsCasesSection({ locale }: { locale: Locale }) {
     officePersonImage,
     labReactorImage,
     meetingRoomRealImage,
-    researchScene1Image,
+    officeWorkspaceImage,
     researchScene2Image,
   ]
 
@@ -102,7 +102,7 @@ export function ApplicationsPage({ locale }: { locale: Locale }) {
       <EditorialBanner
         locale={locale}
         hero={content.hero}
-        image={researchScene1Image}
+        image={officeWorkspaceImage}
         alt={
           locale === 'zh'
             ? '实验室中的材料开发与项目验证场景'
