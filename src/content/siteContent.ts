@@ -530,7 +530,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
       statement:
         '虹扬负责研发与销售,置盈负责生产与仓储,共同服务工业客户的高端材料粘接方案与项目协同开发需求',
       note:
-        '首批正式公开层已纳入营业执照、高新证书、17 项公开专利条目与 9 个产品摘要,更多案例与资料按授权继续补充',
+        '服务电子、高端制造与新能源客户，提供高端材料粘接方案与项目协同开发',
       topUtilityLabel: '网站切换',
       companyTitle: '公司',
       businessTitle: '品牌及业务',
@@ -625,7 +625,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           label: '查看解决方案',
           page: 'solutions',
         },
-        note: '广州虹扬负责研发与销售,中山置盈承接生产与仓储;当前公开层已纳入 9 个产品摘要、营业执照、高新证书与 17 项专利条目。',
+        note: '让需求判断、技术沟通、样品验证与稳定交付放进同一条项目链路',
       },
       brandIntro: {
         eyebrow: '公司简介',
@@ -716,7 +716,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
       ],
       newsHeader: {
         eyebrow: '新闻动态',
-        title: '近期公开更新,已经开始向正式版结构靠拢',
+        title: '公司动态与资料更新',
         description:
           '首页先展示已经确认可公开的内容推进,包括产品摘要、匿名案例、资质证明、真实场景图片与正式联系入口。',
       },
@@ -724,9 +724,9 @@ export const siteContent: Record<Locale, LocaleContent> = {
         {
           category: '官网更新',
           date: '2026年4月',
-          title: '官网公开层已完成一轮正式版扩充',
-          summary: '官网已补入营业执照、高新证书、17 项公开专利条目与 9 个产品摘要,整体表达已从展示版明显推进到正式版。',
-          detail: '当前公开层优先承接材料方向判断、资质证明与正式联系入口,完整 TDS / SDS 仍按项目沟通继续提供。',
+          title: '官网内容持续更新',
+          summary: '官网展示虹扬的材料平台、行业应用、技术实力与联系方式。',
+          detail: '展示公司材料体系、行业应用与核心资质,详细技术资料请直接联系我们获取。',
         },
         {
           category: '案例表达',
@@ -770,7 +770,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
         eyebrow: '材料平台',
         title: '四大体系围绕应用逻辑展开,而不是只列产品型号',
         description:
-          '公开层先展示体系能力、应用方向与代表产品,详细资料在明确需求后继续沟通。',
+          '展示公司的材料体系、应用方向与代表产品,详细资料请联系我们获取。',
       },
       materials: [
         {
@@ -877,7 +877,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
         '虹扬以"体系能力 + 应用场景 + 代表产品 + 定制方向"的方式组织解决方案内容,帮助客户在首轮浏览中更快识别潜在匹配路线。',
       sampleHeader: {
         eyebrow: '示例产品表达',
-        title: '首批 9 个公开产品摘要,补齐更正式的产品表达',
+        title: '9 个代表产品概览',
         description:
           '这一轮将 7068#、7088#、1088#、7098#、9#、V08,以及新增的 9088#、9098# 与轮胎胶纳入首批公开产品摘要,让客户先理解典型路线与应用边界,再进入更详细的资料沟通。',
       },
@@ -906,7 +906,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
             { label: '初黏性', value: '21# 钢球' },
             { label: '剥离强度', value: '25.000 N/cm' },
           ],
-          note: '公开层将其作为高抓附特种路线代表型号,具体底涂、表面处理与涂布参数按项目边界继续沟通。',
+          note: '高抓附特种路线代表型号,具体参数请联系我们获取。',
         },
         {
           name: '7088# 高性能可移胶粘剂',
@@ -932,7 +932,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
             { label: '初黏性', value: '8# 钢球' },
             { label: '持黏性', value: '48h' },
           ],
-          note: '公开层先保留标签与包装方向的典型指标,完整适配参数按被贴物、工艺与法规要求继续沟通。',
+          note: '标签与包装方向典型指标,完整参数请按项目需求沟通。',
         },
         {
           name: '7098# 高黏可移胶',
@@ -958,7 +958,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
             { label: '初黏性', value: '6# 钢球' },
             { label: '剥离强度', value: '7.8 N/cm' },
           ],
-          note: '公开层将 9088# 作为更广谱的可移除路线代表型号,完整合规边界与工艺参数仍在项目沟通后提供。',
+          note: '广谱可移除路线代表型号,完整参数请联系我们。',
         },
         {
           name: '9098# 高剥离可移胶',
@@ -1057,9 +1057,9 @@ export const siteContent: Record<Locale, LocaleContent> = {
       dataRequest: {
         title: '资料开放策略',
         description:
-          '官网公开层先展示平台能力和应用摘要,更详细的 TDS / SDS 与项目资料在明确需求后再继续沟通。',
+          '展示公司的材料平台能力与产品概览,详细技术资料请直接联系我们。',
         items: [
-          '公开层:材料平台、适用方向与能力概览。',
+          '材料平台、适用方向与能力概览。',
           '咨询层:根据需求进入 TDS / SDS、样品和技术答疑流程。',
           '项目层:涉及定制路径或特殊工艺时,按项目边界继续沟通。',
         ],
@@ -1410,7 +1410,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
       ],
       pageCta: {
         eyebrow: '合作方式',
-        title: '先判断合作方式,再决定是否继续深入',
+        title: '选择下一步行动',
         description: '关于页更像品牌与合作说明页,帮助客户快速选择下一步。',
         items: [
           {
@@ -1451,11 +1451,11 @@ export const siteContent: Record<Locale, LocaleContent> = {
     news: {
       hero: {
         eyebrow: '新闻动态',
-        title: '跟进官网正式版的公开进展',
+        title: '官网内容更新进展',
         lead:
           '把产品摘要 资质证明 案例表达与联系入口持续补齐',
         supporting:
-          '这一页记录官网从展示版向正式版推进的公开更新,优先发布已经确认可对外使用的资料、场景与模块。',
+          '这一页展示公司的最新动态、产品更新与技术进展。',
         primary: {
           label: '联系销售',
           page: 'contact',
@@ -1471,13 +1471,13 @@ export const siteContent: Record<Locale, LocaleContent> = {
       featured: {
         category: '置顶更新',
         date: '2026年4月',
-        title: '官网公开层已完成一轮更接近正式版的补齐',
+        title: '官网产品与案例信息持续补充',
         summary: '这一轮已公开营业执照、高新证书、17 项专利条目、9 个产品摘要、5 个匿名量化案例、网站地图与基础声明页,以及更多真实办公和实验场景图片。',
         detail: '站点现在已经能同时承担品牌展示、材料判断、资质证明、案例表达、正式联系与上线支持六类任务。',
       },
       latestHeader: {
         eyebrow: '近期内容',
-        title: '先用事实型更新把公开层做扎实,再逐步扩内容库',
+        title: '持续完善网站内容',
         description:
           '当前动态区以官网进展和公开资料更新为主,后续再按授权补入里程碑、活动和更丰富的品牌内容。',
       },
@@ -1487,7 +1487,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           date: '2026年4月',
           title: '公开产品摘要已扩展到 9 个代表型号',
           summary: '解决方案页现已覆盖 7068#、7088#、1088#、7098#、9#、V08,以及新增的 9088#、9098# 和轮胎胶。',
-          detail: '公开层先帮助客户判断应用方向与产品边界,更详细的 TDS / SDS 仍在项目沟通后继续提供。',
+          detail: '帮助客户判断应用方向与产品边界,详细技术资料请联系获取。',
         },
         {
           category: '行业应用',
@@ -1501,11 +1501,11 @@ export const siteContent: Record<Locale, LocaleContent> = {
           date: '2026年4月',
           title: '公开联系页已同步 5 条电话与双地址',
           summary: '联系页现在已整合公开业务电话、商务邮箱、业务微信二维码、办公室地址和实验室地址,适合直接承接资料申请与项目沟通。',
-          detail: '剩余待最终拍板的内容,主要集中在首页最终标题口径、公司关系标准文案,以及正式上线时的域名和备案信息。',
+          detail: '',
         },
       ],
       archiveNote:
-        '当前动态区已经具备"记录官网正式版推进"的基本能力。后续如果更新节奏稳定,可再扩展为更完整的品牌与内容中心。',
+        '持续更新公司动态与产品信息。',
       pageCta: {
         eyebrow: '继续浏览',
         title: '从公开更新进入正式沟通',

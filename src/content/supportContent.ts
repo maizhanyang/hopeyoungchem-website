@@ -101,7 +101,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
           title: '更正、撤回或更新方式',
           paragraphs: [
             '如果你已经通过电话、邮箱或微信提交了资料，并希望更正联系人信息、补充项目信息或撤回明显填写错误的内容，可以继续通过公开商务邮箱或电话与我们联系。',
-            '随着正式版继续上线，若网站实际启用新的数据接入方式，本页会按真实情况补充更新。',
+            '如有更新，本页会及时同步。',
           ],
         },
       ],
@@ -247,7 +247,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
       },
       detailTitle: '公开入口总览',
       detailCopy:
-        '把主页面、支持页面和联系信息汇总到一起，能让正式公开层更像一个完整站点而不是分散页面集合。',
+        '网站地图汇总了所有页面与联系信息，方便快速导航。',
       intro: {
         eyebrow: '入口索引',
         title: '先看页面结构，再决定从哪里进入沟通',
