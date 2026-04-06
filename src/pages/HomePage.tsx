@@ -5,7 +5,6 @@ import {
   ButtonLink,
   SectionHeader,
   PortalEntryPanel,
-  CredentialPanel,
 } from '../components/common'
 import { OrganizationJsonLd } from '../components/seo'
 import researchScene2Image from '../assets/media/provided/research-scene-2.jpg'
