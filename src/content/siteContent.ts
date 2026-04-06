@@ -614,7 +614,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
         eyebrow: '关键技术伙伴',
         title: '为高端制造提供关键粘接方案',
         lead:
-          '围绕材料选择 方案验证与工艺落地 服务电子 高端制造与新能源项目',
+          '为电子、高端制造与新能源项目提供从材料选型到工艺落地的完整粘接方案',
         supporting:
           '依托硕博团队、知识产权积累与协同制造能力,把需求判断、技术沟通、样品验证与稳定交付放进同一条项目链路',
         primary: {
@@ -1619,7 +1619,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
       statement:
         'Hope Young leads R&D and sales while Zhongshan Zhiying handles manufacturing and warehousing, creating one coordinated path for advanced material bonding solutions and stable delivery',
       note:
-        'The first formal public layer now includes the business license, high-tech certificate, 17 public patent entries and 9 product summaries, with more approved materials to follow',
+        'Hope Young Chemical Technology serves electronics, advanced manufacturing and new energy clients with advanced material bonding solutions and collaborative development.',
       topUtilityLabel: 'Website switch',
       companyTitle: 'Company',
       businessTitle: 'Brands & Business',
@@ -1714,7 +1714,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           label: 'Explore solutions',
           page: 'solutions',
         },
-        note: 'Hope Young leads R&D and sales while Zhongshan Zhiying supports manufacturing and warehousing; the current public layer now includes 9 product summaries, the business license, the high-tech certificate and 17 patent entries.',
+        note: 'Hope Young leads R&D and sales while Zhongshan Zhiying handles manufacturing and warehousing.',
       },
       brandIntro: {
         eyebrow: 'Company Summary',
@@ -1805,7 +1805,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
       ],
       newsHeader: {
         eyebrow: 'News & Updates',
-        title: 'Recent public updates are already moving toward a more formal website layer',
+        title: 'Company updates and milestones',
         description:
           'The homepage now highlights approved progress across product summaries, anonymous cases, proof modules, real photography and direct contact channels.',
       },
@@ -1813,9 +1813,9 @@ export const siteContent: Record<Locale, LocaleContent> = {
         {
           category: 'Website Update',
           date: 'April 2026',
-          title: 'A more formal public layer is now online',
-          summary: 'The website now includes the business license, high-tech certificate, 17 public patent entries and 9 product summaries as it moves well beyond the earlier showcase version.',
-          detail: 'The public layer now supports material screening, proof review and direct business contact, while deeper TDS and SDS sharing stays tied to real project discussion.',
+          title: 'Website content continues to expand',
+          summary: 'The website now presents the company material platform, industry applications and core qualifications.',
+          detail: 'The site supports material screening, qualification review and direct business contact. Detailed TDS and SDS are available upon request.',
         },
         {
           category: 'Application Cases',
@@ -1859,7 +1859,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
         eyebrow: 'Material Platforms',
         title: 'Four adhesive systems presented through application logic',
         description:
-          'The public layer focuses on system fit, representative grades and customization direction, with deeper documents shared once project context is clear.',
+          'The site presents system capabilities, representative grades and customization directions. Detailed documents are shared upon project engagement.',
       },
       materials: [
         {
@@ -1966,7 +1966,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
         'Hope Young presents solutions through system capability, use-case direction, representative grades and customization logic so industrial visitors can identify possible routes early without being overloaded by SKU-level detail.',
       sampleHeader: {
         eyebrow: 'Sample Product Expression',
-        title: 'A nine-grade public set for more formal product expression',
+        title: 'Nine representative product grades',
         description:
           'This round expands the public sample set to 7068#, 7088#, 1088#, 7098#, 9#, V08, plus 9088#, 9098# and the tire-label grade so visitors can see more concrete routes before requesting deeper documents.',
       },
@@ -2021,7 +2021,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
             { label: 'Initial tack', value: '8# steel ball' },
             { label: 'Holding power', value: '48h' },
           ],
-          note: 'The public layer keeps label and packaging guidance at a summary level, with deeper fit discussion handled against facestock, container and compliance needs.',
+          note: 'Label and packaging guidance at a summary level. Detailed specifications available upon request.',
         },
         {
           name: '7098# High-tack Removable Adhesive',
@@ -2047,7 +2047,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
             { label: 'Initial tack', value: '6# steel ball' },
             { label: 'Peel strength', value: '7.8 N/cm' },
           ],
-          note: 'The public layer presents 9088# as a broader clean-removal route, while full compliance and process details remain tied to direct business discussion.',
+          note: '9088# as a versatile clean-removal option. Full specifications available upon request.',
         },
         {
           name: '9098# Removable Adhesive',
@@ -2381,7 +2381,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
       ],
       labHeader: {
         eyebrow: 'Public Proof Modules',
-        title: 'Bring the entity proof, certification, 17 patent entries and validation scenes into one public layer',
+        title: 'Qualifications, certifications and validation capabilities',
         description:
           'This round combines the business license, high-tech certificate, patent example and lab scenes into one clearer public proof structure for the site.',
       },
@@ -2540,11 +2540,11 @@ export const siteContent: Record<Locale, LocaleContent> = {
     news: {
       hero: {
         eyebrow: 'News & Updates',
-        title: 'Track the website as its public layer becomes more formal',
+        title: 'Website updates and milestones',
         lead:
           'A running record of product summaries proof modules case expression and contact updates',
         supporting:
-          'This page records how the website is moving from a showcase into a more formal business-facing portal, using only materials that are already approved for public use.',
+        'This page presents the latest company updates, product information and technical progress.',
         primary: {
           label: 'Contact sales',
           page: 'contact',
@@ -2560,13 +2560,13 @@ export const siteContent: Record<Locale, LocaleContent> = {
       featured: {
         category: 'Featured Update',
         date: 'April 2026',
-        title: 'The public website now has a much more formal first layer',
+        title: 'Product and case study information continues to be added',
         summary: 'This round adds the business license, high-tech certificate, 17 patent entries, 9 product summaries, 5 quantified anonymous cases, the sitemap and the basic legal support pages, plus more real office and lab imagery.',
         detail: 'The site can now support brand introduction, route screening, proof review, case reading, direct business contact and launch-support information in one public structure.',
       },
       latestHeader: {
         eyebrow: 'Recent Items',
-        title: 'Build the public layer on factual updates first, then expand the content library',
+        title: 'Continuously improving website content',
         description:
           'The current stage focuses on website progress and public-information development, with room to add milestones, activities and more approved company news later.',
       },
@@ -2594,7 +2594,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
         },
       ],
       archiveNote:
-        'This update page already works as a factual progress log for the formal public site. It can later evolve into a more complete brand and content center if the publishing rhythm stabilizes.',
+        'Continuously updating company dynamics and product information.',
       pageCta: {
         eyebrow: 'Keep Browsing',
         title: 'Move from public updates into direct discussion',

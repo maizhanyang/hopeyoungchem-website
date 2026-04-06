@@ -278,7 +278,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
           label: 'View technology',
           page: 'technology',
         },
-        note: 'If the formal launch later adds filing information, enterprise WeChat or a new data system, this page should be updated to match the real workflow.',
+        note: 'This page will be updated as new information becomes available.',
       },
       detailTitle: 'Current Public Handling',
       detailCopy:
@@ -287,7 +287,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
         eyebrow: 'Current Version',
         title: 'The current site keeps data handling simple and explicit',
         description:
-          'The public layer focuses on brand information, product summaries, anonymous cases, proof documents and direct contact paths without inventing heavier online processes.',
+          'The website presents brand information, product summaries, case studies, qualifications and direct contact paths.',
       },
       sections: [
         {
@@ -316,7 +316,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
           title: 'Corrections and updates',
           paragraphs: [
             'If information has already been shared through phone, email or WeChat and needs to be corrected, supplemented or clarified, visitors can continue through the public business email or phone channels.',
-            'As the formal public version evolves, this page should be updated whenever a real new data intake method is enabled.',
+            'This page is updated as new features and data sources are added.',
           ],
         },
       ],
@@ -327,7 +327,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
         eyebrow: 'Terms',
         title: 'Set the usage boundary for the public materials',
         lead:
-          'The site currently provides brand introduction, public product summaries, anonymous case expression, proof modules and formal contact entry points. It does not replace project agreements, full technical files or formal quotations.',
+          'The website provides brand introduction, product summaries, case studies, qualifications and contact information. Detailed technical documents and quotations are provided through direct communication.',
         supporting:
           'All grade data, outcomes and case metrics appear here as public summaries only. Batch-specific values, testing conditions, supply terms and delivery arrangements still depend on later technical and commercial confirmation.',
         primary: {
@@ -342,7 +342,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
       },
       detailTitle: 'Public Use Rules',
       detailCopy:
-        'The website works as a formal public entry point, not as a substitute for the company\'s full sales, technical and legal workflow.',
+        'The website serves as the company online presence and does not replace formal business agreements.',
       intro: {
         eyebrow: 'Use Scope',
         title: 'First define what the site is for, then move into deeper discussion',
@@ -354,7 +354,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
           title: 'Public pages support the first round only',
           paragraphs: [
             'The homepage, solutions, applications, technology, about, updates and contact pages are built on materials that are already confirmed for public release and are meant to support first-round understanding.',
-            'If a visitor needs full TDS, SDS, sample handling, project scheduling, quotations or a joint-development plan, the next step should be direct communication through the formal contact channels.',
+            'For TDS, SDS, samples, quotations or joint development plans, please contact us directly.',
           ],
         },
         {
@@ -376,7 +376,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
           title: 'The site will continue to change with approval scope',
           paragraphs: [
             'As the approval scope expands, the website may later add named cases, more certifications, more product summaries, filing information and downloadable documents.',
-            'Until those additions are formally released, the current version should not be read as a promise beyond what is already shown on the page.',
+            'The content shown represents currently available information.',
           ],
         },
       ],
@@ -407,7 +407,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
         eyebrow: 'Public Materials',
         title: 'Unify the usage boundary for brand, imagery, proof files and product summaries',
         description:
-          'A formal website should not only publish content, but also explain what is openly readable and what still belongs inside direct communication workflows.',
+          'The website clearly presents publicly available information and guides visitors to direct contact for detailed technical discussions.',
       },
       sections: [
         {
@@ -440,7 +440,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
           ],
         },
       ],
-      note: 'This is already enough for the current launch-stage public layer. A later media kit, distributor kit or download center can introduce more detailed licensing rules if needed.',
+      note: 'Sufficient for current launch. Additional media and download resources may be added in the future.',
     },
     sitemap: {
       hero: {
@@ -449,7 +449,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
         lead:
           'The current site can already support brand presentation, material judgement, proof review, case reading and direct business contact in one public structure.',
         supporting:
-          'This page helps first-time visitors locate the right entry quickly and gives the formal launch a more complete support layer.',
+          'This page helps visitors navigate the website and find the information they need.',
         primary: {
           label: 'Contact us',
           page: 'contact',
@@ -462,7 +462,7 @@ export const supportContent: Record<Locale, SupportLocaleContent> = {
       },
       detailTitle: 'Public Entry Index',
       detailCopy:
-        'Bringing main pages, support pages and direct contact details into one place makes the public layer feel like a complete website rather than a loose set of pages.',
+        'The sitemap gathers all pages and contact information for easy navigation.',
       intro: {
         eyebrow: 'Index',
         title: 'See the structure first, then choose the best entry point',
