@@ -1,9 +1,11 @@
 import { lazy, Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
+import { siteStatus } from './config/siteStatus'
 import { pageOrder, siteContent, type Locale, type PageKey } from './content/siteContent'
 import { utilityPageOrder, supportContent, type UtilityPageKey } from './content/supportContent'
 import { buildPath, getPageTitle } from './utils/navigation'
 import { usePageMetadata } from './hooks/usePageMetadata'
+import { SiteOfflinePage } from './pages/SiteOfflinePage'
 
 import { SiteHeader, SiteFooter } from './components/layout'
 import { PageLoader } from './components/common/PageLoader'
@@ -94,6 +96,14 @@ function UtilityPage({ locale, page }: { locale: Locale; page: UtilityPageKey })
 }
 
 function App() {
+  if (siteStatus.isOffline) {
+    return (
+      <Routes>
+        <Route path="*" element={<SiteOfflinePage />} />
+      </Routes>
+    )
+  }
+
   return (
     <Routes>
       {pageOrder.map((page) => (

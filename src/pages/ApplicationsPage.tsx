@@ -14,6 +14,30 @@ import meetingRoomRealImage from '../assets/media/provided/meeting-room-real.jpg
 import researchScene2Image from '../assets/media/provided/research-scene-2.jpg'
 import officePersonImage from '../assets/media/provided/office-person-1.jpg'
 
+function ApplicationsProofSection({ locale }: { locale: Locale }) {
+  const content = siteContent[locale].applications
+
+  return (
+    <section className="content-section applications-proof-section">
+      <div className="applications-proof-shell">
+        <SectionHeader section={content.proofHeader} />
+        <div className="applications-proof-grid">
+          {content.proofPoints.map((item, index) => (
+            <article className="applications-proof-card" key={item.title}>
+              <span className="applications-proof-index">{String(index + 1).padStart(2, '0')}</span>
+              <div className="applications-proof-copy">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <span>{item.detail}</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function ApplicationsCasesSection({ locale }: { locale: Locale }) {
   const content = siteContent[locale].applications
   const caseImages = [
@@ -33,7 +57,7 @@ function ApplicationsCasesSection({ locale }: { locale: Locale }) {
             caseStudy={item}
             locale={locale}
             image={caseImages[index % caseImages.length]}
-            reverse={false}
+            reverse={index % 2 === 1}
             index={index}
           />
         ))}
@@ -121,20 +145,21 @@ export function ApplicationsPage({ locale }: { locale: Locale }) {
               title:
                 locale === 'zh'
                   ? '先让客户看到我们理解的问题'
-                  : 'Show the problem understanding first',
+                  : 'Show problem understanding first',
               description: content.overview,
             }}
           />
           <div className="page-editorial-side">
             <p>
               {locale === 'zh'
-                ? '行业应用页不堆客户名称，而是用更适合商务沟通的方式，把痛点、方案路径和交付结果串成一条阅读线。'
-                : 'Instead of listing customer names, the applications page keeps a business-ready reading flow that connects challenge, approach and delivery outcome.'}
+                ? '先找与你工况更接近的案例,再看这些案例背后的适配信号,最后决定回到方案页、技术页还是直接联系。'
+                : 'Start with the cases that feel closest to your operating conditions, then read the fit signals behind them, and finally decide whether the next step belongs in solutions, technology or direct contact.'}
             </p>
           </div>
         </div>
       </section>
 
+      <ApplicationsProofSection locale={locale} />
       <ApplicationsCasesSection locale={locale} />
       <ApplicationsFocusSection locale={locale} />
       <ApplicationsPageCta locale={locale} />

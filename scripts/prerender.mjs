@@ -13,6 +13,8 @@ import { resolve, dirname, join } from 'path'
 
 // ===================== 路由配置 =====================
 
+const offlineMode = true
+
 const pageOrder = ['home', 'solutions', 'applications', 'technology', 'about', 'news', 'contact']
 const utilityPageOrder = ['sitemap', 'copyright', 'terms', 'privacy']
 const pageSlugs = {
@@ -96,6 +98,16 @@ const pageDescriptions = {
     terms: 'Hope Young Chemical Technology terms of service.',
     privacy: 'Hope Young Chemical Technology privacy policy.',
   },
+}
+
+const offlineTitles = {
+  zh: '网站暂停访问 | 虹扬化工',
+  en: 'Site Temporarily Offline | Hope Young',
+}
+
+const offlineDescriptions = {
+  zh: '因备案与审核安排，虹扬官网当前暂停访问。审核完成后将恢复正常浏览。',
+  en: 'The Hope Young website is temporarily offline for filing and review. Access will resume once the review is complete.',
 }
 
 // ===================== 生成 HTML =====================
@@ -186,8 +198,8 @@ function main() {
   for (const locale of locales) {
     for (const page of allPages) {
       const path = buildPath(locale, page)
-      const title = pageTitles[locale][page]
-      const description = pageDescriptions[locale][page]
+      const title = offlineMode ? offlineTitles[locale] : pageTitles[locale][page]
+      const description = offlineMode ? offlineDescriptions[locale] : pageDescriptions[locale][page]
       const fullUrl = `${siteInfo.url}${path}`
       const lang = locale === 'zh' ? 'zh-CN' : 'en'
 

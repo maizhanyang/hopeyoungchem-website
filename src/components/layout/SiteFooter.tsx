@@ -33,9 +33,8 @@ function FooterLinkColumn({
 
 export function SiteFooter({ locale, page }: { locale: Locale; page: RouteKey }) {
   const content = siteContent[locale]
-  const { phones, address } = siteConfig.contacts
+  const { primaryPhone, address } = siteConfig.contacts
   const { icpNumber, publicSecurityNumber, publicSecurityUrl } = siteConfig.legal
-  const primaryPhone = phones[0]
   const year = new Date().getFullYear()
   const registrationLine =
     locale === 'zh'

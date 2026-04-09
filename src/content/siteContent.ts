@@ -13,7 +13,13 @@ import officeWorkspace from '../assets/media/provided/office-workspace.jpg'
 import patentStorageDevice from '../assets/media/provided/patent-storage-device.jpg'
 import researchScene1 from '../assets/media/provided/research-scene-1.jpg'
 import businessLicense from '../assets/media/provided/business-license.jpg'
+import factoryWorkshopDetail from '../assets/media/provided/factory-workshop-detail.jpg'
+import factoryWorkshopWide from '../assets/media/provided/factory-workshop-wide.jpg'
 import highTechCertificate from '../assets/media/provided/high-tech-certificate.jpg'
+import validationScene7068 from '../assets/media/provided/validation-scene-7068.png'
+import validationScene7088 from '../assets/media/provided/validation-scene-7088.png'
+import validationScene7098 from '../assets/media/provided/validation-scene-7098.png'
+import validationScene9 from '../assets/media/provided/validation-scene-9.png'
 
 export type Locale = 'zh' | 'en'
 export type PageKey =
@@ -56,6 +62,7 @@ export type MaterialCard = {
   name: string
   useFor: string
   features: string[]
+  representativeGrades?: string[]
   customization: string
 }
 
@@ -77,6 +84,7 @@ export type CaseStudy = {
   solution: string
   material: string
   outcome: string
+  fitSignal?: string
 }
 
 export type PhotoCard = {
@@ -126,6 +134,11 @@ export type ContactOption = {
   note: string
 }
 
+export type ContactPhone = {
+  name: string
+  number: string
+}
+
 export type PageCtaItem = {
   eyebrow?: string
   title: string
@@ -140,6 +153,89 @@ export type PageCtaContent = {
   items: PageCtaItem[]
   primary: ActionLink
   secondary?: ActionLink
+}
+
+export type HomeStatementContent = {
+  eyebrow: string
+  title: string
+  lead: string
+  supporting: string
+  note: string
+  tags: string[]
+  proofItems: Array<{
+    value: string
+    label: string
+  }>
+  primary: ActionLink
+  secondary: ActionLink
+  visual: {
+    primaryFrames: Array<{
+      label: string
+      image: string
+      alt: string
+    }>
+    secondaryFrames: Array<{
+      label: string
+      image: string
+      alt: string
+    }>
+    captionEyebrow: string
+    captionTitle: string
+    captionDescription: string
+  }
+}
+
+export type HomeResultItem = {
+  value: string
+  label: string
+  detail: string
+}
+
+export type HomeResultStripContent = {
+  eyebrow: string
+  title: string
+  description: string
+  items: HomeResultItem[]
+}
+
+export type HomeProblemRoute = {
+  eyebrow: string
+  title: string
+  description: string
+  outcome: string
+  page: PageKey
+}
+
+export type HomeProblemRoutesContent = {
+  eyebrow: string
+  title: string
+  description: string
+  items: HomeProblemRoute[]
+}
+
+export type HomeTrustPanel = {
+  eyebrow: string
+  title: string
+  description: string
+  image: string
+  alt: string
+}
+
+export type HomeTrustShowcaseContent = {
+  eyebrow: string
+  title: string
+  description: string
+  quote: string
+  panels: HomeTrustPanel[]
+}
+
+export type HomeConversionContent = {
+  eyebrow: string
+  title: string
+  description: string
+  quickPoints: string[]
+  primary: ActionLink
+  secondary: ActionLink
 }
 
 type LocalizedValue = Record<Locale, string>
@@ -195,6 +291,10 @@ type ContactPageContent = {
   hero: HeroContent
   note: string
   options: ContactOption[]
+  summaryTitle: string
+  summaryDescription: string
+  detailTitle: string
+  detailDescription: string
   hubTitle: string
   hubDescription: string
   channelLabels: ContactLabels
@@ -203,6 +303,17 @@ type ContactPageContent = {
   guideDescription: string
   guideItems: string[]
   guideNote: string
+}
+
+type AboutCollaborationContent = {
+  header: SectionHeaderContent
+  narrative: string
+  valueCards: FeatureCard[]
+}
+
+type TechnologyValidationContent = {
+  header: SectionHeaderContent
+  photos: PhotoCard[]
 }
 
 export type LocaleContent = {
@@ -239,6 +350,11 @@ export type LocaleContent = {
     }
   }
   home: {
+    statement: HomeStatementContent
+    resultStrip: HomeResultStripContent
+    problemRoutes: HomeProblemRoutesContent
+    trustShowcase: HomeTrustShowcaseContent
+    conversionCta: HomeConversionContent
     hero: HeroContent
     brandIntro: SectionHeaderContent
     portalHeader: SectionHeaderContent
@@ -263,6 +379,9 @@ export type LocaleContent = {
   solutions: {
     hero: HeroContent
     intro: string
+    guideHeader: SectionHeaderContent
+    guideCards: FeatureCard[]
+    platformHeader: SectionHeaderContent
     materials: MaterialCard[]
     sampleHeader: SectionHeaderContent
     samples: ProductShowcase[]
@@ -278,6 +397,8 @@ export type LocaleContent = {
   applications: {
     hero: HeroContent
     overview: string
+    proofHeader: SectionHeaderContent
+    proofPoints: FeatureCard[]
     cases: CaseStudy[]
     focusHeader: SectionHeaderContent
     focusAreas: FeatureCard[]
@@ -289,6 +410,7 @@ export type LocaleContent = {
     pillars: FeatureCard[]
     galleryHeader: SectionHeaderContent
     gallery: PhotoCard[]
+    validationSection: TechnologyValidationContent
     labHeader: SectionHeaderContent
     labCards: CredentialCard[]
     pageCta: PageCtaContent
@@ -296,6 +418,7 @@ export type LocaleContent = {
   about: {
     hero: HeroContent
     story: string
+    collaborationSection: AboutCollaborationContent
     values: FeatureCard[]
     timeline: Array<{
       year: string
@@ -331,10 +454,9 @@ export type SiteConfig = {
     pageDescriptions: Record<PageKey, LocalizedValue>
   }
   contacts: {
-    phones: Array<{
-      name: string
-      number: string
-    }>
+    primaryPhone: ContactPhone
+    featuredPhones: ContactPhone[]
+    phones: ContactPhone[]
     address: string
     officeAddress: string
     labAddress: string
@@ -442,6 +564,11 @@ export const siteConfig: SiteConfig = {
     pageDescriptions,
   },
   contacts: {
+    primaryPhone: { name: '张俊(线下销售)', number: '13922297800' },
+    featuredPhones: [
+      { name: '张俊(线下销售)', number: '13922297800' },
+      { name: '何永华(线下销售)', number: '18620031360' },
+    ],
     phones: [
       { name: '吴润东(线上销售)', number: '18148928019' },
       { name: '张俊(线下销售)', number: '13922297800' },
@@ -610,22 +737,199 @@ export const siteContent: Record<Locale, LocaleContent> = {
       },
     },
     home: {
-      hero: {
+      statement: {
         eyebrow: '关键技术伙伴',
-        title: '为高端制造提供关键粘接方案',
+        title: '粘接未来，赋能智造',
         lead:
-          '为电子、高端制造与新能源项目提供从材料选型到工艺落地的完整粘接方案',
+          '以自主核心技术，为高端制造提供关键粘接解决方案',
         supporting:
-          '依托硕博团队、知识产权积累与协同制造能力,把需求判断、技术沟通、样品验证与稳定交付放进同一条项目链路',
+          '虹扬围绕电子、高端制造与新能源项目，把材料判断、验证节奏、协同制造与正式交付放进同一条项目主线，让首次接触就更接近真实项目启动。',
+        note: '先把协同能力说明白，再进入样品、资料与量产节奏沟通。',
+        tags: ['电子装配', '标签与包装', '新能源功能层', '联合验证'],
+        proofItems: [
+          { value: '4 硕 + 2 博', label: '研发团队' },
+          { value: '17 项', label: '公开专利条目' },
+          { value: '双主体', label: '协同制造与交付' },
+          { value: '4 组', label: '验证现场记录' },
+        ],
         primary: {
-          label: '联系销售',
+          label: '发起项目沟通',
+          page: 'contact',
+        },
+        secondary: {
+          label: '先看材料体系',
+          page: 'solutions',
+        },
+        visual: {
+          primaryFrames: [
+            {
+              label: '研发现场',
+              image: researchScene2,
+              alt: '虹扬实验场景主视觉',
+            },
+            {
+              label: '实验验证',
+              image: researchScene1,
+              alt: '研发实验操作与验证场景',
+            },
+            {
+              label: '制造支撑',
+              image: factoryWorkshopWide,
+              alt: '车间全景与生产支撑环境',
+            },
+          ],
+          secondaryFrames: [
+            {
+              label: '项目讨论',
+              image: meetingRoomReal,
+              alt: '会议室中的项目路线讨论场景',
+            },
+            {
+              label: '日常协同',
+              image: officeWorkspace,
+              alt: '办公室中的项目协同与工作环境',
+            },
+            {
+              label: '沟通界面',
+              image: officePerson1,
+              alt: '办公室中的客户沟通与业务协同场景',
+            },
+          ],
+          captionEyebrow: 'Project Rhythm',
+          captionTitle: '从需求判断到验证导入，先建立一条更顺的工业协同路线。',
+          captionDescription: '同一支团队对齐应用场景、实验验证、资料沟通与量产节奏。',
+        },
+      },
+      resultStrip: {
+        eyebrow: '结果证据',
+        title: '首页先把值得继续沟通的四层判断讲清楚。',
+        description:
+          '先建立方向判断、公开证明、协同关系与正式联系入口，再进入更深一层的技术资料沟通。',
+        items: [
+          {
+            value: '4 大体系',
+            label: '材料路线',
+            detail: '永久强粘、可移除、标签包装与功能特种四条公开主线。',
+          },
+          {
+            value: '9 个摘要',
+            label: '公开型号',
+            detail: '先判断代表产品方向，再进入更深层资料沟通。',
+          },
+          {
+            value: '17 项专利',
+            label: '公开技术基础',
+            detail: '让研发与制造能力在进入联系前就有明确背书。',
+          },
+          {
+            value: '5 条热线',
+            label: '正式联系入口',
+            detail: '业务电话、邮箱、微信与双地址都已经进入公开链路。',
+          },
+        ],
+      },
+      problemRoutes: {
+        eyebrow: '典型需求入口',
+        title: '先按问题进入，再决定从哪里往下看。',
+        description:
+          '把首页做成项目判断入口，而不是资料目录，让客户更快确认你们是否懂自己的场景。',
+        items: [
+          {
+            eyebrow: 'Route 01',
+            title: '先判断材料方向',
+            description: '适合已经带着基材、性能目标或型号比较需求进站的团队。',
+            outcome: '先缩小到正确的材料平台。',
+            page: 'solutions',
+          },
+          {
+            eyebrow: 'Route 02',
+            title: '先了解主体与协同关系',
+            description: '适合第一问题是“广州虹扬和中山置盈是什么关系、是否值得正式沟通”的访客。',
+            outcome: '先看主体边界、协同逻辑和长期配合方式。',
+            page: 'about',
+          },
+          {
+            eyebrow: 'Route 03',
+            title: '先对齐验证与交付节奏',
+            description: '适合正在打样、联合开发或需要更快推进技术沟通的工业客户。',
+            outcome: '看研发协同、实验方法与交付支撑。',
+            page: 'technology',
+          },
+        ],
+      },
+      trustShowcase: {
+        eyebrow: '能力证明',
+        title: '先把四个最关键的信任点讲透，再决定要不要继续往下谈。',
+        description:
+          '首页承担的不是资料堆砌，而是让客户快速判断这家公司是否具备长期配合价值。',
+        quote:
+          '对工业客户来说，真正重要的不是一句“我们很专业”，而是能否看出这家公司具备稳定供应、技术协同、长期规划与制造支撑。',
+        panels: [
+          {
+            eyebrow: 'Supply Chain',
+            title: '供应链稳定保障',
+            description: '通过产能协调与供应链联动，关键原料和交付节奏更稳定，也让订单承接能力更具抗风险韧性。',
+            image: factoryWorkshopWide,
+            alt: '协同制造车间与供应链支撑环境',
+          },
+          {
+            eyebrow: 'Technical Linkage',
+            title: '技术与研发联动',
+            description: '共享行业洞察与研发资源，让技术判断、工艺优化和客户验证形成更有效的联动关系。',
+            image: researchScene1,
+            alt: '实验室中的研发验证与技术联动场景',
+          },
+          {
+            eyebrow: 'Strategic Coordination',
+            title: '战略发展协同',
+            description: '广州虹扬与中山置盈保持独立法人、长期互信和协同规划，让前端市场判断与后端交付能力形成资源合力。',
+            image: meetingRoomReal,
+            alt: '项目讨论与战略协同沟通场景',
+          },
+          {
+            eyebrow: 'Manufacturing Proof',
+            title: '协同制造证明',
+            description: '真实车间设备和制造现场进入首页信任层，让协同制造能力不只是文字说明，而是可被直接感知的支撑条件。',
+            image: factoryWorkshopDetail,
+            alt: '工厂设备层与制造现场',
+          },
+        ],
+      },
+      conversionCta: {
+        eyebrow: '下一步',
+        title: '给我们一个应用场景，我们先帮你判断材料方向。',
+        description:
+          '当首页已经让客户确认“你们懂我的问题”，最后一步就该是更轻的项目发起动作。',
+        quickPoints: [
+          '适合正在做样品评估、资料申请或验证计划的团队',
+          '适合希望先判断路线，再决定是否深入拿 TDS / SDS 的客户',
+          '适合需要提前对齐技术沟通与交付节奏的人',
+        ],
+        primary: {
+          label: '进入联系页',
           page: 'contact',
         },
         secondary: {
           label: '查看解决方案',
           page: 'solutions',
         },
-        note: '让需求判断、技术沟通、样品验证与稳定交付放进同一条项目链路',
+      },
+      hero: {
+        eyebrow: '关键技术伙伴',
+        title: '粘接未来，赋能智造',
+        lead:
+          '以自主核心技术，为高端制造提供关键粘接解决方案',
+        supporting:
+          '虹扬围绕电子、高端制造与新能源项目，把材料判断、验证节奏、协同制造与正式交付放进同一条项目主线，让首次接触就更接近真实项目启动。',
+        primary: {
+          label: '发起项目沟通',
+          page: 'contact',
+        },
+        secondary: {
+          label: '先看材料体系',
+          page: 'solutions',
+        },
+        note: '先把协同能力说明白，再进入样品、资料与量产节奏沟通。',
       },
       brandIntro: {
         eyebrow: '公司简介',
@@ -858,11 +1162,11 @@ export const siteContent: Record<Locale, LocaleContent> = {
     solutions: {
       hero: {
         eyebrow: '高端材料粘接方案',
-        title: '先判断体系 再进入型号与验证',
+        title: '先判断体系，再进入代表型号与验证',
         lead:
-          '围绕四大体系 代表产品与应用方向组织公开解决方案',
+          '围绕四大材料平台、代表型号与项目进入方式组织公开解决方案',
         supporting:
-          '当项目进入样品评估、技术资料申请或更深层沟通阶段,再由销售与技术团队根据具体场景提供进一步资料。',
+          '网站先展示可公开的平台能力与型号边界; 当项目进入资料评估、样品验证或供货讨论阶段,再由销售与技术团队根据真实场景继续对接。',
         primary: {
           label: '联系销售',
           page: 'contact',
@@ -871,15 +1175,44 @@ export const siteContent: Record<Locale, LocaleContent> = {
           label: '查看行业应用',
           page: 'applications',
         },
-        note: '对外展示重点是"应用方向 + 代表产品 + 定制空间 + 沟通方式"。',
+        note: '这一页的公开逻辑是: 先看平台适配,再看代表型号,最后决定进入哪一层沟通。',
       },
       intro:
-        '虹扬以"体系能力 + 应用场景 + 代表产品 + 定制方向"的方式组织解决方案内容,帮助客户在首轮浏览中更快识别潜在匹配路线。',
-      sampleHeader: {
-        eyebrow: '示例产品表达',
-        title: '9 个代表产品概览',
+        '虹扬把解决方案组织成更接近真实工业采购的阅读路径: 先判断体系适配,再看代表型号,最后决定是否进入资料、样品或供货沟通。',
+      guideHeader: {
+        eyebrow: '浏览方法',
+        title: '让首次访问者在 30 秒内判断要不要继续进入沟通',
         description:
-          '这一轮将 7068#、7088#、1088#、7098#、9#、V08,以及新增的 9088#、9098# 与轮胎胶纳入首批公开产品摘要,让客户先理解典型路线与应用边界,再进入更详细的资料沟通。',
+          '解决方案页不是完整产品目录,而是把公开判断顺序讲清楚: 先看体系,再看代表型号,最后进入对应阶段的商务与技术讨论。',
+      },
+      guideCards: [
+        {
+          title: '先看基材与工艺约束',
+          description: '从被粘物、表面能、施工窗口和量产节奏出发,先排除明显不匹配的平台。',
+          detail: '这比一开始逐个比较型号更接近工业项目的首轮筛选方式。',
+        },
+        {
+          title: '再看代表型号与公开边界',
+          description: '用公开型号理解典型性能方向、定制空间和资料开放边界。',
+          detail: '让客户先判断是否值得继续索取更深层文件与样品。',
+        },
+        {
+          title: '最后按项目阶段进入沟通',
+          description: '资料申请、样品验证和供货讨论对应不同节奏,入口选对,推进会更快。',
+          detail: '这也是销售与技术团队更高效接力的前提。',
+        },
+      ],
+      platformHeader: {
+        eyebrow: '四大平台',
+        title: '四条公开进入路线,而不是一串分散型号',
+        description:
+          '先把项目放进更合适的平台语境,再看代表型号与验证重点,客户会更容易判断是否继续深入。',
+      },
+      sampleHeader: {
+        eyebrow: '代表型号',
+        title: '9 个代表型号,帮助客户判断是否值得继续拿资料',
+        description:
+          '7068#、7088#、1088#、7098#、9#、V08、9088#、9098# 与轮胎胶作为首批公开型号表达,用于帮助客户理解路线边界,而不是替代完整技术资料。',
       },
       samples: [
         {
@@ -1005,32 +1338,36 @@ export const siteContent: Record<Locale, LocaleContent> = {
           name: '永久性强粘接体系',
           useFor: '专注于需要永久性、结构性粘接的高强度应用,适用于 EVA、海绵、橡塑、金属、玻璃及复合材料。',
           features: ['极高初黏力', '高最终剥离强度', '耐候耐温湿', '抗蠕变'],
-          customization: '可按基材极性、附着力、耐高温、耐化学腐蚀与涂布工艺要求定制,公开代表产品包括 7068# 与轮胎胶。',
+          representativeGrades: ['7068#', '轮胎胶'],
+          customization: '可按基材极性、附着力、耐高温、耐化学腐蚀与涂布工艺要求定制,适合先从强力永久粘接路线进入讨论。',
         },
         {
           name: '可移除 / 临时固定体系',
           useFor: '服务于需要强力临时粘接或使用后需干净移除的应用,广泛用于电子保护膜、广告标识、表面保护等。',
           features: ['高粘接力', '洁净可移除', '粘接寿命可控', '不残胶'],
-          customization: '可定制剥离力曲线、特定基材的移除性以及光学透明度,公开代表产品包括 7088#、7098#、9088# 与 9098#。',
+          representativeGrades: ['7088#', '7098#', '9088#', '9098#'],
+          customization: '可定制剥离力曲线、特定基材的移除性以及光学透明度,适合先从可移与临时固定的边界判断进入讨论。',
         },
         {
           name: '标签与包装专用胶粘剂体系',
           useFor: '专为标签行业和高端印刷包装的覆膜、上光工艺设计,适用于各类纸质 / 薄膜标签及包装场景。',
           features: ['快速润湿', '高速贴标适配', '耐水耐油', '高透明高光泽'],
-          customization: '可按标签基材、被贴物和食品医药安全标准定制,公开代表产品包括 1088# 标签胶与 9# 上光膜胶。',
+          representativeGrades: ['1088#', '9#'],
+          customization: '可按标签基材、被贴物和食品医药安全标准定制,适合先从标签与包装的工艺窗口进入讨论。',
         },
         {
           name: '功能性特种胶粘剂体系',
           useFor: '满足电子设备组装、汽车零部件固定、新能源电池模组封装等复杂粘接需求。',
           features: ['双面粘接', '高柔韧与抗冲击', '电气性能可定制', '极端环境耐受'],
-          customization: '可针对复合基材、电气性能、化学耐受性和复杂应力环境进行联合开发,公开代表产品包括 V08 与 Y05 等特种系列。',
+          representativeGrades: ['V08'],
+          customization: '可针对复合基材、电气性能、化学耐受性和复杂应力环境进行联合开发,适合先从功能性与多性能平衡需求进入讨论。',
         },
       ],
       processHeader: {
         eyebrow: '协同流程',
-        title: '让客户知道一条咨询如何进入更具体的材料讨论',
+        title: '从首次咨询到样品导入,一条更清楚的协同节奏',
         description:
-          '工业客户关心的不只是材料本身,也关心合作节奏是否清晰。解决方案页需要让沟通路径更透明。',
+          '工业客户更关心"接下来会怎么推进"。这一页需要把咨询如何进入资料、打样和长期配合说清楚。',
       },
       process: [
         {
@@ -1055,34 +1392,46 @@ export const siteContent: Record<Locale, LocaleContent> = {
         },
       ],
       dataRequest: {
-        title: '资料开放策略',
+        title: '公开资料边界',
         description:
-          '展示公司的材料平台能力与产品概览,详细技术资料请直接联系我们。',
+          '网站先开放路线级理解,详细 TDS / SDS、批次参数与项目文件在明确场景后继续提供。',
         items: [
-          '材料平台、适用方向与能力概览。',
-          '咨询层:根据需求进入 TDS / SDS、样品和技术答疑流程。',
-          '项目层:涉及定制路径或特殊工艺时,按项目边界继续沟通。',
+          '公开层: 材料平台、适用方向、代表型号与能力概览。',
+          '咨询层: 根据需求进入 TDS / SDS、样品和技术答疑流程。',
+          '项目层: 涉及定制路径或特殊工艺时,按项目边界继续沟通。',
         ],
       },
       pageCta: {
         eyebrow: '下一步',
-        title: '按项目阶段继续推进',
-        description: '资料、样品与供货讨论对应不同节奏,先选更合适的进入方式。',
+        title: '现在更适合从哪一种方式进入',
+        description: '先选最贴近当前阶段的入口,再进入销售与技术的下一步配合。',
         items: [
           {
             eyebrow: '资料',
             title: '资料申请',
-            description: '适合先确认平台方向、公开资料边界与基础参数的项目。',
+            description: '适合先确认平台方向、公开资料边界和基础参数的项目。',
+            action: {
+              label: '进入资料沟通',
+              page: 'contact',
+            },
           },
           {
             eyebrow: '样品',
             title: '样品沟通',
-            description: '适合已经明确基材、工艺或验证目标的项目团队。',
+            description: '适合已经明确基材、工艺或关键验证指标的项目团队。',
+            action: {
+              label: '进入样品沟通',
+              page: 'contact',
+            },
           },
           {
             eyebrow: '供货',
             title: '供货讨论',
-            description: '适合进入导入、批量验证或长期配合阶段的客户。',
+            description: '适合进入导入、批量验证或长期稳定供货阶段的客户。',
+            action: {
+              label: '进入供货讨论',
+              page: 'contact',
+            },
           },
         ],
         primary: {
@@ -1098,11 +1447,11 @@ export const siteContent: Record<Locale, LocaleContent> = {
     applications: {
       hero: {
         eyebrow: '行业应用表达',
-        title: '从真实工况看方案路径',
+        title: '用真实工况判断方案路径',
         lead:
-          '用行业场景呈现问题 路径与结果',
+          '以匿名行业案例呈现问题、方案逻辑、材料方向与交付结果',
         supporting:
-          '当前版本优先展示对电子、高端制造与新能源场景的理解,后续如有授权再逐步增强实名案例证明。',
+          '当前版本优先证明我们是否理解电子、高端制造与新能源项目的真实约束; 如后续获得授权,再逐步增强实名案例证明。',
         primary: {
           label: '联系销售',
           page: 'contact',
@@ -1114,7 +1463,30 @@ export const siteContent: Record<Locale, LocaleContent> = {
         note: '案例结构统一为:痛点、方案、材料方向与交付结果。',
       },
       overview:
-        '行业应用页承担两个任务:让客户判断"你们懂不懂我的工艺场景",也让销售拥有一套更稳定的对外讲解模板。',
+        '行业应用页不只是讲"做过什么",更重要的是让客户判断"你们是否理解我的工况、验证压力和导入节奏"。',
+      proofHeader: {
+        eyebrow: '阅读方法',
+        title: '先看我们如何理解问题,再判断这些案例是否对你的项目有参考价值',
+        description:
+          '本页不依赖客户名称做背书,而是用更适合商务沟通的方式,把工况约束、方案路径、验证压力和结果表达串起来。',
+      },
+      proofPoints: [
+        {
+          title: '先看工况约束',
+          description: '关注被粘物、环境压力、产线节奏和终端要求是否与你的项目相似。',
+          detail: '相似工况比相似行业名称更有判断价值。',
+        },
+        {
+          title: '再看验证与导入逻辑',
+          description: '重点看我们如何处理可靠性、耐候性、洁净度或量产稳定性等验证节点。',
+          detail: '这能更快判断协同深度是否匹配。',
+        },
+        {
+          title: '最后决定下一页',
+          description: '若你已经看到类似路径,就继续回到方案页、技术页或直接进入联系。',
+          detail: '让每一次浏览都更接近真实项目推进。',
+        },
+      ],
       cases: [
         {
           title: '消费电子精密部件粘接',
@@ -1122,6 +1494,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           solution: '虹扬定向开发高洁净、低挥发的精密电子粘接材料路线,并同步提供全套验证支持文件与导入协同。',
           material: '以高洁净、低挥发的精密电子粘接材料体系为核心,面向结构件导入场景。',
           outcome: '最终帮助客户通过终端品牌方全部 6 项可靠性验证,获得两款旗舰机型结构件订单,并形成该型号年度稳定采购量超过 50 吨。',
+          fitSignal: '适合正在评估精密电子结构件、洁净要求和品牌验证门槛的项目。',
         },
         {
           title: '高端制造长效耐候粘接',
@@ -1129,6 +1502,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           solution: '双方联合开发高性能耐候粘接材料系列,并重点优化长期服役稳定性与复杂环境适应性。',
           material: '以高耐候粘接材料体系为核心,面向更严苛长期服役环境。',
           outcome: '合作产品经第三方检测,在 1000 小时紫外老化后剥离强度保持率超过 85%,并带动客户次年相关高端应用销售额提升 35%。',
+          fitSignal: '适合面临耐候、耐湿热和更高终端准入压力的制造项目。',
         },
         {
           title: '新能源电池模组封装场景',
@@ -1136,6 +1510,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           solution: '虹扬与客户围绕新能源电池应用边界联合攻关,开发满足多重性能平衡的特种弹性体胶粘剂路线。',
           material: '采用功能性特种胶粘剂体系,兼顾封装可靠性、耐受性与工艺可执行性。',
           outcome: '产品在 85°C 电解液中浸泡 30 天后,粘接强度保持率仍超过 90%,绝缘电阻率维持在 1012 Ω·cm 以上,并完成首批超过 5 吨的订单交付。',
+          fitSignal: '适合需要同时平衡绝缘、耐介质、耐热与柔韧性的新能源封装项目。',
         },
         {
           title: '通用胶粘带规模化生产优化',
@@ -1143,6 +1518,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           solution: '虹扬提供高稳定性、宽工艺窗口的通用型粘接材料方案,并同步输出配套工艺参数包。',
           material: '以高稳定性通用型粘接材料体系为核心,面向大规模连续生产场景。',
           outcome: '使用后客户产线因胶水波动导致的调试停机时间减少 20%,与胶粘剂相关的季度平均客诉率从 0.5% 下降至 0.3%,支撑其每年数千万平方米的稳定产出。',
+          fitSignal: '适合更关注批次稳定性、宽工艺窗口和连续化产线效率的规模化生产项目。',
         },
         {
           title: '高端标签材料性能升级',
@@ -1150,35 +1526,36 @@ export const siteContent: Record<Locale, LocaleContent> = {
           solution: '虹扬定制开发高附着力、可移型标签胶,并重点优化其对难粘基材的适应性。',
           material: '以高附着力可移型标签胶体系为核心,兼顾多基材适配与洁净移除表现。',
           outcome: '新标签产品在 HDPE 塑料瓶和涂层金属板上的初始剥离强度分别提升 150% 和 80%,帮助客户获得 3 家高端日化品牌供应商资质,并推动相关产品线年度毛利率提升 8 个百分点。',
+          fitSignal: '适合需要兼顾难粘基材附着力、可移除性和标签终端升级的项目。',
         },
       ],
       focusHeader: {
-        eyebrow: '理解重点',
-        title: '好的行业页不只展示结果,也要展示我们理解的问题',
+        eyebrow: '适配信号',
+        title: '如果你的项目也在关注这些问题,就值得继续往下谈',
         description:
-          '很多工业客户会先判断供应方是否真正理解工艺约束、验证压力和协同节奏,然后才愿意深入讨论材料。',
+          '客户通常不是被单一案例打动,而是被"这家公司理解我面临的取舍"说服。',
       },
       focusAreas: [
         {
           title: '产线适配',
           description: '关注施工窗口、涂布稳定性、反应节奏与量产可执行性。',
-          detail: '材料建议不能脱离产线现实约束。',
+          detail: '适合需要先验证导入可行性的团队。',
         },
         {
           title: '性能平衡',
-          description: '在强度、柔韧、耐候、耐介质与附着力之间寻找更可行的平衡点。',
-          detail: '帮助客户更快找到可落地的方案区间。',
+          description: '在强度、柔韧、耐候、耐介质与附着力之间寻找更可执行的平衡点。',
+          detail: '适合存在多目标冲突的项目。',
         },
         {
-          title: '长期配合',
-          description: '更适合持续优化、重复供货或多项目协同的工业合作关系。',
-          detail: '让一次咨询具备走向长期合作的基础。',
+          title: '协同节奏',
+          description: '从验证支持、样品迭代到持续供货,说明合作是否能跟上项目节奏。',
+          detail: '适合需要长期技术配合的工业客户。',
         },
       ],
       pageCta: {
         eyebrow: '继续进入',
-        title: '沿着场景继续推进讨论',
-        description: '案例页更像判断入口。确定方向后,可以继续进入更贴近项目阶段的页面。',
+        title: '确认方向后,让讨论进入更合适的下一页',
+        description: '案例页负责建立问题理解; 下一步要么回到材料路线,要么补足技术信任,要么直接开启项目沟通。',
         items: [
           {
             title: '回到材料路线',
@@ -1218,11 +1595,11 @@ export const siteContent: Record<Locale, LocaleContent> = {
     technology: {
       hero: {
         eyebrow: '研发协同',
-        title: '教授领衔 硕博协同',
+        title: '教授领衔，硕博协同',
         lead:
-          '把团队 方法与验证能力讲清楚',
+          '把团队、方法与验证能力讲清楚',
         supporting:
-          '官网表达聚焦教授牵引的技术方向、博士协同的研究视角,以及将学术方法转化为工业验证效率的能力。',
+          '官网表达聚焦教授牵引的技术方向、博士协同的研究视角，以及把学术方法转化为工业验证效率的能力。',
         primary: {
           label: '联系销售',
           page: 'contact',
@@ -1290,6 +1667,40 @@ export const siteContent: Record<Locale, LocaleContent> = {
           description: '配合"方案沟通、资料对接、联合开发"这类文案使用更合适。',
         },
       ],
+      validationSection: {
+        header: {
+          eyebrow: '验证现场',
+          title: '把真实样品测试与验证动作放进技术页',
+          description:
+            '这组照片展示的是样品测试、配方验证与导入前的小试现场，用来说明虹扬的技术判断并不是停留在纸面，而是进入了真实操作和验证流程。',
+        },
+        photos: [
+          {
+            src: validationScene7068,
+            alt: '7068# 胶样在实验台上的测试准备现场',
+            title: '验证现场',
+            description: '7068# 胶样的现场测试记录，展示从样品准备到手工验证的真实过程。',
+          },
+          {
+            src: validationScene7098,
+            alt: '7098# 胶样在实验室中的样品测试场景',
+            title: '样品测试',
+            description: '7098# 胶样进入实验台验证阶段，用现场照片说明测试节奏与留样过程。',
+          },
+          {
+            src: validationScene7088,
+            alt: '7088# 胶样在实验室中的配方验证场景',
+            title: '配方验证',
+            description: '7088# 胶样的操作验证画面，用于支撑配方判断和验证流程的公开表达。',
+          },
+          {
+            src: validationScene9,
+            alt: '9# 胶样在实验室中的导入验证场景',
+            title: '导入验证',
+            description: '9# 胶样的小试验证记录，体现项目导入前对材料表现和操作路径的真实确认。',
+          },
+        ],
+      },
       labHeader: {
         eyebrow: '公开证明模块',
         title: '把营业主体、高新证明、17 项专利条目与验证场景放进同一组公开证明',
@@ -1374,6 +1785,33 @@ export const siteContent: Record<Locale, LocaleContent> = {
       },
       story:
         '广州虹扬负责研发、销售与项目协同沟通,中山置盈承接生产、仓储与协同制造交付,双方共同构成从前端技术判断到后端稳定交付的整体能力。官网对外把虹扬定义为客户的"关键技术伙伴":从需求对接、路线判断、样品验证到工艺落地,用一套贯通研发、销售与制造的全周期支持方式服务电子、高端制造与新能源项目。',
+      collaborationSection: {
+        header: {
+          eyebrow: '战略协同关系',
+          title: '用正式口径说明广州虹扬与中山置盈的协同方式',
+          description:
+            '这部分不是模糊的一体化叙事，而是明确说明两家独立法人如何通过长期互信与协同运作，为客户提供更稳定、更高效、更具长期价值的支持。',
+        },
+        narrative:
+          '广州虹扬化工科技有限公司与中山置盈化工科技有限公司均为独立运营、股权清晰的法人主体。基于深厚的产业渊源与长期互信，双方建立了紧密的战略协同关系。中山置盈化工在基础化工原料领域具备扎实的产业基础与生产管理经验，广州虹扬则专注于下游市场的深度开拓、产品应用创新与客户技术服务。这种协同并不模糊主体边界，而是在各自清晰分工的前提下，形成更适合工业客户长期配合的整体能力。',
+        valueCards: [
+          {
+            title: '供应链稳定保障',
+            description: '通过产能协调与供应链高效联动，确保关键原料的稳定供应与品质一致性。',
+            detail: '这显著增强了订单交付的可靠性，也提高了项目推进中的抗风险能力。',
+          },
+          {
+            title: '技术与研发联动',
+            description: '共享行业洞察与技术资源，在研发方向与工艺优化上形成互补。',
+            detail: '这让创新成果转化更快，也让客户获得更具竞争力的解决方案支持。',
+          },
+          {
+            title: '战略发展协同',
+            description: '在市场布局与长期规划上保持同步，让前端方案判断与后端交付能力形成资源合力。',
+            detail: '这种协同是虹扬能够提供长期价值服务的重要基础，而不只是阶段性的业务配合。',
+          },
+        ],
+      },
       values: [
         {
           title: '自主研发与知识产权体系',
@@ -1543,9 +1981,9 @@ export const siteContent: Record<Locale, LocaleContent> = {
         eyebrow: '联系我们',
         title: '把资料 样品与项目沟通放进同一个正式入口',
         lead:
-          '5 条业务电话 商务邮箱 微信与双地址 一页直达',
+          '主联系人、商务邮箱、企业微信与双地址一页直达',
         supporting:
-          '无论是初步了解材料方向、申请技术资料,还是推进样品、验证和技术会议,都可以通过公开业务电话、商务邮箱与业务微信直接建立联系。',
+          '无论是初步了解材料方向、申请技术资料，还是推进样品、验证和技术会议，都可以先从主联系人、商务邮箱、企业微信和双地址进入正式沟通。',
         primary: {
           label: '查看解决方案',
           page: 'solutions',
@@ -1578,15 +2016,21 @@ export const siteContent: Record<Locale, LocaleContent> = {
           note: '这类项目更适合尽快进入更细的应用和验证讨论。',
         },
       ],
+      summaryTitle: '官方联系摘要',
+      summaryDescription:
+        '首次联系建议先从两位主联系人、商务邮箱、企业微信入口以及办公室 / 实验室地址进入，便于更快建立正式沟通。',
+      detailTitle: '全部公开联系人',
+      detailDescription:
+        '如需按具体协作角色继续分流，以下 5 个公开电话仍保留为官网正式联系渠道。',
       hubTitle: '正式联系信息',
       hubDescription:
-        '以下信息用于官网公开对外联系,适用于销售咨询、资料申请、技术会议安排、来访沟通和项目跟进。',
+        '以下信息用于官网公开对外联系，适用于销售咨询、资料申请、技术会议安排、来访沟通和项目跟进。',
       channelLabels: {
         phones: '业务电话',
-        wechat: '业务微信',
+        wechat: '企业微信入口',
         address: '办公 / 实验地址',
       },
-      qrcodeCaption: '可扫码添加业务微信,用于项目沟通、资料跟进与来访安排。',
+      qrcodeCaption: '当前先保留正式企业微信入口展示位，可用于项目沟通、资料跟进与来访安排。',
       guideTitle: '首次联系建议准备',
       guideDescription:
         '为了让销售与技术沟通更高效,建议在首次来电或添加微信前先整理以下信息。',
@@ -1699,22 +2143,199 @@ export const siteContent: Record<Locale, LocaleContent> = {
       },
     },
     home: {
-      hero: {
+      statement: {
         eyebrow: 'Key technical partner',
-        title: 'Critical bonding solutions for advanced manufacturing',
+        title: 'Bonding the Future, Enabling Intelligent Manufacturing',
         lead:
-          'Built around material selection validation and process landing for electronics advanced manufacturing and new-energy projects',
+          'Critical bonding solutions for advanced manufacturing, built on proprietary core technology',
         supporting:
-          'Supported by a graduate-level team, an IP-backed platform and coordinated manufacturing so requirement judgement, technical exchange, validation and delivery stay on one track',
+          'Hope Young supports electronics, advanced manufacturing and new-energy projects by keeping route judgement, validation rhythm, coordinated manufacturing and formal delivery inside one connected project line.',
+        note: 'Clarify the coordination model first, then move into samples, documents and production planning.',
+        tags: ['Electronics assembly', 'Labels and packaging', 'New-energy layers', 'Joint validation'],
+        proofItems: [
+          { value: '4M + 2PhD', label: 'R&D team' },
+          { value: '17', label: 'public patent entries' },
+          { value: '2 entities', label: 'coordinated delivery model' },
+          { value: '4 scenes', label: 'validation records' },
+        ],
         primary: {
-          label: 'Contact sales',
+          label: 'Start a project discussion',
+          page: 'contact',
+        },
+        secondary: {
+          label: 'See material systems',
+          page: 'solutions',
+        },
+        visual: {
+          primaryFrames: [
+            {
+              label: 'R&D scene',
+              image: researchScene2,
+              alt: 'Hope Young laboratory hero visual',
+            },
+            {
+              label: 'Validation',
+              image: researchScene1,
+              alt: 'Research and validation scene inside the lab',
+            },
+            {
+              label: 'Manufacturing',
+              image: factoryWorkshopWide,
+              alt: 'Factory floor and production support environment',
+            },
+          ],
+          secondaryFrames: [
+            {
+              label: 'Project room',
+              image: meetingRoomReal,
+              alt: 'Project route discussion inside the meeting room',
+            },
+            {
+              label: 'Coordination',
+              image: officeWorkspace,
+              alt: 'Office coordination and daily workspace',
+            },
+            {
+              label: 'Discussion',
+              image: officePerson1,
+              alt: 'Office communication and business coordination scene',
+            },
+          ],
+          captionEyebrow: 'Project Rhythm',
+          captionTitle: 'Move from requirement definition to validation through a smoother industrial collaboration path.',
+          captionDescription: 'One team aligns application context, lab validation, document exchange and production timing together.',
+        },
+      },
+      resultStrip: {
+        eyebrow: 'Proof first',
+        title: 'The homepage should clarify four trust layers before the deeper discussion begins.',
+        description:
+          'Establish route fit, public proof, coordinated structure and formal contact paths before moving into deeper technical detail.',
+        items: [
+          {
+            value: '4 systems',
+            label: 'Public routes',
+            detail: 'Permanent bonding, removable systems, label-packaging and specialty functional directions.',
+          },
+          {
+            value: '9 summaries',
+            label: 'Public grades',
+            detail: 'Enough to judge route fit before asking for deeper technical documents.',
+          },
+          {
+            value: '17 patents',
+            label: 'Technical base',
+            detail: 'A clearer public signal that development and manufacturing are both real.',
+          },
+          {
+            value: '5 contacts',
+            label: 'Direct channels',
+            detail: 'Phones, email, WeChat and both addresses already sit inside the public contact layer.',
+          },
+        ],
+      },
+      problemRoutes: {
+        eyebrow: 'Entry Paths',
+        title: 'Start with the right question, then choose the next page.',
+        description:
+          'The homepage should help industrial visitors find the right entry point rather than browse the site like a document index.',
+        items: [
+          {
+            eyebrow: 'Route 01',
+            title: 'Start with the material system',
+            description: 'Best when the visitor is already comparing substrates, target properties or candidate grades.',
+            outcome: 'Narrow the project to the right material platform first.',
+            page: 'solutions',
+          },
+          {
+            eyebrow: 'Route 02',
+            title: 'Start with the company relationship',
+            description: 'Best when the first question is who Hope Young is, how it works with Zhongshan Zhiying and whether that coordination model is credible.',
+            outcome: 'Review the entity structure, role split and long-term support logic first.',
+            page: 'about',
+          },
+          {
+            eyebrow: 'Route 03',
+            title: 'Start with validation and delivery rhythm',
+            description: 'Best for industrial teams already preparing samples, joint validation or faster technical coordination.',
+            outcome: 'Review the team, method and validation-support structure.',
+            page: 'technology',
+          },
+        ],
+      },
+      trustShowcase: {
+        eyebrow: 'Trust Signals',
+        title: 'Show the four trust signals before asking for the next conversation.',
+        description:
+          'The homepage is not meant to act as a document center. Its role is to help industrial visitors decide whether Hope Young is worth engaging further.',
+        quote:
+          'Industrial buyers do not trust a company because it says it is professional. They trust what they can see: supply stability, technical coordination, strategic alignment and manufacturing support.',
+        panels: [
+          {
+            eyebrow: 'Supply Chain',
+            title: 'Stable supply-chain assurance',
+            description: 'Capacity coordination and efficient supply linkage help keep key materials, quality consistency and delivery rhythm more dependable.',
+            image: factoryWorkshopWide,
+            alt: 'Coordinated workshop environment supporting supply stability',
+          },
+          {
+            eyebrow: 'Technical Linkage',
+            title: 'R&D and technical linkage',
+            description: 'Shared insight and technical resources create a stronger connection between route judgement, process optimization and customer-side validation.',
+            image: researchScene1,
+            alt: 'Laboratory scene showing technical validation and R&D linkage',
+          },
+          {
+            eyebrow: 'Strategic Coordination',
+            title: 'Strategic development alignment',
+            description: 'Hope Young and Zhongshan Zhiying remain independent legal entities while keeping long-term trust and coordinated planning across market and delivery decisions.',
+            image: meetingRoomReal,
+            alt: 'Project discussion scene representing strategic coordination',
+          },
+          {
+            eyebrow: 'Manufacturing Proof',
+            title: 'Coordinated manufacturing support',
+            description: 'Real workshop equipment and production scenes make manufacturing capability tangible instead of leaving it as a text claim.',
+            image: factoryWorkshopDetail,
+            alt: 'Factory equipment platform and production scene',
+          },
+        ],
+      },
+      conversionCta: {
+        eyebrow: 'Next step',
+        title: 'Give us the application context first, and we will help narrow the right material direction.',
+        description:
+          'Once the homepage proves “they understand the problem”, the next action should feel lighter than a heavy lead form.',
+        quickPoints: [
+          'Useful for teams entering sampling, technical document requests or validation planning',
+          'Useful for visitors who want to judge route fit before asking for TDS or SDS',
+          'Useful when technical discussion and delivery rhythm need to be aligned early',
+        ],
+        primary: {
+          label: 'Open contact page',
           page: 'contact',
         },
         secondary: {
           label: 'Explore solutions',
           page: 'solutions',
         },
-        note: 'Hope Young leads R&D and sales while Zhongshan Zhiying handles manufacturing and warehousing.',
+      },
+      hero: {
+        eyebrow: 'Key technical partner',
+        title: 'Bonding the Future, Enabling Intelligent Manufacturing',
+        lead:
+          'Critical bonding solutions for advanced manufacturing, built on proprietary core technology',
+        supporting:
+          'Hope Young supports electronics, advanced manufacturing and new-energy projects by keeping route judgement, validation rhythm, coordinated manufacturing and formal delivery inside one connected project line.',
+        primary: {
+          label: 'Start a project discussion',
+          page: 'contact',
+        },
+        secondary: {
+          label: 'See material systems',
+          page: 'solutions',
+        },
+        note: 'Clarify the coordination model first, then move into samples, documents and production planning.',
       },
       brandIntro: {
         eyebrow: 'Company Summary',
@@ -1949,9 +2570,9 @@ export const siteContent: Record<Locale, LocaleContent> = {
         eyebrow: 'Advanced Material Bonding Solutions',
         title: 'Judge the system before the grade',
         lead:
-          'Organized around four systems representative grades and application-facing logic',
+          'Public solution content is organized around four material platforms, representative grades and project entry logic',
         supporting:
-          'When a project moves into sampling, document request or deeper technical exchange, sales and technical teams can continue with route-specific information.',
+          'The site shows the platform and grade boundary first. Once a project moves into document review, sampling or supply planning, sales and technical teams continue the route-specific discussion.',
         primary: {
           label: 'Contact sales',
           page: 'contact',
@@ -1960,15 +2581,44 @@ export const siteContent: Record<Locale, LocaleContent> = {
           label: 'See applications',
           page: 'applications',
         },
-        note: 'The public presentation focuses on application fit, representative grades, customization range and next-step communication.',
+        note: 'The public logic is straightforward: judge platform fit first, review representative grades second, and choose the right next conversation third.',
       },
       intro:
-        'Hope Young presents solutions through system capability, use-case direction, representative grades and customization logic so industrial visitors can identify possible routes early without being overloaded by SKU-level detail.',
-      sampleHeader: {
-        eyebrow: 'Sample Product Expression',
-        title: 'Nine representative product grades',
+        'Hope Young structures solutions in a sequence that is closer to real industrial buying behavior: judge system fit first, review representative grades second, and then decide whether the next step is documents, samples or supply discussion.',
+      guideHeader: {
+        eyebrow: 'How To Read',
+        title: 'Help a first-time visitor decide within 30 seconds whether to move forward',
         description:
-          'This round expands the public sample set to 7068#, 7088#, 1088#, 7098#, 9#, V08, plus 9088#, 9098# and the tire-label grade so visitors can see more concrete routes before requesting deeper documents.',
+          'This page is not a full product catalog. It explains the public decision order clearly: review the system first, then the representative grade, then the right business and technical entry point.',
+      },
+      guideCards: [
+        {
+          title: 'Start with substrate and process constraints',
+          description: 'Look at the bonded materials, surface energy, line window and production rhythm before comparing specific grades.',
+          detail: 'That mirrors how industrial teams usually screen routes in the first conversation.',
+        },
+        {
+          title: 'Then read the representative grades',
+          description: 'Use the public grades to understand performance direction, customization range and document boundary.',
+          detail: 'This helps visitors decide whether deeper files or samples are worth requesting.',
+        },
+        {
+          title: 'Choose the next conversation by project stage',
+          description: 'Document review, sample validation and supply planning belong to different commercial rhythms.',
+          detail: 'Choosing the right entry point makes the sales and technical handoff more efficient.',
+        },
+      ],
+      platformHeader: {
+        eyebrow: 'Four Platforms',
+        title: 'Four public entry routes instead of a scattered list of grades',
+        description:
+          'Once a project is framed inside the right platform logic, it becomes much easier to judge representative grades and validation priorities.',
+      },
+      sampleHeader: {
+        eyebrow: 'Representative Grades',
+        title: 'Nine representative grades that help visitors decide whether deeper files are worth requesting',
+        description:
+          'The first public set now includes 7068#, 7088#, 1088#, 7098#, 9#, V08, 9088#, 9098# and the tire-label grade. They are intended to explain route boundaries, not replace full technical documentation.',
       },
       samples: [
         {
@@ -2094,32 +2744,36 @@ export const siteContent: Record<Locale, LocaleContent> = {
           name: 'Permanent Bonding Systems',
           useFor: 'Designed for permanent or structural bonding across EVA, sponge, rubber-plastic, metal, glass and composite substrates.',
           features: ['Very high initial tack', 'High peel strength', 'Weatherability', 'Anti-creep performance'],
-          customization: 'Can be tuned around substrate polarity, heat resistance, chemical resistance and coating process requirements, with public examples such as 7068# and the tire-label grade.',
+          representativeGrades: ['7068#', 'Tire-label grade'],
+          customization: 'Can be tuned around substrate polarity, heat resistance, chemical resistance and coating-process requirements, making it the right route for stronger permanent-bonding discussions.',
         },
         {
           name: 'Removable or Temporary Bonding Systems',
           useFor: 'Suitable for protective films, temporary fixation, removable labels and clean-removal applications.',
           features: ['High tack', 'Clean removability', 'Controllable bond life', 'No residue'],
-          customization: 'Can be developed around peel-force curves, substrate-specific removability and optical transparency, with public examples such as 7088#, 7098#, 9088# and 9098#.',
+          representativeGrades: ['7088#', '7098#', '9088#', '9098#'],
+          customization: 'Can be developed around peel-force curves, substrate-specific removability and optical transparency, making it suitable for projects that first need to define removable-bonding boundaries.',
         },
         {
           name: 'Label and Packaging Adhesive Systems',
           useFor: 'Designed for label stock, laminated print packaging, glossy films and other packaging applications.',
           features: ['Fast wetting', 'High-speed labeling fit', 'Water and oil resistance', 'High transparency'],
-          customization: 'Can be adapted to different facestocks, containers and higher food or medical safety requirements, with public examples such as 1088# and 9#.',
+          representativeGrades: ['1088#', '9#'],
+          customization: 'Can be adapted to different facestocks, containers and higher food or medical safety requirements, making it useful for labeling and packaging projects with tighter process windows.',
         },
         {
           name: 'Special Functional Adhesive Systems',
           useFor: 'Suitable for electronics assembly, automotive components, battery-module packaging and other complex functional bonding needs.',
           features: ['Dual-side bonding', 'Flexibility and impact resistance', 'Electrical performance options', 'Extreme environment resistance'],
-          customization: 'Can be jointly developed around composite substrates, electrical properties, chemical resistance and complex stress conditions, with public examples such as V08 and Y05.',
+          representativeGrades: ['V08'],
+          customization: 'Can be jointly developed around composite substrates, electrical properties, chemical resistance and complex stress conditions, making it a stronger route when multiple performance targets must be balanced together.',
         },
       ],
       processHeader: {
         eyebrow: 'How We Work',
-        title: 'Industrial customers need a visible working rhythm, not only a material claim',
+        title: 'A clearer working rhythm from the first inquiry to sample introduction',
         description:
-          'A clear path from requirement definition to evaluation and delivery helps build trust in early-stage industrial communication.',
+          'Industrial customers do not only want a material claim. They want to see how a conversation moves into documents, sampling and stable cooperation.',
       },
       process: [
         {
@@ -2144,34 +2798,46 @@ export const siteContent: Record<Locale, LocaleContent> = {
         },
       ],
       dataRequest: {
-        title: 'Document Access Logic',
+        title: 'Public Document Boundary',
         description:
-          'The website shows public platform-level information first. Detailed TDS / SDS and project files sit behind real context and business discussion.',
+          'The website opens route-level understanding first. Detailed TDS / SDS data, batch indicators and project files are shared once the application context is clear.',
         items: [
-          'Public layer: platform overview, application fit and summary capability.',
+          'Public layer: platform overview, application fit, representative grades and summary capability.',
           'Inquiry layer: TDS / SDS, sample discussion and deeper technical Q&A.',
           'Project layer: route-specific documents and customized details managed case by case.',
         ],
       },
       pageCta: {
         eyebrow: 'Next Step',
-        title: 'Move forward by project stage',
-        description: 'Document requests, sample discussion and supply planning each belong to a different rhythm.',
+        title: 'Choose the entry point that best matches the current project stage',
+        description: 'The right conversation entry usually matters as much as the material route itself.',
         items: [
           {
             eyebrow: 'Docs',
             title: 'Document request',
-            description: 'Best when the platform direction and public document boundary need to be clarified first.',
+            description: 'Best when the platform direction, public document boundary and basic parameters need to be clarified first.',
+            action: {
+              label: 'Open document discussion',
+              page: 'contact',
+            },
           },
           {
             eyebrow: 'Sample',
             title: 'Sample discussion',
-            description: 'Best for teams that already know the substrate, process or validation target.',
+            description: 'Best for teams that already know the substrate, process or critical validation target.',
+            action: {
+              label: 'Open sample discussion',
+              page: 'contact',
+            },
           },
           {
             eyebrow: 'Supply',
             title: 'Supply discussion',
-            description: 'Best for customers moving into introduction, volume validation or longer cooperation.',
+            description: 'Best for customers moving into introduction, volume validation or stable recurring supply.',
+            action: {
+              label: 'Open supply discussion',
+              page: 'contact',
+            },
           },
         ],
         primary: {
@@ -2187,11 +2853,11 @@ export const siteContent: Record<Locale, LocaleContent> = {
     applications: {
       hero: {
         eyebrow: 'Application Storytelling',
-        title: 'See routes through real industrial conditions',
+        title: 'Read routes through real operating conditions',
         lead:
-          'Use industry scenarios to show challenge route and outcome',
+          'Anonymous industry cases are used to show the problem, route logic, material direction and delivery result',
         supporting:
-          'This version focuses on how Hope Young understands electronics, advanced manufacturing and new-energy scenarios. Named customer proof can be added later if approval is available.',
+          'This version is designed to prove whether Hope Young understands the real constraints behind electronics, advanced manufacturing and new-energy projects. Named customer proof can be added later if approval becomes available.',
         primary: {
           label: 'Contact sales',
           page: 'contact',
@@ -2203,7 +2869,30 @@ export const siteContent: Record<Locale, LocaleContent> = {
         note: 'Each case follows the same structure: challenge, route, material direction and outcome.',
       },
       overview:
-        'The applications page helps buyers feel that Hope Young understands real industrial constraints while giving the sales team a repeatable story for early conversation.',
+        'The applications page is not only about what has been done before. Its job is to help visitors judge whether Hope Young understands their operating conditions, validation pressure and introduction rhythm.',
+      proofHeader: {
+        eyebrow: 'How To Read',
+        title: 'Start with how the problem is understood, then decide whether the case is relevant to your project',
+        description:
+          'The page does not depend on named customers as the main trust device. Instead it connects operating constraints, route logic, validation pressure and outcome in a form that is easier to use in business discussion.',
+      },
+      proofPoints: [
+        {
+          title: 'Read the operating constraints first',
+          description: 'Check whether the substrate, environmental pressure, line rhythm and end-use requirements resemble your own project.',
+          detail: 'Similarity of working conditions is usually more valuable than similarity of industry labels.',
+        },
+        {
+          title: 'Then review the validation logic',
+          description: 'Look at how reliability, weatherability, cleanliness or volume-stability checkpoints were handled.',
+          detail: 'That is often the fastest way to judge whether the collaboration depth fits.',
+        },
+        {
+          title: 'Choose the next page last',
+          description: 'Once the path feels familiar, move forward to solutions, technology or direct contact.',
+          detail: 'Each click should bring the visitor closer to a real project conversation.',
+        },
+      ],
       cases: [
         {
           title: 'Consumer-electronics precision bonding',
@@ -2211,6 +2900,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           solution: 'Hope Young developed an ultra-clean low-volatility bonding-material route for precision electronics and supported the project with a full validation-document package.',
           material: 'Ultra-clean low-volatility bonding systems designed for precision-electronics introduction.',
           outcome: 'The route passed all 6 reliability checks from the end brand, won structural-part orders for 2 flagship models and reached stable annual purchasing of more than 50 tons.',
+          fitSignal: 'Relevant for projects that are screening precision-electronics parts against cleanliness demands and brand-level validation thresholds.',
         },
         {
           title: 'Long-weatherability bonding for advanced manufacturing',
@@ -2218,6 +2908,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           solution: 'The two sides jointly developed a weather-resistant bonding-material series and optimized the structure behind long-term durability and environmental stability.',
           material: 'High-weatherability bonding systems built for harsher long-term service conditions.',
           outcome: 'After 1000 hours of UV aging, peel retention stayed above 85%, and the related product line increased next-year sales in higher-end applications by 35%.',
+          fitSignal: 'Relevant for manufacturing programs facing stronger weatherability, damp-heat exposure and tougher end-market qualification pressure.',
         },
         {
           title: 'New-energy battery specialty packaging',
@@ -2225,6 +2916,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           solution: 'Hope Young jointly developed a specialty elastomer adhesive route designed around the real performance tradeoffs of battery-module packaging.',
           material: 'Special functional adhesive systems created for insulation, chemical resistance and practical manufacturability.',
           outcome: 'After 30 days in electrolyte at 85°C, bond-strength retention stayed above 90% and insulation resistance remained above 1012 Ω·cm, with the first delivery exceeding 5 tons.',
+          fitSignal: 'Relevant for new-energy packaging work that must balance insulation, chemical resistance, heat tolerance and flexibility at the same time.',
         },
         {
           title: 'Scale-up optimization for industrial tape production',
@@ -2232,6 +2924,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
           solution: 'Hope Young supplied a stable general-purpose bonding-material route together with a process-parameter package for line-side optimization.',
           material: 'High-stability bonding systems designed for wider process windows and continuous production.',
           outcome: 'Line stoppage caused by adhesive variation dropped by 20%, complaint rate fell from 0.5% to 0.3%, and the route supported tens of millions of square meters of annual output.',
+          fitSignal: 'Relevant for scale-up programs where batch stability, wider process windows and continuous-line efficiency matter most.',
         },
         {
           title: 'Premium label-material performance upgrade',
@@ -2239,35 +2932,36 @@ export const siteContent: Record<Locale, LocaleContent> = {
           solution: 'Hope Young customized a higher-adhesion removable label adhesive and optimized fit across harder-to-bond substrates.',
           material: 'High-adhesion removable label adhesive systems tuned for difficult substrates and cleaner removal.',
           outcome: 'Initial peel strength increased by 150% on HDPE bottles and 80% on coated metal, helping the customer qualify with 3 premium personal-care suppliers and improve annual gross margin by 8 percentage points.',
+          fitSignal: 'Relevant for label programs that must improve difficult-substrate adhesion without giving up removability or end-use upgrade potential.',
         },
       ],
       focusHeader: {
-        eyebrow: 'What We Understand',
-        title: 'A strong case page shows problem understanding, not just a final success claim',
+        eyebrow: 'Fit Signals',
+        title: 'If your project is wrestling with these same questions, the conversation is worth continuing',
         description:
-          'Industrial buyers often judge a supplier first by how well it understands process constraints, validation pressure and tradeoffs.',
+          'Industrial buyers are rarely persuaded by a single case alone. They are persuaded when a supplier clearly understands the tradeoffs they are trying to manage.',
       },
       focusAreas: [
         {
           title: 'Production fit',
           description: 'Covers process window, coating stability, reaction rhythm and manufacturability.',
-          detail: 'Recommendations stay grounded in line reality, not only lab potential.',
+          detail: 'Useful for teams that need to judge introduction feasibility first.',
         },
         {
           title: 'Property balance',
-          description: 'Balances strength, flexibility, resistance, weatherability and adhesion needs.',
-          detail: 'This helps buyers identify a practical route faster.',
+          description: 'Balances strength, flexibility, media resistance, weatherability and adhesion together.',
+          detail: 'Useful when the project is constrained by multiple competing targets.',
         },
         {
-          title: 'Long-term cooperation',
-          description: 'Built for repeated supply, ongoing optimization and multi-project support.',
-          detail: 'The relationship model matters as much as the first quote.',
+          title: 'Collaboration rhythm',
+          description: 'Covers validation support, sample iteration and the ability to stay with the project through supply.',
+          detail: 'Useful for industrial customers that need longer-term technical cooperation.',
         },
       ],
       pageCta: {
         eyebrow: 'Continue',
-        title: 'Keep the discussion moving through the right page',
-        description: 'Once the scenario is clearer, visitors usually need either route detail, technical backing or direct project contact.',
+        title: 'Once the direction is clearer, move the discussion into the right next page',
+        description: 'The applications page builds problem understanding. The next step is usually route detail, technical trust or direct project contact.',
         items: [
           {
             title: 'Back to solutions',
@@ -2307,11 +3001,11 @@ export const siteContent: Record<Locale, LocaleContent> = {
     technology: {
       hero: {
         eyebrow: 'R&D Collaboration',
-        title: 'Professor-led and PhD-supported',
+        title: 'Professor-led, supported by a graduate research team',
         lead:
-          'A clearer view of team method and validation strength',
+          'A clearer view of team depth, method and validation capability',
         supporting:
-          'Its public narrative focuses on professor-led direction, doctoral collaboration and the ability to translate academic method into practical project value.',
+          'The public narrative centers on professor-led direction, doctoral collaboration and the ability to translate academic method into practical industrial value.',
         primary: {
           label: 'Contact sales',
           page: 'contact',
@@ -2323,7 +3017,7 @@ export const siteContent: Record<Locale, LocaleContent> = {
         note: 'This page supports both brand trust and first-round project credibility.',
       },
       overview:
-        'The reference materials show that Hope Young does not simply "have R&D staff" but works with a team of four masters and two PhDs, an application-oriented development method and collaboration with South China University of Technology. The public site translates those strengths into clear customer-facing value.',
+        'Hope Young does not simply "have R&D staff". It works with a team of four masters and two PhDs, an application-oriented development method and collaboration with South China University of Technology. The public site translates those strengths into clear customer-facing value.',
       pillars: [
         {
           title: 'Master and doctoral team',
@@ -2343,9 +3037,9 @@ export const siteContent: Record<Locale, LocaleContent> = {
       ],
       galleryHeader: {
         eyebrow: 'R&D Environment',
-        title: 'Use real lab, office and meeting scenes to make the team feel tangible',
+        title: 'Use real lab, office and meeting scenes to make the technical team tangible',
         description:
-          'The beta release does not need oversized imagery, but it should clearly show that Hope Young has real lab conditions, office coordination and project discussion space.',
+          'The public site does not need oversized imagery, but it should clearly show that Hope Young operates with real laboratory conditions, office coordination and project-discussion space.',
       },
       gallery: [
         {
@@ -2379,11 +3073,45 @@ export const siteContent: Record<Locale, LocaleContent> = {
           description: 'Fits naturally with messaging around route discussion, document alignment and joint development.',
         },
       ],
+      validationSection: {
+        header: {
+          eyebrow: 'Validation In Practice',
+          title: 'Bring real sample testing and validation activity onto the technology page',
+          description:
+            'These photos show sample testing, formulation verification and pre-introduction trial work. They demonstrate that Hope Young carries technical judgement into real operating and validation steps rather than leaving it on paper.',
+        },
+        photos: [
+          {
+            src: validationScene7068,
+            alt: '7068# sample test setup in the laboratory',
+            title: 'Validation scene',
+            description: 'A real 7068# sample-testing record that shows how Hope Young moves from preparation into hands-on validation.',
+          },
+          {
+            src: validationScene7098,
+            alt: '7098# sample under laboratory testing',
+            title: 'Sample testing',
+            description: 'The 7098# sample enters bench-side testing, making the public validation rhythm and sample-handling process more visible.',
+          },
+          {
+            src: validationScene7088,
+            alt: '7088# sample during laboratory formulation verification',
+            title: 'Formulation verification',
+            description: 'An operation-stage record of the 7088# sample used to support formulation judgement and process verification.',
+          },
+          {
+            src: validationScene9,
+            alt: '9# sample during pre-introduction laboratory validation',
+            title: 'Introduction validation',
+            description: 'A pre-introduction validation record for the 9# sample, showing how route fit is checked before a project moves further.',
+          },
+        ],
+      },
       labHeader: {
         eyebrow: 'Public Proof Modules',
-        title: 'Qualifications, certifications and validation capabilities',
+        title: 'Qualifications, certifications and validation capability in one public proof layer',
         description:
-          'This round combines the business license, high-tech certificate, patent example and lab scenes into one clearer public proof structure for the site.',
+          'This round brings the business license, high-tech certificate, patent example and lab scenes into one clearer proof structure for the public website.',
       },
       labCards: [
         {
@@ -2414,8 +3142,8 @@ export const siteContent: Record<Locale, LocaleContent> = {
       ],
       pageCta: {
         eyebrow: 'Discussion Paths',
-        title: 'Build technical trust before moving into validation',
-        description: 'This page is best for translating team depth, method and proof logic into a next project step.',
+        title: 'Build technical trust before moving into project validation',
+        description: 'This page translates team depth, method and proof logic into a credible next step for the project.',
         items: [
           {
             eyebrow: 'Talk',
@@ -2446,11 +3174,11 @@ export const siteContent: Record<Locale, LocaleContent> = {
     about: {
       hero: {
         eyebrow: 'About Hope Young',
-        title: 'Material expertise with project alignment',
+        title: 'Material expertise with a clearer project working model',
         lead:
           'A clearer picture of who Hope Young is and how it works',
         supporting:
-          'The first version avoids generic corporate language and instead builds a stable brand impression through structure and clarity.',
+          'The public site avoids generic corporate language and instead builds a more stable business impression through structure, proof and clarity.',
         primary: {
           label: 'Contact us',
           page: 'contact',
@@ -2459,10 +3187,37 @@ export const siteContent: Record<Locale, LocaleContent> = {
           label: 'View technology',
           page: 'technology',
         },
-        note: 'This round already brings in real office lab and credential visuals, so later updates can focus on final public wording.',
+        note: 'This round already introduces real office, laboratory and credential imagery, allowing later updates to focus on final public wording.',
       },
       story:
-        'Based in Guangzhou, Hope Young focuses on advanced material bonding solutions and collaborative project development, while Zhongshan Zhiying supports manufacturing, warehousing and coordinated delivery. The public-facing story positions Hope Young as a "key technical partner" that helps industrial customers move from requirement alignment to route judgement, sample validation and process landing through one connected working model.',
+        'Guangzhou Hope Young leads R&D, sales and project coordination, while Zhongshan Zhiying supports manufacturing, warehousing and coordinated delivery. Together they form a connected capability from front-end technical judgement to stable back-end fulfillment. The public site positions Hope Young as a key technical partner that supports electronics, advanced manufacturing and new-energy projects from requirement alignment to route judgement, sample validation and process landing.',
+      collaborationSection: {
+        header: {
+          eyebrow: 'Strategic Coordination',
+          title: 'State clearly how Hope Young and Zhongshan Zhiying coordinate',
+          description:
+            'This section avoids vague one-company storytelling. Instead, it states how two independent legal entities coordinate over the long term to create more stable, efficient and durable value for customers.',
+        },
+        narrative:
+          'Guangzhou Hope Young Chemical Technology Co., Ltd. and Zhongshan Zhiying Chemical Technology Co., Ltd. are both independently operated legal entities with clear ownership structures. Built on longstanding industrial ties and mutual trust, the two companies have established a close strategic coordination relationship. Zhongshan Zhiying brings solid manufacturing and process-management experience in upstream chemical materials, while Hope Young focuses on downstream market development, application innovation and customer-facing technical service. The value of this relationship does not come from blurring legal boundaries, but from keeping responsibilities clear while forming a more capable long-term support structure for industrial customers.',
+        valueCards: [
+          {
+            title: 'Stable supply-chain assurance',
+            description: 'Capacity coordination and supply-chain linkage help maintain material continuity and quality consistency.',
+            detail: 'That improves delivery reliability and strengthens resilience when industrial projects face timing or supply risk.',
+          },
+          {
+            title: 'R&D and technical linkage',
+            description: 'Shared technical resources and market insight create a stronger bridge between development direction and process optimization.',
+            detail: 'That helps convert innovation faster and gives customers more competitive route support.',
+          },
+          {
+            title: 'Strategic development alignment',
+            description: 'Market planning and long-term direction stay coordinated so front-end judgement and back-end delivery can reinforce each other.',
+            detail: 'This coordinated structure is part of why Hope Young can support customers with longer-term value rather than only short-term transactions.',
+          },
+        ],
+      },
       values: [
         {
           title: 'Proprietary R&D and IP foundation',
@@ -2499,8 +3254,8 @@ export const siteContent: Record<Locale, LocaleContent> = {
       ],
       pageCta: {
         eyebrow: 'Partnership',
-        title: 'Judge the working style before going deeper',
-        description: 'The about page should make it easy to choose the next door into the company.',
+        title: 'Choose the most useful next step',
+        description: 'The about page works as a brand and working-model brief, helping visitors choose the next conversation.',
         items: [
           {
             title: 'See solutions',
@@ -2630,11 +3385,11 @@ export const siteContent: Record<Locale, LocaleContent> = {
     contact: {
       hero: {
         eyebrow: 'Contact',
-        title: 'Bring documents, samples and project contact into one formal entry point',
+        title: 'One formal contact point for documents, samples and project coordination',
         lead:
-          '5 direct phones, business email, WeChat and both addresses on one page',
+          'Lead contacts, business email, enterprise WeChat and both addresses in one place',
         supporting:
-          'Whether the need is early-stage route review, document request, sample validation or technical-meeting planning, the fastest next step is direct contact through the public business phones, business email and WeChat channel.',
+          'Whether the need is early-stage route review, document requests, sample validation or technical-meeting planning, the fastest next step is to begin with the lead contacts, business email, enterprise WeChat entry and both site addresses.',
         primary: {
           label: 'Review solutions',
           page: 'solutions',
@@ -2646,37 +3401,43 @@ export const siteContent: Record<Locale, LocaleContent> = {
         note: 'Standard document requests can usually be arranged within 24 hours after confirmation, with first contact normally answered within one working day.',
       },
       note:
-        'Customers can use the public business phones, business email, WeChat QR code and the office or laboratory addresses below to begin a formal conversation.',
+        'Use the public business phone lines, business email, WeChat QR code and the office or laboratory addresses below to begin a formal business conversation.',
       options: [
         {
           title: 'Sample request',
-          emphasis: 'Best when the application direction is already clear and a specific grade needs to be validated',
-          body: 'It helps to share the target grade, substrate, surface treatment, process conditions and the key property requirements before sampling is arranged.',
+          emphasis: 'Best when the application direction is clear and a specific grade needs validation',
+          body: 'Please share the target grade, substrate, surface treatment, process conditions and key performance requirements before sampling is arranged.',
           note: 'The team will judge whether a mature grade fits or whether a more customized route should be discussed.',
         },
         {
           title: 'Technical document request',
           emphasis: 'Best for customers asking for TDS, SDS or a more structured technical summary',
-          body: 'Requests work better when tied to a real use case or product family rather than material data in isolation.',
+          body: 'Requests work best when tied to a real use case or product family rather than material data in isolation.',
           note: 'Document sharing still follows the public-summary plus inquiry-based detail logic.',
         },
         {
           title: 'Technical meeting and joint validation',
-          emphasis: 'Best for complex projects that already need faster alignment and technical discussion',
-          body: 'For more challenging use cases, a short email or phone summary followed by an online or offline technical meeting is usually the most effective route.',
-          note: 'These projects often benefit from direct and early communication with both business and technical participants.',
+          emphasis: 'Best for complex projects that need faster alignment and technical discussion',
+          body: 'For more challenging use cases, a short email or phone summary followed by an online or in-person technical meeting is usually the most effective route.',
+          note: 'These projects often benefit from early communication involving both business and technical participants.',
         },
       ],
-      hubTitle: 'Official Contact Details',
+      summaryTitle: 'Official contact summary',
+      summaryDescription:
+        'For the first contact, begin with the two lead contacts, the business email, the enterprise WeChat entry and the office or laboratory addresses.',
+      detailTitle: 'Full public contact list',
+      detailDescription:
+        'If the discussion needs to be routed by role, the full set of five public phone numbers remains available below.',
+      hubTitle: 'Official contact channels',
       hubDescription:
-        'These channels are approved for the beta public site and can be used for sales discussion, document requests, visit coordination and project follow-up.',
+        'These public channels can be used for sales discussions, document requests, visit coordination and project follow-up.',
       channelLabels: {
         phones: 'Business phones',
-        wechat: 'Business WeChat',
+        wechat: 'Enterprise WeChat entry',
         address: 'Office / Lab address',
       },
-      qrcodeCaption: 'Scan to add the business WeChat channel for project discussion, document follow-up and visit coordination.',
-      guideTitle: 'Recommended Information for First Contact',
+      qrcodeCaption: 'Use the enterprise WeChat entry for project communication, document follow-up and visit coordination.',
+      guideTitle: 'Suggested Details for First Contact',
       guideDescription:
         'Preparing the points below helps sales and technical communication become productive more quickly.',
       guideItems: [

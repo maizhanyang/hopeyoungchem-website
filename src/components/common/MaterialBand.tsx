@@ -14,11 +14,13 @@ export function MaterialBand({
       ? {
           fit: '适用方向',
           features: '性能重点',
+          grades: '代表型号',
           custom: '可定制方向',
         }
       : {
           fit: 'Application Fit',
           features: 'Performance Focus',
+          grades: 'Representative Grades',
           custom: 'Customization',
         }
 
@@ -45,6 +47,18 @@ export function MaterialBand({
             ))}
           </div>
         </div>
+        {material.representativeGrades && material.representativeGrades.length > 0 && (
+          <div className="material-band-block">
+            <span>{labels.grades}</span>
+            <div className="material-feature-list">
+              {material.representativeGrades.map((grade) => (
+                <span className="material-chip" key={grade}>
+                  {grade}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
         <div className="material-band-block">
           <span>{labels.custom}</span>
           <p>{material.customization}</p>

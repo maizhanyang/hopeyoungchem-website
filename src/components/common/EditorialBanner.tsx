@@ -36,7 +36,7 @@ export function EditorialBanner({
           <div className="editorial-banner-detail">
             <span className="contact-channel-label">{detailTitle}</span>
             <p>{detailCopy}</p>
-            <strong>{hero.note}</strong>
+            {hero.note !== detailCopy && <strong>{hero.note}</strong>}
           </div>
         </div>
         <div className="editorial-banner-media-panel">

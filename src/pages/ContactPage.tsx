@@ -20,8 +20,8 @@ function ContactDirectSection({ locale }: { locale: Locale }) {
               eyebrow: locale === 'zh' ? '官方渠道' : 'Official Channels',
               title:
                 locale === 'zh'
-                  ? '把电话、微信和来访地址放进同一个正式入口'
-                  : 'Bring phone, WeChat and the office address into one formal entry point',
+                  ? '把电话、企业微信和双地址放进同一个正式联系入口'
+                  : 'Use one formal page for phone, enterprise WeChat and both addresses',
               description: content.contact.note,
             }}
           />
@@ -105,7 +105,7 @@ export function ContactPage({ locale }: { locale: Locale }) {
             : 'Office entrance and visit identification scene'
         }
         theme="contact"
-        detailTitle={locale === 'zh' ? '正式联系' : 'Direct Contact'}
+        detailTitle={locale === 'zh' ? '正式联系' : 'Official Contact'}
         detailCopy={content.contact.note}
       />
 

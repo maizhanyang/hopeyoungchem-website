@@ -1,4 +1,4 @@
-import { siteContent, type Locale, type PhotoCard } from '../content/siteContent'
+import { siteContent, type Locale } from '../content/siteContent'
 import {
   EditorialBanner,
   SectionHeader,
@@ -24,7 +24,7 @@ function TechnologyIntroSection({ locale }: { locale: Locale }) {
               title:
                 locale === 'zh'
                   ? '把团队、方法和验证逻辑放到同一页'
-                  : 'Bring team method and validation into one page',
+                  : 'Bring the team, method and validation logic onto one page',
               description: content.overview,
             }}
           />
@@ -52,7 +52,7 @@ function TechnologyMethodSection({ locale }: { locale: Locale }) {
           title:
             locale === 'zh'
               ? '让客户看到研发判断如何进入真实项目'
-              : 'Show how research judgement enters real projects',
+              : 'Show how technical judgement enters real projects',
           description:
             locale === 'zh'
               ? '技术页的重点不是堆资历，而是把硕博团队、华工合作背景和应用导向验证方法，转译成客户能理解的合作价值。'
@@ -77,6 +77,29 @@ function TechnologyGallerySection({ locale }: { locale: Locale }) {
       <div className="technology-gallery-mosaic">
         {content.gallery.map((photo) => (
           <TechnologyGalleryTile key={photo.title} photo={photo} />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+function TechnologyValidationSection({ locale }: { locale: Locale }) {
+  const validationSection = siteContent[locale].technology.validationSection
+
+  return (
+    <section className="content-section technology-validation-section">
+      <SectionHeader section={validationSection.header} />
+      <div className="technology-validation-grid">
+        {validationSection.photos.map((photo) => (
+          <article className="technology-validation-card" key={`${photo.title}-${photo.alt}`}>
+            <div className="technology-validation-media">
+              <LazyImage src={photo.src} alt={photo.alt} />
+            </div>
+            <div className="technology-validation-copy">
+              <h3>{photo.title}</h3>
+              <p>{photo.description}</p>
+            </div>
+          </article>
         ))}
       </div>
     </section>
@@ -151,6 +174,7 @@ export function TechnologyPage({ locale }: { locale: Locale }) {
       <TechnologyIntroSection locale={locale} />
       <TechnologyMethodSection locale={locale} />
       <TechnologyGallerySection locale={locale} />
+      <TechnologyValidationSection locale={locale} />
       <TechnologyProofSection locale={locale} />
       <TechnologyPageCta locale={locale} />
     </>

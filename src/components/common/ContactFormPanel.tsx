@@ -17,7 +17,7 @@ export function ContactFormPanel({ locale }: { locale: Locale }) {
   const [draft, setDraft] = useState<InquiryDraft>(emptyInquiryDraft)
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const isZh = locale === 'zh'
-  const primaryPhone = siteConfig.contacts.phones[0]
+  const { primaryPhone } = siteConfig.contacts
 
   const submitInquiry = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -77,12 +77,12 @@ export function ContactFormPanel({ locale }: { locale: Locale }) {
   return (
     <div className="contact-form-panel">
       <div className="section-header section-header-compact">
-        <span className="eyebrow">{isZh ? '快速留资' : 'Quick Inquiry'}</span>
-        <h2>{isZh ? '先整理项目要点，再通过微信或电话发给业务联系人' : 'Prepare the project brief, then send it by WeChat or phone'}</h2>
+        <span className="eyebrow">{isZh ? '咨询摘要' : 'Inquiry Summary'}</span>
+        <h2>{isZh ? '先整理项目要点，再通过主联系人或企业微信继续沟通' : 'Prepare the project brief, then continue with the lead contact or enterprise WeChat'}</h2>
         <p>
           {isZh
-            ? '首版 beta 暂不接入在线提交后台。填写后可一键复制咨询内容，再通过业务微信或业务电话继续沟通。'
-            : 'The beta version does not connect a live submission backend yet. Fill in the form to copy a structured inquiry brief, then continue through the business WeChat channel or a direct business phone.'}
+            ? '当前表单用于整理一份结构化咨询摘要。填写后可直接复制，并发送给主联系人或企业微信入口，方便更快进入正式沟通。'
+            : 'This form prepares a structured inquiry summary for formal follow-up. Complete it, copy it, and send it to the lead contact or enterprise WeChat entry to speed up the next discussion.'}
         </p>
       </div>
       <form className="contact-form" onSubmit={submitInquiry}>
@@ -155,7 +155,7 @@ export function ContactFormPanel({ locale }: { locale: Locale }) {
         </label>
         <div className="form-actions">
           <button type="submit">
-            {isZh ? '复制咨询信息' : 'Copy Inquiry Brief'}
+            {isZh ? '生成并复制咨询摘要' : 'Generate and Copy Summary'}
           </button>
           <a
             className="button-link button-link-secondary button-link-inline"
@@ -166,16 +166,16 @@ export function ContactFormPanel({ locale }: { locale: Locale }) {
           <p className="form-status" role="status" aria-live="polite">
             {status === 'success' &&
               (isZh
-                ? '咨询内容已复制，可直接粘贴到微信发送给销售。'
-                : 'The inquiry brief has been copied and can now be pasted into WeChat for sales follow-up.')}
+                ? '咨询摘要已复制，可直接粘贴发送给主联系人或企业微信。'
+                : 'The inquiry summary has been copied and can now be sent to the lead contact or enterprise WeChat entry.')}
             {status === 'error' &&
               (isZh
-                ? '当前浏览器未能完成复制，请直接通过电话或微信联系。'
-                : 'Copying was not available in this browser, so please continue through phone or WeChat directly.')}
+                ? '当前浏览器未能完成复制，请直接通过电话或企业微信继续联系。'
+                : 'Copying was not available in this browser, so please continue by phone or enterprise WeChat directly.')}
             {status === 'idle' &&
               (isZh
-                ? '提交按钮不会公开发送数据，只会整理并复制一份结构化咨询内容。'
-                : 'The submit button does not send public data yet. It only prepares and copies a structured inquiry note.')}
+                ? '该按钮不会公开发送数据，只会整理并复制一份结构化咨询摘要。'
+                : 'This button does not submit public data. It only prepares and copies a structured inquiry summary.')}
           </p>
         </div>
       </form>

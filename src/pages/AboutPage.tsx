@@ -31,7 +31,7 @@ function AboutBrandSection({ locale }: { locale: Locale }) {
           <h2>
             {locale === 'zh'
               ? '把品牌、技术方法和合作方式放在一起看'
-              : 'See the brand, technical method and partnership style together'}
+              : 'Review the brand, technical method and partnership model together'}
           </h2>
           <p>{content.story}</p>
           <div className="hero-actions">
@@ -80,7 +80,7 @@ function AboutGallerySection({ locale }: { locale: Locale }) {
           title:
             locale === 'zh'
               ? '把附件 6 里的真实品牌素材接进正式关于页'
-              : 'Bring the approved brand-wall imagery into the formal about page',
+              : 'Introduce the approved brand-wall imagery into the formal about page',
           description:
             locale === 'zh'
               ? '这组品牌墙素材现在直接承担关于页的正式视觉露出，也让品牌、空间和接待感受有了更真实的公开表达。'
@@ -96,6 +96,28 @@ function AboutGallerySection({ locale }: { locale: Locale }) {
   )
 }
 
+function AboutCollaborationSection({ locale }: { locale: Locale }) {
+  const collaborationSection = siteContent[locale].about.collaborationSection
+
+  return (
+    <section className="content-section about-collaboration-section">
+      <div className="about-collaboration-shell">
+        <SectionHeader section={collaborationSection.header} />
+        <div className="about-collaboration-layout">
+          <div className="about-collaboration-narrative">
+            <p>{collaborationSection.narrative}</p>
+          </div>
+          <div className="about-collaboration-grid">
+            {collaborationSection.valueCards.map((item) => (
+              <FeaturePanel key={item.title} card={item} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function AboutValuesSection({ locale }: { locale: Locale }) {
   const content = siteContent[locale].about
 
@@ -105,10 +127,10 @@ function AboutValuesSection({ locale }: { locale: Locale }) {
         <SectionHeader
           section={{
             eyebrow: locale === 'zh' ? '合作方式' : 'Working Style',
-            title:
-              locale === 'zh'
-                ? '把长期配合说清楚，比堆品牌口号更重要'
-                : 'Clarifying long-term collaboration matters more than slogans',
+          title:
+            locale === 'zh'
+              ? '把长期配合说清楚，比堆品牌口号更重要'
+              : 'A clear working model matters more than slogans',
             description:
               locale === 'zh'
                 ? '关于页更像一张合作方式说明页，帮助客户理解虹扬如何进入项目、如何组织沟通，以及为什么适合长期配合。'
@@ -132,7 +154,7 @@ function AboutProofSection({ locale }: { locale: Locale }) {
     title:
       locale === 'zh'
         ? '把品牌现场、证照与专利公开层放在同一页收口'
-        : 'Bring brand presence, credentials and the patent layer into one closing section',
+        : 'Bring brand presence, credentials and patent proof into one closing section',
     description:
       locale === 'zh'
         ? '关于页现在不仅讲故事，也把真实品牌场景、营业主体、高新证明与专利积累放在一起，帮助客户更快判断这是一个可正式沟通的企业入口。'
@@ -167,7 +189,7 @@ function AboutTimelineSection({ locale }: { locale: Locale }) {
           title:
             locale === 'zh'
               ? '用公开节点概括企业发展节奏'
-              : 'Map the company pace through public milestones',
+              : 'Trace the company through public milestones',
           description:
             locale === 'zh'
               ? '时间线作为附属信息保留，用更轻的方式帮助客户快速理解企业阶段和业务方向。'
@@ -244,6 +266,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
 
       <AboutBrandSection locale={locale} />
       <AboutGallerySection locale={locale} />
+      <AboutCollaborationSection locale={locale} />
       <AboutValuesSection locale={locale} />
       <AboutProofSection locale={locale} />
       <AboutTimelineSection locale={locale} />

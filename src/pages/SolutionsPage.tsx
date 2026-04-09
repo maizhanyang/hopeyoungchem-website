@@ -7,22 +7,51 @@ import {
   FeaturePanel,
   ButtonLink,
 } from '../components/common'
+import { Link } from 'react-router-dom'
+import { buildPath } from '../utils'
 import researchScene1Image from '../assets/media/provided/research-scene-1.jpg'
+
+function SolutionsGuideSection({ locale }: { locale: Locale }) {
+  const content = siteContent[locale].solutions
+
+  return (
+    <section className="content-section solution-guide-section">
+      <div className="solution-guide-shell">
+        <SectionHeader section={content.guideHeader} />
+        <div className="solution-guide-grid">
+          {content.guideCards.map((item, index) => (
+            <article className="solution-guide-card" key={item.title}>
+              <span className="solution-guide-index">{String(index + 1).padStart(2, '0')}</span>
+              <div className="solution-guide-copy">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <span>{item.detail}</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
 
 function SolutionsMaterialSection({ locale }: { locale: Locale }) {
   const content = siteContent[locale].solutions
 
   return (
     <section className="content-section solution-platform-section">
-      <div className="solution-platform-stack">
-        {content.materials.map((material, index) => (
-          <MaterialBand
-            key={material.name}
-            material={material}
-            locale={locale}
-            index={index}
-          />
-        ))}
+      <div className="solution-platform-shell">
+        <SectionHeader section={content.platformHeader} />
+        <div className="solution-platform-stack">
+          {content.materials.map((material, index) => (
+            <MaterialBand
+              key={material.name}
+              material={material}
+              locale={locale}
+              index={index}
+            />
+          ))}
+        </div>
       </div>
     </section>
   )
@@ -90,6 +119,12 @@ function SolutionsPageCta({ locale }: { locale: Locale }) {
               {item.eyebrow && <span className="page-cta-chip">{item.eyebrow}</span>}
               <h3>{item.title}</h3>
               <p>{item.description}</p>
+              {item.action && (
+                <Link className="page-cta-inline-link" to={buildPath(locale, item.action.page)}>
+                  <span>{item.action.label}</span>
+                  <span aria-hidden="true">→</span>
+                </Link>
+              )}
             </article>
           ))}
         </div>
@@ -129,20 +164,21 @@ export function SolutionsPage({ locale }: { locale: Locale }) {
               title:
                 locale === 'zh'
                   ? '把平台判断放在产品型号之前'
-                  : 'Place platform judgement before product codes',
+                  : 'Put platform judgment before product codes',
               description: content.intro,
             }}
           />
           <div className="page-editorial-side">
             <p>
               {locale === 'zh'
-                ? '先看平台适配和定制空间，再进入样品、资料与供货沟通，这样更接近真实工业项目的进入方式。'
-                : 'Platform fit and customization range come first, followed by sample, document and supply discussions to mirror how industrial projects actually begin.'}
+                ? '这页最适合用于首轮判断: 先用平台筛选可行路线,再看代表型号与公开资料边界,最后决定是否进入下一步沟通。'
+                : 'This page works best as a first screening tool: use the platform to narrow the route, review the representative grade and public document boundary, and then decide whether the conversation should move forward.'}
             </p>
           </div>
         </div>
       </section>
 
+      <SolutionsGuideSection locale={locale} />
       <SolutionsMaterialSection locale={locale} />
       <SolutionsShowcaseSection locale={locale} />
       <SolutionsProcessSection locale={locale} />

@@ -21,18 +21,25 @@ export function CaseFeatureBand({
           solution: '方案思路',
           material: '材料方向',
           outcome: '交付结果',
+          fit: '适配信号',
         }
       : {
           challenge: 'Challenge',
           solution: 'Approach',
           material: 'Material Direction',
           outcome: 'Outcome',
+          fit: 'Fit Signal',
         }
 
   return (
     <article className={reverse ? 'case-feature-band case-feature-band-reverse' : 'case-feature-band'}>
       <div className="case-feature-media">
-        <LazyImage src={image} alt={caseStudy.title} />
+        <LazyImage
+          src={image}
+          alt={caseStudy.title}
+          rootMargin="600px"
+          loading={index < 2 ? 'eager' : 'lazy'}
+        />
       </div>
       <div className="case-feature-copy">
         <span className="eyebrow">
@@ -56,6 +63,12 @@ export function CaseFeatureBand({
             <span>{labels.outcome}</span>
             <p>{caseStudy.outcome}</p>
           </div>
+          {caseStudy.fitSignal && (
+            <div className="case-row">
+              <span>{labels.fit}</span>
+              <p>{caseStudy.fitSignal}</p>
+            </div>
+          )}
         </div>
       </div>
     </article>
